@@ -1,0 +1,146 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+#content .contentArea > p { 
+  font-size: 1.25em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#content .contentArea > p span {
+  color: rgba(47, 71, 152, 1);
+  font-weight: 500;
+}
+
+#content .contentArea img{
+  margin-bottom: 50px;
+  
+}
+#content .contentArea dl {
+  overflow: hidden;
+  margin: 40px 0;
+}
+#content .contentArea dl:last-child{
+  margin-bottom: 150px;
+}
+#content .contentArea > div{
+  overflow: hidden;
+}
+#content .contentArea > div p,
+#content .contentArea dl dt{
+  font-size: 1.875em;
+  color: rgba(47, 71, 152, 1);
+  float: left;
+  width: 300px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#content .contentArea > div form,
+#content .contentArea dl dd{
+  float: right;
+  width: 900px;
+  font-size: 1.25em;
+  color: #666;
+  line-height: 1.8em;
+  
+}
+#content .contentArea dl:nth-of-type(3) dd::before{
+  content: '';
+  display: block;
+  width: 160px;
+  height: 160px;
+  border: 1px solid #ccc;
+  border-radius: 80px;
+  margin-left: 33px;
+  margin-bottom: 20px;
+}
+#content .contentArea dl:nth-of-type(3) dd:nth-of-type(1):before{
+  background: url(../images/content5/process1_1.png) center no-repeat;
+}
+#content .contentArea dl:nth-of-type(3) dd:nth-of-type(2):before{
+  background: url(../images/content5/process2_1.png) center no-repeat;
+}
+#content .contentArea dl:nth-of-type(3) dd:nth-of-type(3):before{
+  background: url(../images/content5/process3_1.png) center no-repeat;
+}
+#content .contentArea dl:nth-of-type(3) dd:nth-of-type(4):before{
+  background: url(../images/content5/process4_1.png) center no-repeat;
+}
+#content .contentArea dl:nth-of-type(3) dd{
+  width: 225px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+#content .contentArea dl:nth-of-type(3) dd i{
+  position: absolute;
+  right: -13px;
+  top: 70px;
+  font-size: 1.5em;
+  color: rgba(47, 71, 152, 1);
+  text-shadow: 1px 1px 5px rgba(150, 150, 150, 0.5);
+}
+#content .contentArea dl dd span{
+  font-weight: 700;
+}
+#content .contentArea > div form{
+  margin-bottom: 100px;
+}
+#content .contentArea > div form ul li{
+  margin-bottom: 20px;
+}
+#content .contentArea > div form ul li label{
+  display: block;
+}
+#content .contentArea > div form ul li select,
+#content .contentArea > div form ul li input{
+  width: 900px;
+  height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#content .contentArea > div form ul li input:focus-visible,
+#content .contentArea > div form ul li select:focus-visible,
+#content .contentArea > div form ul li textarea:focus-visible{
+  outline : rgba(47, 71, 152, 1) auto 1px;
+}
+#content .contentArea > div form ul li select{
+  width: 300px;
+}
+#content .contentArea > div form ul li textarea{
+  resize: none;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+#content .contentArea > div form ul li:last-of-type{
+  overflow: hidden;
+}
+#content .contentArea > div form ul li .formBtn{
+  width: 150px;
+  float: right;
+  margin-left: 20px;
+  border: 0px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid rgba(51, 51, 51, 0);
+  transition: all .5s;
+
+}
+#content .contentArea > div form ul li:last-of-type input:first-of-type{
+  color: #fff;
+  background: rgba(47, 71, 152, 1);
+}
+#content .contentArea > div form ul li:last-of-type input:first-of-type:hover{
+  color: #333;
+  background: #fff;
+  border: 1px solid #333;
+}
+#content .contentArea > div form ul li .formBtn:hover{
+  background: #fff;
+  border: 1px solid #333;
+}

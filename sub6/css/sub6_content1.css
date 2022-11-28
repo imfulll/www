@@ -1,0 +1,524 @@
+/* common */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto 100px;
+  position: relative;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+}
+
+/* =================list================= */
+#content .contentArea .searchBox {
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+#content .contentArea .searchBox > div {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 570px;
+  padding-top: 25px;
+}
+#content .contentArea .searchBox .searchSel {
+  float: left;
+  margin-right: 10px;
+}
+#content .contentArea .searchBox .searchSel #select {
+  width: 150px;
+  padding: 10px 20px;
+  appearance: none;
+  background: url(../images/content1/categoryArrow.png) right 20px center
+    no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#content .contentArea .searchBox .searchInput {
+  float: left;
+  overflow: hidden;
+}
+#content .contentArea .searchBox .searchInput input {
+  display: block;
+  width: 300px;
+  padding: 10px 20px;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  float: left;
+  font-size: 1.2rem;
+}
+#content .contentArea .searchBox .searchInput button {
+  width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+  float: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#content .contentArea .list .listTop {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#content .contentArea .list .listTop p {
+  float: left;
+  font-size: 1.2rem;
+  line-height: 43px;
+  margin-left: 20px;
+}
+#content .contentArea .list .listTop p span {
+  font-size: 1.5rem;
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+}
+#content .contentArea .list .listTop #scale {
+  width: 180px;
+  float: right;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  border-color: #ccc;
+  appearance: none;
+  background: url(../images/content1/categoryArrow.png) right 20px center
+    no-repeat;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 43px;
+}
+#content .contentArea .list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-column-gap: 30px;
+  grid-row-gap: 70px;
+  margin-bottom: 50px;
+}
+#content .contentArea .list ul li {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+#content .contentArea .list ul li a {
+  display: block;
+}
+#content .contentArea .list ul li a .listImg {
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#content .contentArea .list ul li a .listImg img {
+  width: 380px;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.5s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#content .contentArea .list ul li:hover a .listImg img {
+  transform: scale(1.05);
+}
+#content .contentArea .list ul li a .listText {
+  padding: 20px;
+  overflow: hidden;
+}
+#content .contentArea .list ul li a .listText dl dt {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 340px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+}
+#content .contentArea .list ul li:hover a .listText dl dt {
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea .list ul li a .listText dl dd {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  line-height: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#content .contentArea .list ul li a .listText > span {
+  display: block;
+  float: left;
+  position: relative;
+  margin-right: 20px;
+  color: #999;
+  transition: all 0.5s;
+}
+#content .contentArea .list ul li a .listText span.isAttach {
+  font-weight: 700;
+}
+#content .contentArea .list ul li:hover a .listText span.isAttach {
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea .list ul li:hover a .listText span {
+  color: #333;
+}
+#content .contentArea .list ul li a .listText span:nth-of-type(1)::after,
+#content .contentArea .list ul li a .listText span:nth-of-type(2)::after {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 20px;
+  background: #ccc;
+  position: absolute;
+  right: -13px;
+  top: 0;
+}
+#content .contentArea .list ul li a .listText span:last-of-type {
+  float: right;
+  margin-right: 0;
+}
+#content .contentArea .list ul li a .listText span i {
+  margin-right: 10px;
+}
+#content .contentArea .list ul li:hover a .listText span i {
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea .listButton {
+  text-align: right;
+  overflow: hidden;
+  padding: 10px 0;
+}
+#content .contentArea .listButton a {
+  display: block;
+  float: right;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.5s;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+#content .contentArea .listButton a.write {
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .contentArea .listButton a:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+#content .contentArea #listPage {
+  text-align: center;
+}
+#content .contentArea #listPage i {
+  color: #666;
+}
+#content .contentArea #listPage i:nth-of-type(1) {
+  margin-right: 10px;
+}
+#content .contentArea #listPage i:nth-of-type(2) {
+  margin-left: 10px;
+}
+#content .contentArea #listPage .pageNum {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+#content .contentArea #listPage .pageNum.pageCurrent {
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .contentArea #listPage .pageNum.pageOther:hover {
+  background: rgba(47, 71, 152, 0.2);
+}
+
+/* =================write================= */
+#content .contentArea .writeBox {
+  width: 1200px;
+}
+#content .contentArea .writeBox .inputBox div {
+  margin-bottom: 20px;
+}
+#content .contentArea .writeBox label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#content .contentArea .writeBox input {
+  font-size: 1.2rem;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+#content .contentArea .writeBox textarea {
+  width: 1200px;
+  height: 500px;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+#content .contentArea .writeBox .uploader .imgUp {
+  margin-bottom: 20px;
+}
+#content .contentArea .writeBox .uploader .imgUp label span {
+  font-size: 0.9rem;
+  color: rgba(47, 71, 152, 1);
+  margin-left: 10px;
+}
+#content .contentArea .writeBox .uploader input[type="file"] {
+  padding: 8px 20px;
+}
+#content .contentArea .writeBox .uploader .delete_ok {
+  margin-left: 20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+#content .contentArea .writeBox .uploader .delete_ok input {
+  width: auto;
+  height: auto;
+}
+
+input:disabled {
+  background-color: rgba(47, 71, 152, 0.1);
+}
+
+#content .contentArea .writeBox .writeButton {
+  overflow: hidden;
+  padding: 10px 0;
+}
+#content .contentArea .writeBox .writeButton a {
+  display: block;
+  float: right;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin: 0 10px 0 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+#content .contentArea .writeBox .writeButton .onBoard {
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+  cursor: pointer;
+}
+#content .contentArea .writeBox .writeButton button:hover,
+#content .contentArea .writeBox .writeButton a:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* =================view================= */
+#content .contentArea .view .viewBox {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  margin-bottom: 30px;
+}
+#content .contentArea .view .viewBox .viewTitle1,
+#content .contentArea .view .viewBox .viewTitle2 {
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  background: rgba(47, 71, 152, 0.1);
+}
+#content .contentArea .view .viewBox .viewTitle1 {
+  font-weight: 700;
+  padding-left: 30px;
+}
+#content .contentArea .view .viewBox .viewTitle2 {
+  border-bottom: 1px solid #333;
+}
+#content .contentArea .view .viewBox .viewTitle2 span {
+  margin: 0 10px;
+}
+#content .contentArea .view .viewBox .viewContent {
+  padding: 50px;
+  box-sizing: border-box;
+}
+#content .contentArea .view .viewBox .viewContent .imgBox {
+  text-align: center;
+}
+
+#content .contentArea .view .viewButton {
+  text-align: right;
+}
+#content .contentArea .view .viewButton a {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin: 0 10px 0 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+#content .contentArea .view .viewButton a.delete {
+  background: rgba(255, 0, 0, 0.1);
+}
+#content .contentArea .view .viewButton a.delete:hover {
+  background: rgba(255, 0, 0, 1);
+  color: #fff;
+}
+#content .contentArea .view .viewButton a.write {
+  background: rgba(47, 71, 152, 0.1);
+}
+#content .contentArea .view .viewButton a.write:hover {
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .contentArea .view .viewButton a:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* =================comment================= */
+#content .contentArea .view .comment {
+  margin-bottom: 30px;
+}
+#content .contentArea .view .comment .commentInner {
+  border-top: 4px double #333;
+  border-bottom: 4px double #333;
+  margin-bottom: 30px;
+  position: relative;
+}
+#content .contentArea .view .comment .commentInner > p {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  margin-left: -60px;
+  line-height: 40px;
+}
+#content .contentArea .view .comment .commentBox {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 60px;
+}
+#content .contentArea .view .comment .commentBox:last-of-type {
+  border-bottom: 0;
+}
+#content .contentArea .view .comment .commentBox .commentTop {
+  overflow: hidden;
+}
+#content .contentArea .view .comment .commentBox .commentTop p {
+  float: left;
+}
+#content .contentArea .view .comment .commentBox .commentTop .writeNick {
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+}
+#content .contentArea .view .comment .commentBox .commentTop .writeDate {
+  margin-left: 40px;
+  color: #999;
+}
+#content .contentArea .view .comment .commentBox .commentBtn {
+  float: right;
+}
+#content .contentArea .view .comment .commentBox .commentBtn .comBtn {
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+#content .contentArea .view .comment .commentBox .commentBtn .modiBtn {
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea .view .comment .commentBox .commentBtn .delBtn {
+  color: rgba(255, 0, 0, 1);
+}
+#content .contentArea .view .comment .commentBox .writeCont {
+  margin: 20px 0;
+}
+#content .contentArea .view .comment .commentWrite {
+  overflow: hidden;
+}
+#content .contentArea .view .comment .commentWrite textarea {
+  width: 1100px;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 1rem;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #ccc;
+}
+#content .contentArea .view .comment .commentWrite div {
+  float: left;
+}
+#content .contentArea .view .comment .commentWrite div a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#content .contentArea .view .comment .commentWrite div .noWorking {
+  cursor: default;
+}
+#content .contentArea .view .preNext ul {
+  padding: 50px 0;
+}
+#content .contentArea .view .preNext li {
+  overflow: hidden;
+}
+#content .contentArea .view .preNext .prenextInner {
+  display: block;
+  padding: 10px 100px;
+  overflow: hidden;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+#content .contentArea .view .preNext .prenextInner.exist:hover {
+  background: rgba(47, 71, 152, 0.1);
+}
+#content .contentArea .view .preNext .prenextInner .prenextText {
+  float: left;
+}
+#content .contentArea .view .preNext .prenextInner .prenextSub {
+  font-weight: 700;
+  margin-left: 10px;
+  float: left;
+}
+#content .contentArea .view .preNext .prenextInner:hover .prenextSub.exist {
+  color: rgba(47, 71, 152, 1);
+  text-decoration: underline;
+}
+#content .contentArea .view .preNext .prenextInner .prenextDate {
+  color: #999;
+  float: right;
+}

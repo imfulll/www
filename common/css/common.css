@@ -1,0 +1,473 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
+/* CSS Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+address {
+  font-style: normal;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+.hidden {
+  display: block;
+  position: absolute;
+  left: -1000%;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  color: #fff;
+}
+#skipNav {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 60;
+}
+#skipNav a {
+  display: block;
+  height: 1px;
+  margin-bottom: -1px;
+  font-size: 1.2em;
+  color: #333;
+  overflow: hidden;
+  text-align: center;
+}
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+  height: auto;
+  padding: 10px 0;
+  background: #f2f2f2;
+}
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+}
+input, button, select, option, textarea{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+input:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible,
+textarea:focus-visible{
+  outline: 0;
+}
+
+/* 
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Nanum Myeongjo', serif; 
+*/
+
+/* on */
+#headerArea.on h1 a {
+  background-image: url(../images/footer_logo1.png);
+}
+
+/* header 공통영역 */
+#headerArea {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.5s;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.05);
+}
+#headerArea .headerInner {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+}
+#headerArea .headerInner h1 {
+  width: 200px;
+  float: left;
+  margin-top: 37px;
+}
+#headerArea h1 a {
+  display: block;
+  width: 190px;
+  background: url(../images/logo.png) left center no-repeat;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+
+#gnb {
+  width: 800px;
+  float: left;
+}
+
+#gnb ul.dropdownmenu {
+}
+#gnb ul.dropdownmenu li.menu {
+  position: relative;
+  float: left;
+  width: 16.66%;
+  height: 50px;
+  padding: 25px 0;
+}
+#gnb ul.dropdownmenu > li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: rgba(47, 71, 152, 1);
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transition: all 0.5s;
+}
+#gnb ul.dropdownmenu > li:hover::after {
+  width: 100%;
+  left: 0;
+}
+#gnb ul.dropdownmenu li a.depth1 {
+  display: block;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* 2depth */
+#gnb ul.dropdownmenu li ul {
+  width: 100%;
+  height: 210px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 15px 0;
+  line-height: 2em;
+  display: none;
+  margin-top: 30px;
+  overflow: hidden;
+}
+#gnb ul.dropdownmenu li:hover ul {
+  background: rgba(47, 71, 152, 0.03);
+}
+#gnb ul.dropdownmenu li ul li {
+  text-align: center;
+}
+#gnb ul.dropdownmenu li ul li a {
+  display: block;
+  color: #666;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+#gnb ul.dropdownmenu li ul li:hover a {
+  color: #333;
+  font-weight: 500;
+}
+
+#headerArea .headerInner #gnb li:last-child {
+  margin-right: 0;
+}
+#headerArea .headerInner #gnb .dropdownmenu > li:nth-child(3) {
+  font-family: "Noto Sans KR", sans-serif;
+}
+#headerArea .headerInner .headerRight {
+  float: right;
+  width: 200px;
+}
+#headerArea .headerInner .headerRight ul {
+  float: right;
+  overflow: hidden;
+}
+#headerArea .headerInner .headerRight li {
+  float: left;
+  margin-top: 45px;
+  position: relative;
+}
+
+#headerArea .headerInner .headerRight li:first-child {
+  margin-right: 25px;
+}
+#headerArea .headerInner .headerRight li a {
+  color: #fff;
+}
+#headerArea .headerInner .headerRight li:hover a {
+  font-weight: 700;
+}
+#headerArea:hover .headerInner .headerRight li a {
+  color: #666;
+}
+
+/* footer 공통영역 */
+
+#footerArea {
+  background: #333;
+  color: #fff;
+  padding-bottom: 30px;
+  position: relative;
+}
+#footerArea::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  position: relative;
+  top: -90px;
+}
+
+/* top */
+#footerArea .topMove {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: rgba(51, 51, 51, 0.5);
+  position: fixed;
+  left: 50%;
+  margin-left: 650px;
+  bottom: 50px;
+  z-index: 50;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+}
+#footerArea .topMove.stick {
+  bottom: 245px;
+  position: absolute;
+}
+#footerArea .topMove:hover {
+  background: rgba(47, 71, 152, 1);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+#footerArea a {
+  color: #fff;
+}
+#footerArea .footerInner {
+  width: 1200px;
+  margin: 0 auto;
+}
+#footerArea .footerInner .footerTop {
+  position: relative;
+  font-size: 0.875em;
+  height: 80px;
+}
+#footerArea .footerInner .footerTop .fnb li {
+  float: left;
+  line-height: 80px;
+  position: relative;
+  transition: all 0.5s;
+}
+#footerArea .footerInner .footerTop .fnb li:hover {
+  font-weight: 700;
+}
+#footerArea .footerInner .footerTop .fnb li a {
+  margin-right: 30px;
+}
+#footerArea .footerInner .footerTop .family {
+  float: right;
+  width: 150px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+#footerArea .footerInner .footerTop .family > a {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+}
+#footerArea .footerInner .footerTop .family > a:hover {
+  background: #fff;
+  color: #333;
+}
+#footerArea .footerInner .footerTop .family .familyList {
+  position: absolute;
+  top: -210px;
+  left: 0;
+  width: 150px;
+  display: none;
+  z-index: 70;
+}
+#footerArea .footerInner .footerTop .family ul li {
+  background: rgba(220, 220, 220, 0.5);
+}
+
+#footerArea .footerInner .footerTop .family ul li a {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  box-sizing: border-box;
+  border: 1px solid rgba(51, 51, 51, 0);
+  color: #333;
+}
+#footerArea .footerInner .footerTop .family ul li:hover a {
+  background: #fff;
+  color: #333;
+  box-sizing: border-box;
+  border: 1px solid #333;
+}
+.modal_box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 60;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  display: none;
+}
+#footerArea .footerInner .footerBot {
+  clear: both;
+  overflow: hidden;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+#footerArea .footerInner .footerBot img {
+  float: left;
+  margin-top: 10px;
+}
+#footerArea .footerInner .footerBot .footerText {
+  float: left;
+  margin-left: 30px;
+}
+#footerArea .footerInner .footerBot .sns {
+  float: right;
+  margin-right: 10px;
+}
+#footerArea .footerInner .footerBot .sns li {
+  float: left;
+  margin-left: 10px;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+#footerArea .footerInner .footerBot .sns li:hover {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}

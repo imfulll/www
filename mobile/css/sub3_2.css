@@ -1,0 +1,202 @@
+/* 효성소개 본문영역 */
+#content  .divBox {
+  margin-bottom: 150px;
+  overflow: hidden;
+  width: 94%;
+  margin: 0 3% 20px;
+}
+#content  h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin: 30px 0 10px;
+}
+
+/* box1 */
+#content  .divBox1{
+  width: 94%;
+}
+#content  .divBox1 img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#content  .divBox1 dl {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-top: 2px solid rgba(47, 71, 152, 1);
+  padding: 10px 10px 20px;
+  box-sizing: border-box;
+}
+#content  .divBox1 dl:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+
+#content  .divBox1 dl dt {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#content  .divBox1 dl dd {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* box2 */
+#content  .divBox2 {
+  width: 100%;
+  margin: 0;
+}
+#content  .divBox2 p{
+  text-align: center;
+}
+#content  .divBox2 ul {
+  display: grid;
+  grid-template-columns: repeat(2,48.5%);
+  grid-template-rows: repeat(2,100px);
+  grid-gap : 10px 3% ;
+  padding: 20px 3%;
+}
+#content  .divBox2 ul li {
+  box-shadow: 1px 1px 5px 1px rgba(216, 216, 216, 0.5);
+  border-radius: 20px;
+  text-align: center;
+  line-height: 100px;
+  color: #666;
+  font-weight: 700;
+  position: relative;
+}
+#content  .divBox2 ul li:hover {
+  transform: scale(1.05);
+}
+#content  .divBox2 ul li::after {
+  font-size: 0.8rem;
+  color: #999;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  opacity: 1;
+}
+#content  .divBox2 ul li:nth-of-type(1)::after {
+  content: "기본금 + 연장수당";
+  margin-left: -43px;
+}
+#content  .divBox2 ul li:nth-of-type(2)::after {
+  content: "개인 직무 난이도 + 책임도";
+  margin-left: -61px;
+}
+#content  .divBox2 ul li:nth-of-type(3)::after {
+  content: "지역수당 + 자격수당";
+  margin-left: -47px;
+}
+#content  .divBox2 ul li:nth-of-type(4)::after {
+  content: "목표달성 지향 + 동기부여 강화";
+  margin-left: -71px;
+}
+
+/* box3 */
+#content  .divBox3 {
+  padding-bottom: 50px;
+}
+#content  .divBox3 ul li {
+  height: 390px;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin-right: 24px;
+  box-sizing: border-box;
+  position: relative;
+}
+#content  .divBox3 ul li:nth-of-type(1) {
+  background: url(../images/sub3/benefit01.png)no-repeat;
+  background-position : top 30px center;
+  -webkit-background-size: 90px 75px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #content  .divBox3 ul li:nth-of-type(1) {
+    background: url(../images/sub3/benefit01x2.png)no-repeat;
+    background-position : top 30px center;
+    -webkit-background-size: 90px 75px;
+  }
+}
+
+#content  .divBox3 ul li:nth-of-type(2) {
+  background: url(../images/sub3/benefit02.png)no-repeat;
+  background-position : top 30px center;
+  -webkit-background-size: 90px 75px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #content  .divBox3 ul li:nth-of-type(2) {
+    background: url(../images/sub3/benefit02x2.png)no-repeat;
+    background-position : top 30px center;
+    -webkit-background-size: 90px 75px;
+  }
+}
+
+#content  .divBox3 ul li:nth-of-type(3) {
+  background: url(../images/sub3/benefit03.png)no-repeat;
+  background-position : top 30px center;
+  -webkit-background-size: 90px 75px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #content  .divBox3 ul li:nth-of-type(3) {
+    background: url(../images/sub3/benefit03x2.png)no-repeat;
+    background-position : top 30px center;
+    -webkit-background-size: 90px 75px;
+  }
+}
+
+#content  .divBox3 ul li:nth-of-type(4) {
+  background: url(../images/sub3/benefit04.png)no-repeat;
+  background-position : top 30px center;
+  -webkit-background-size: 90px 75px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #content  .divBox3 ul li:nth-of-type(4) {
+    background: url(../images/sub3/benefit04x2.png)no-repeat;
+    background-position : top 30px center;
+    -webkit-background-size: 90px 75px;
+  }
+}
+
+#content  .divBox3 ul li:nth-of-type(5) {
+  background: url(../images/sub3/benefit05.png)no-repeat;
+  background-position : top 30px center;
+  -webkit-background-size: 90px 75px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #content  .divBox3 ul li:nth-of-type(5) {
+    background: url(../images/sub3/benefit05x2.png)no-repeat;
+    background-position : top 30px center;
+    -webkit-background-size: 90px 75px;
+  }
+}
+
+#content  .divBox3 ul li:nth-of-type(6) {
+  background: url(../images/sub3/benefit06.png)no-repeat;
+  background-position : top 30px center;
+  -webkit-background-size: 90px 75px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #content  .divBox3 ul li:nth-of-type(6) {
+    background: url(../images/sub3/benefit06x2.png)no-repeat;
+    background-position : top 30px center;
+    -webkit-background-size: 90px 75px;
+  }
+}
+
+#content  .divBox3 ul li dl{
+  position: absolute;
+  top: 120px;
+}
+#content  .divBox3 ul li dl dt {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.swiper-pagination-bullet-active{
+  background: rgba(47, 71, 152, 1);;
+}

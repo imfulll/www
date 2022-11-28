@@ -1,0 +1,170 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+}
+#content .contentArea .unit {
+  display: block;
+  text-align: right;
+  margin: 0 30px 10px 0;
+  color: #999;
+  font-size: 0.9em;
+}
+
+/* chart */
+#content .contentArea .barChart {
+  width: 800px;
+  position: relative;
+  left: 50%;
+  margin-left: -400px;
+  margin-bottom: 50px;
+}
+
+/* table */
+#content .contentArea .table1 {
+  margin-bottom: 150px;
+}
+#content .contentArea .table1 tfoot tr {
+  font-weight: 700;
+  background: rgba(47, 71, 152, 0.03);
+}
+#content .contentArea table {
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  width: 1200px;
+  text-align: center;
+}
+#content .contentArea table thead tr {
+  border-bottom: 1px solid #333;
+}
+#content .contentArea table tr {
+  line-height: 3em;
+  border-bottom: 1px solid #ccc;
+}
+#content .contentArea table thead tr:first-of-type th:nth-of-type(1) {
+  width: 200px;
+}
+#content .contentArea table thead tr th {
+  width: 250px;
+}
+#content .contentArea .table2 {
+  margin-bottom: 200px;
+  clear: both;
+}
+#content .contentArea .table2 tfoot tr th,
+#content .contentArea .table2 tbody tr th {
+  text-align: left;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+#content .contentArea .table2 tbody tr:nth-of-type(3) th,
+#content .contentArea .table2 tbody tr:nth-of-type(6) th,
+#content .contentArea .table2 tbody tr:last-of-type th {
+  text-align: center;
+  padding-left: 0;
+}
+#content .contentArea .table2 tbody tr:nth-of-type(3),
+#content .contentArea .table2 tbody tr:nth-of-type(6),
+#content .contentArea .table2 tbody tr:last-of-type {
+  font-weight: 700;
+  background: rgba(47, 71, 152, 0.03);
+}
+#content .contentArea table tfoot tr:hover,
+#content .contentArea table tbody tr:hover {
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.05);
+}
+#content .contentArea table td {
+  text-align: right;
+}
+#content .contentArea table td {
+  padding-right: 90px;
+  box-sizing: border-box;
+}
+
+/* select box */
+#content .contentArea .selectBox {
+  border: 1px solid #999;
+  height: 100px;
+  margin-bottom: 50px;
+  position: relative;
+}
+#content .contentArea .selectBox .downBtn {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #999;
+  float: left;
+  margin-left: 50px;
+  margin-top: 30px;
+  text-align: center;
+  line-height: 40px;
+  background: #333;
+  color: #fff;
+}
+#content .contentArea .selectBox span {
+  display: block;
+  float: left;
+  line-height: 100px;
+  margin-left: 550px;
+}
+
+#content .contentArea .selectBox .selectYear {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  margin-top: 30px;
+  position: absolute;
+  right: 50px;
+  background: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+#content .contentArea .selectBox .selectYear:hover {
+  background: #333;
+  color: #fff;
+}
+#content .contentArea .selectBox .selectYear.clicked {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 0;
+}
+#content .contentArea .selectBox .selectBtn {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: -170px;
+  border: 1px solid #999;
+  border-bottom: 0 solid #999;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #fff;
+}
+#content .contentArea .selectBox .selectBtn a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+#content .contentArea .selectBox .selectBtn li:first-of-type a {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#content .contentArea .selectBox .selectBtn li:hover a {
+  background: rgb(230, 230, 230);
+}
+#content .contentArea .selectBox i {
+  float: right;
+  line-height: 40px;
+  margin-right: 20px;
+}

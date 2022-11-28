@@ -1,0 +1,147 @@
+#content .thumb {
+  width: 94%;
+  margin: 50px 3%;
+}
+#content .thumb li {
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+#content .thumb div img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#content .thumb div {
+  position: relative;
+}
+#content .thumb div i {
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -31px;
+  margin-top: -34px;
+  color: #ff0000;
+}
+#content .thumb dl dt {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#content .thumb dl dd {
+  color: #666;
+}
+
+body.on {
+  overflow: hidden;
+}
+
+#content {
+  position: relative;
+}
+#content .youtube .popupTop {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 120;
+  display: none;
+  background: #fff;
+  box-sizing: border-box;
+  border-top: 5px solid rgba(47, 71, 152, 1);
+  border-left: 5px solid rgba(47, 71, 152, 1);
+  border-right: 5px solid rgba(47, 71, 152, 1);
+}
+#content .youtube .popupTop p {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+#content .youtube .popupTop a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 50px;
+  color: rgba(47, 71, 152, 1);
+}
+#content .youtube ul {
+  width: 100%;
+  height: 80%;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 110;
+  overflow-y: scroll;
+  display: none;
+  box-sizing: border-box;
+  border: 5px solid rgba(47, 71, 152, 1);
+}
+#content .youtube .frameContainer {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+#content .youtube iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#content .youtube dl {
+  width: 94%;
+  margin: 20px 3% 20px;
+}
+#content .youtube dl dt {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#content .youtube dl dd {
+  color: #666;
+}
+#content .youtube li p {
+  width: 94%;
+  margin: 0 3%;
+}
+#content .youtube li p.moreText {
+  display: block;
+  position: absolute;
+  left: -1000%;
+  top: 0;
+}
+#content .youtube li .moreBtn {
+  display: block;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 30px 0 0 3%;
+  text-align: center;
+  line-height: 40px;
+  background: #333;
+  color: #fff;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}

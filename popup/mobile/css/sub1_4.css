@@ -1,0 +1,81 @@
+/* ====================common================== */
+#content {
+  overflow: hidden;
+  position: relative;
+}
+#content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: rgba(47, 71, 152, 1);
+  text-align: center;
+  margin-top: 20px;
+}
+#content ul {
+}
+#content ul li {
+}
+#content ul li > p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#content ul li > div {
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+#content ul li div img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#content ul li div div {
+  box-sizing: border-box;
+  padding: 10px;
+}
+#content ul li div h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#content ul li div p {
+  margin-bottom: 20px;
+}
+#content ul li div dl {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+#content ul li div dl dt {
+  float: left;
+  width: 30%;
+  font-weight: 700;
+  text-align: center;
+}
+#content ul li div dl dd {
+  float: left;
+  width: 70%;
+  line-height: 1.5rem;
+}
+
+/* page */
+#content .pageNum {
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: 20px;
+  overflow: hidden;
+}
+#content .pageNum span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  float: left;
+  margin-right: 5px;
+}
+#content .pageNum span:last-of-type {
+  margin-right: 0;
+}

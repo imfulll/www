@@ -1,0 +1,397 @@
+/* common */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto 100px;
+  position: relative;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+}
+
+/* =================list================= */
+#content .contentArea .searchBox{
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+#content .contentArea .searchBox > div{
+  overflow: hidden;
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 25px;
+}
+#content .contentArea .searchBox .areaSel{
+  float: left;
+  margin-right: 10px;
+}
+#content .contentArea .searchBox .areaSel #select1{
+  width: 220px;
+  padding: 10px 20px;
+  appearance: none;
+  background: url(../images/content5/categoryArrow.png) right 20px center no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#content .contentArea .searchBox .searchSel {
+  float: left;
+  margin-right: 10px;
+}
+#content .contentArea .searchBox .searchSel #select2{
+  width: 150px;
+  padding: 10px 20px;
+  appearance: none;
+  background: url(../images/content5/categoryArrow.png) right 20px center no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#content .contentArea .searchBox .searchInput{
+  float: left;
+  overflow: hidden;
+}
+#content .contentArea .searchBox .searchInput input{
+  display: block;
+  width: 300px;
+  padding: 10px 20px;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  float: left;
+  font-size: 1.2rem;
+}
+#content .contentArea .searchBox .searchInput button{
+  width: 100px;
+  height: 50px;
+  padding: 10px 20px;
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+  float: left;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#content .contentArea .tableTop{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#content .contentArea .tableTop p{
+  float: left;
+  font-size: 1.2rem;
+  line-height: 43px;
+  margin-left: 20px;
+}
+#content .contentArea .tableTop p span{
+  font-size: 1.5rem;
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+}
+#content .contentArea .tableTop #scale{
+  width: 150px;
+  float: right;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  border-color: #ccc;
+  appearance: none;
+  background: url(../images/content5/categoryArrow.png) right 20px center no-repeat;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 43px;
+}
+#content .contentArea .table{
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#content .contentArea .table tr{
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  transition: all .5s;
+}
+#content .contentArea .table tr:hover{
+  background: rgba(47, 71, 152, 0.1);
+}
+#content .contentArea .table thead tr{
+  border-bottom: 1px solid #333;
+  background: rgba(47, 71, 152, 0.1);
+  font-weight: 700;
+}
+#content .contentArea .table tbody tr:last-of-type{
+  border-bottom: 0;
+}
+#content .contentArea .table thead tr td:nth-of-type(1){
+  width: 70px;
+  margin-left: -20px;
+}
+#content .contentArea .table thead tr td:nth-of-type(2){
+  width: 250px;
+}
+#content .contentArea .table thead tr td:nth-of-type(3){
+  width: 410px;
+}
+#content .contentArea .table thead tr td:nth-of-type(4){
+  width: 100px;
+}
+#content .contentArea .table thead tr td:nth-of-type(5){
+  width: 150px;
+}
+#content .contentArea .table thead tr td:nth-of-type(6){
+  width: 150px;
+}
+#content .contentArea .table thead tr td:nth-of-type(7){
+  width: 70px;
+}
+
+#content .contentArea .table tbody tr td:nth-of-type(3){
+  text-align: left;
+  padding-left: 20px;
+}
+#content .contentArea .table tbody tr td:nth-of-type(3) a{
+  display: block;
+  width: 410px;
+  height: 50px;
+  white-space : nowrap;
+  overflow:hidden;  
+  text-overflow: ellipsis;
+  line-height: 50px;
+}
+#content .contentArea .table tbody tr:hover td:nth-of-type(3) a{
+  text-decoration: underline;
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea .listButton {
+  text-align: right;
+}
+#content .contentArea .listButton a{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+#content .contentArea .listButton a:last-of-type{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .contentArea .listButton a:hover{
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+#content .contentArea #tablePage{
+  text-align: center;
+}
+#content .contentArea #tablePage i{
+  color: #666;
+}
+#content .contentArea #tablePage i:nth-of-type(1){
+  margin-right: 10px;
+}
+#content .contentArea #tablePage i:nth-of-type(2){
+  margin-left: 10px;
+}
+#content .contentArea #tablePage .pageNum{
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  transition: all .5s;
+}
+#content .contentArea #tablePage .pageNum.pageCurrent{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .contentArea #tablePage .pageNum.pageOther:hover{
+  background: rgba(47, 71, 152, .2);
+}
+
+
+
+
+
+
+/* =================write================= */
+#content .contentArea .writeBox{
+  width: 1200px;
+}
+#content .contentArea .writeBox .inputBox div{
+  margin-bottom: 20px;
+}
+#content .contentArea .writeBox label{
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#content .contentArea .writeBox input{
+  font-size: 1.2rem;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+#content .contentArea .writeBox select{
+  display: block;
+  font-size: 1.2rem;
+  width: 300px;
+  height: 50px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  appearance: none;
+  background: url(../images/content5/categoryArrow.png) right 20px center no-repeat;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+#content .contentArea .writeBox .due{
+  width: 300px;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator{
+  cursor: pointer;
+}
+
+#content .contentArea .writeBox textarea{
+  width: 1200px;
+  height: 300px;
+  box-sizing: border-box;
+  resize: none;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+input:disabled {
+  background-color: rgba(47, 71, 152, .1);
+}
+#content .contentArea .writeBox .writeButton {
+  overflow: hidden;
+  padding: 10px 0;
+}
+#content .contentArea .writeBox .writeButton button,
+#content .contentArea .writeBox .writeButton a{
+  display: block;
+  float: right;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all .5s;
+  margin: 0 10px 0 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+#content .contentArea .writeBox .writeButton button{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+  cursor: pointer;
+  line-height: 0;
+}
+#content .contentArea .writeBox .writeButton button:hover,
+#content .contentArea .writeBox .writeButton a:hover{
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* =================view================= */
+#content .contentArea .view .viewBox{
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  margin-bottom: 30px;
+}
+#content .contentArea .view .viewBox .viewTitle1,
+#content .contentArea .view .viewBox .viewTitle2{
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  background: rgba(47, 71, 152, .1);
+}
+#content .contentArea .view .viewBox .viewTitle1{
+  font-weight: 700;
+  
+}
+#content .contentArea .view .viewBox .viewTitle1 span{
+  color: rgba(47, 71, 152, 1);
+  margin: 0 10px;
+}
+#content .contentArea .view .viewBox .viewTitle2{
+  border-bottom: 1px solid #333;
+  overflow: hidden;
+}
+#content .contentArea .view .viewBox .viewTitle2 .viewLeft{
+  float: left;
+}
+#content .contentArea .view .viewBox .viewTitle2 .viewLeft span{
+  margin: 0 10px;
+}
+#content .contentArea .view .viewBox .viewTitle2 .viewRight{
+  float: right;
+}
+#content .contentArea .view .viewBox .viewTitle2 .viewRight span{
+  font-weight: 700;
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea .view .viewBox .viewContent{
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+#content .contentArea .view .viewButton {
+  text-align: right;
+}
+#content .contentArea .view .viewButton a{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: all .5s;
+  margin: 0 10px 0 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+#content .contentArea .view .viewButton a.delete{
+  background: rgba(255, 0, 0, .1);
+}
+#content .contentArea .view .viewButton a.delete:hover{
+  background: rgba(255, 0, 0, 1);
+  color: #fff;
+}
+#content .contentArea .view .viewButton a.write{
+  background: rgba(47, 71, 152, .1);
+}
+#content .contentArea .view .viewButton a.write:hover{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .contentArea .view .viewButton a:hover{
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}

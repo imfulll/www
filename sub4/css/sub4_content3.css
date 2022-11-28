@@ -1,0 +1,46 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+}
+#content .contentArea .stockChart {
+  width: 600px;
+  position: relative;
+  left: 50%;
+  margin-left: -400px;
+  margin-bottom: 100px;
+}
+#content .contentArea .stockText {
+  /* position: relative; */
+  margin-bottom: 200px;
+}
+#content .contentArea .stockText table {
+  text-align: center;
+  width: 1200px;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+#content .contentArea .stockText table thead th {
+  background: rgba(47, 71, 152, 0.07);
+  width: 200px;
+}
+#content .contentArea .stockText table thead tr {
+  border-bottom: 1px solid #333;
+}
+#content .contentArea .stockText table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+#content .contentArea .stockText table tbody tr:hover {
+  background: rgba(47, 71, 152, 0.03);
+}
+#content .contentArea .stockText table tr {
+  line-height: 3em;
+}

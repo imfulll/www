@@ -1,0 +1,204 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea::before {
+  content: "";
+  display: block;
+  width: 750px;
+  height: 750px;
+  background: rgba(47, 71, 152, 0.2);
+  position: absolute;
+  left: -400px;
+  top: 100px;
+  z-index: -10;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#content .contentArea h3 span {
+  color: rgba(47, 71, 152, 1);
+}
+
+/* ceo */
+@keyframes ceoPic {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes ceoText {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* active */
+#content .ceo.active img {
+  animation: ceoPic 0.7s ease-out;
+  animation-fill-mode: forwards;
+}
+#content .ceo.active .ceoText {
+  animation: ceoText 0.7s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+}
+
+#content .contentArea .ceo {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#content .contentArea .ceo img {
+  float: left;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+#content .contentArea .ceo .ceoText {
+  font-size: 1.25em;
+  line-height: 2.188em;
+  display: block;
+  width: 800px;
+  text-align: justify;
+  float: right;
+  box-sizing: border-box;
+  padding-left: 50px;
+  word-wrap: break-word;
+  opacity: 0;
+}
+#content .contentArea .ceo .ceoText p:nth-of-type(2) {
+  text-align: right;
+  float: left;
+}
+#content .contentArea .ceo .ceoText p:nth-of-type(3) {
+  text-align: right;
+  float: right;
+}
+#content .contentArea .ceo .ceoText p:nth-of-type(3) span {
+  font-size: 1.7em;
+  margin-left: 20px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+/* ceo */
+@keyframes profile {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* active */
+#content .contentArea .profile.active ul li {
+  animation: profile 0.7s ease-out;
+  animation-fill-mode: forwards;
+}
+#content .contentArea .profile.active ul li:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+#content .contentArea .profile.active ul li:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+#content .contentArea .profile.active ul li:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+#content .contentArea .profile.active ul li:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+#content .contentArea .profile.active ul li:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+#content .contentArea .profile.active ul li:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+#content .contentArea .profile.active ul li:nth-of-type(7) {
+  animation-delay: 0.7s;
+}
+#content .contentArea .profile.active ul li:nth-of-type(8) {
+  animation-delay: 0.8s;
+}
+
+#content .contentArea .profile {
+  clear: both;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  width: 1200px;
+}
+#content .contentArea .profile h3 {
+  margin-bottom: 80px;
+}
+#content .contentArea .profile ul {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
+}
+#content .contentArea .profile ul li {
+  float: left;
+  width: 300px;
+  display: inline-block;
+  margin-bottom: 70px;
+  opacity: 0;
+}
+#content .contentArea .profile ul li .profileImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  display: inline-block;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(0.8);
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea .profile ul li:hover .profileImg {
+  transform: scale(0.9);
+  background: rgba(47, 71, 152, 0.8);
+}
+#content .contentArea .profile ul li .profileImg img {
+  display: inline-block;
+  padding-top: 50px;
+}
+#content .contentArea .profile ul li .profileImg img:nth-of-type(2n) {
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea .profile ul li:hover .profileImg img:nth-of-type(2n) {
+  display: inline-block;
+}
+#content .contentArea .profile ul li .profileImg img:nth-of-type(2n + 1) {
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea .profile ul li:hover .profileImg img:nth-of-type(2n + 1) {
+  display: none;
+}
+#content .contentArea .profile ul li dl {
+  margin-top: 20px;
+}
+#content .contentArea .profile ul li dl dt {
+  font-size: 1.25em;
+  color: #666;
+}
+#content .contentArea .profile ul li dl dd {
+  font-size: 1.625em;
+  color: #333;
+  margin-top: 20px;
+  font-weight: 500;
+}

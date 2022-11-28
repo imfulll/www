@@ -1,0 +1,208 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#content .contentArea h3 {
+  font-size: 2.5em;
+  margin: 40px 0 50px 0;
+  text-align: center;
+}
+#content .contentArea li:nth-of-type(1) h3 {
+  margin-top: 0;
+}
+#content .contentArea h3 span {
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea h3 sub {
+  font-size: 0.7em;
+}
+#content .contentArea > ul {
+  margin-bottom: 150px;
+}
+#content .contentArea > ul > li {
+  opacity: 0;
+}
+#content .contentArea ul li ul {
+  overflow: hidden;
+  margin-bottom: -10px;
+}
+#content .contentArea ul li ul li {
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.05);
+  width: 580px;
+  height: 580px;
+  float: left;
+  margin: 10px 10px 50px 10px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea ul li ul li:hover {
+  border-radius: 0;
+  background: rgba(47, 71, 152, 0.05);
+}
+#content .contentArea ul li ul li:nth-of-type(1) {
+}
+#content .contentArea ul li ul li:nth-of-type(2) {
+  float: right;
+}
+#content .contentArea ul li ul li::before {
+  content: "";
+  width: 580px;
+  height: 580px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 1);
+  opacity: 0;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea ul li ul li:hover::before {
+  border-radius: 0;
+  opacity: 0.5;
+}
+#content .contentArea ul li ul li::after {
+  content: "";
+  display: block;
+  width: 580px;
+  height: 580px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.05;
+}
+#content .contentArea ul li ul li:hover::after {
+  opacity: 0;
+}
+#content .contentArea ul li:nth-of-type(1) ul li:nth-of-type(1)::after {
+  background: url(../images/content1/con1_1.png) center no-repeat;
+}
+#content .contentArea ul li:nth-of-type(1) ul li:nth-of-type(2)::after {
+  background: url(../images/content1/con2_1.png) center no-repeat;
+}
+#content .contentArea ul li:nth-of-type(2) ul li:nth-of-type(1)::after {
+  background: url(../images/content1/con3_1.png) center no-repeat;
+}
+#content .contentArea ul li:nth-of-type(2) ul li:nth-of-type(2)::after {
+  background: url(../images/content1/con4_1.png) center no-repeat;
+}
+#content .contentArea ul li:nth-of-type(3) ul li:nth-of-type(1)::after {
+  background: url(../images/content1/con5_1.png) center no-repeat;
+}
+#content .contentArea ul li:nth-of-type(3) ul li:nth-of-type(2)::after {
+  background: url(../images/content1/con6_1.png) center no-repeat;
+}
+#content .contentArea ul li ul li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+  filter: grayscale(1);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea ul li ul li:hover img {
+  border-radius: 0;
+  filter: grayscale(0.5);
+  opacity: 0.5;
+  background: rgba(0, 0, 0, 1);
+}
+
+#content .contentArea ul li ul li dl {
+  color: #333;
+  position: relative;
+}
+#content .contentArea ul li ul li dl dt {
+  text-align: center;
+  font-size: 1.875em;
+  font-weight: 700;
+  margin: 100px 0 70px;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea ul li ul li:hover dl dt {
+  color: #fff;
+}
+#content .contentArea ul li ul li dl dd {
+  text-align: justify;
+  padding: 0 70px;
+  font-size: 1.25em;
+  line-height: 2em;
+  word-wrap: break-word;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea ul li ul li:hover dl dd {
+  color: #fff;
+}
+
+#content .footerMain {
+  width: 2000px;
+  position: relative;
+  left: -400px;
+  top: 0;
+  overflow: hidden;
+}
+#content .footerMain img {
+  transform: scale(1);
+  filter: grayscale(0.5);
+  transition: all 0.5s ease-in-out;
+}
+#content .footerMain:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+#content .footerMain p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  text-align: center;
+  width: 2000px;
+  margin-top: 240px;
+  font-size: 2.5em;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+}
+#content .footerMain p::before {
+  content: "푸른 하늘과 따뜻한 햇빛, 깨끗한 물, 시원한 바람...";
+  display: block;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  margin-left: -204px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+#content .footerMain p::after {
+  content: "우리의 삶은 자연이 주는 혜택으로 보다 건강하고 풍요로워 집니다.";
+  display: block;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -280px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+
+/* =================scroll===================== */
+@keyframes up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#content .conserve.active,
+#content .develop.active,
+#content .efficient.active {
+  animation: up 0.5s ease-out;
+  animation-fill-mode: forwards;
+}

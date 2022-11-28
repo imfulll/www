@@ -1,0 +1,208 @@
+/*-------------------------------------------------------------------*/
+.grid-image-item,
+.grid--images .grid-sizer {
+  width: 25%;
+}
+.grid-image-item {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.grid-image-item img {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+}
+.grid-image-item h4 {
+  display: block;
+  width: 96%;
+  text-align: center;
+  margin: 0 auto;
+}
+.grid-image-item p {
+  display: block;
+  width: 96%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* =============================== */
+#headerArea #gnb ul li:nth-of-type(4)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 128px;
+  box-shadow: 0px 0px 4px 1px #52fefe;
+  margin-top: 5px;
+}
+
+/* =============================== */
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+
+.imgText{
+  font-family: "Black Ops One", cursive;
+  position: absolute;
+  left: 50%;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 3rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: 
+    typewriter 1s steps(7) 1s 1 normal both,
+    textMove 1s steps(7) 1s 1 normal both,
+    blinkTextCursor 500ms steps(7) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 290px;}
+}
+@keyframes textMove{
+  from{margin-left: 0;}
+  to{margin-left: -145px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* ============================= */
+#content .fixedImg {
+  width: 90%;
+  height: 100px;
+  margin: 0 5% 100px;
+  padding: 50px 0;
+  background: url(../images/fixedImg.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#content {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+#content h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Black Ops One", cursive;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: all .5s;
+}
+#content section:hover h3 {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+}
+#content .gallery {
+  padding: 0 5%;
+}
+#content .gallery .grid-image-item {
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+#content .gallery .grid-image-item:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+#content .gallery .grid-image-item .gridInner {
+  margin: 0 10px;
+  transition: all 0.5s;
+  background: black;
+}
+#content .gallery .grid-image-item:hover .gridInner {
+  box-shadow: 0px 0px 20px 5px rgba(2, 255, 255, 1);
+}
+#content .gallery .grid-image-item p:nth-of-type(1) {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all .5s;
+}
+#content .gallery .grid-image-item p:nth-of-type(2) {
+  padding-bottom: 30px;
+  font-size: 0.9rem;
+}
+.duo__cell{
+  padding-bottom: 100px;
+}
+
+#footerArea {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+@media (hover: hover) {
+  .grid--images .grid-image-item img {
+    transition: all 0.5s;
+  }
+  .grid--images:hover .grid-image-item img {
+    filter: grayscale(0.8);
+  }
+  .grid--images:hover .grid-image-item:hover img {
+    filter: grayscale(0);
+  }
+  .grid--images .grid-image-item:hover p:nth-of-type(1) {
+    text-shadow: 0 0 5px #fff, 0 0 10px #02feff;
+  }
+}
+
+/*-------------------------------------------------------------------*/
+/* 여기만 수정 */
+
+@media screen and (max-width: 1024px) {
+  .grid-image-item,
+  .grid--images .grid-sizer {
+    width: 33.33%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #content .gallery .grid-image-item p:nth-of-type(1) {
+    padding-bottom: 20px;
+  }
+  #content .gallery .grid-image-item p:nth-of-type(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .grid-image-item,
+  .grid--images .grid-sizer {
+    width: 50%;
+  }
+  .imgText{
+    margin-left: -143px;
+    animation: none;
+    border-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #content .fixedImg {
+    display: none;
+  }
+  #content .gallery .grid-image-item:nth-of-type(2n) {
+    display: none;
+  }
+}
+

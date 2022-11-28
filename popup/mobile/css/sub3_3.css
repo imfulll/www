@@ -1,0 +1,133 @@
+#content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin: 30px 0 10px;
+}
+
+/* ==============model============ */
+.model li {
+  width: 94%;
+  height: 100px;
+  margin: 0 3% 30px;
+  border: 1px solid rgba(47, 71, 152, 1);
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.08);
+  padding-top: 12px;
+}
+.model li:last-of-type {
+  background: rgba(47, 71, 152, 1);
+}
+.model li span {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.model li span:nth-of-type(1) {
+  color: rgba(47, 71, 152, 1);
+  font-size: 12px;
+}
+.model li span:nth-of-type(2) {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.model li span:nth-of-type(3) {
+  color: #666;
+}
+.model li:last-of-type span {
+  color: #fff;
+}
+.model li:last-of-type span:nth-of-type(1),
+.model li:last-of-type span:nth-of-type(3) {
+  color: rgba(255, 255, 255, 0.7);
+}
+.model li {
+  position: relative;
+}
+.model li i {
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  margin-left: -14px;
+  font-size: 2rem;
+  color: #999;
+}
+
+/* ==============text box============ */
+.textBox {
+  width: 94%;
+  margin: 0 3%;
+}
+.textBox dl {
+  margin-bottom: 50px;
+}
+.textBox dt {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.textBox dt span {
+  color: rgba(47, 71, 152, 1);
+}
+.textBox dt span::before {
+  content: "STEP";
+  display: block;
+  font-size: 0.8rem;
+}
+.textBox dd {
+  line-height: 1.8rem;
+}
+.textBox dd a {
+  text-decoration: underline;
+}
+.textBox dd ul {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.03);
+}
+.textBox dd ul li span {
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+}
+
+/* ==============division============ */
+#content .division p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin: 30px 0 10px;
+}
+#content .division ul {
+  width: 94%;
+  margin: 0 3%;
+  overflow: hidden;
+}
+#content .division ul li {
+  width: 50%;
+  float: left;
+}
+#content .division ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.06);
+  border-top: 4px solid rgba(47, 71, 152, 0);
+  box-sizing: border-box;
+  text-align: justify;
+}
+#content .division ul li a.current {
+  border-top: 4px solid rgba(47, 71, 152, 1);
+  background: rgba(0, 0, 0, 0);
+}
+#content .division dl dt {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#content .regular,
+#content .tempo {
+  display: none;
+}

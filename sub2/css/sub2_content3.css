@@ -1,0 +1,148 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea > ul {
+  margin-bottom: 150px;
+}
+#content .contentArea > ul > li {
+  overflow: hidden;
+  border-radius: 50px;
+  background: rgba(47, 71, 152, 0.05);
+  margin-bottom: 100px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+#content .contentArea > ul > li:hover {
+  background: #fff;
+  box-shadow: 1px 1px 10px 10px rgba(216, 216, 216, 0.5);
+}
+
+#content .contentArea .imgBox {
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  border-radius: 50px 0 0 50px;
+  float: left;
+  margin-right: 50px;
+}
+
+#content .contentArea img {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea ul li:hover img {
+  transform: scale(1.05);
+}
+#content .contentArea .textile .imgBox {
+  float: right;
+  margin-right: 0;
+  border-radius: 0 50px 50px 0;
+}
+
+#content .contentArea h3 {
+  font-size: 2.5em;
+  margin: 40px 0 10px 0;
+  color: rgba(47, 71, 152, 1);
+  font-family: "Noto Sans KR", sans-serif;
+}
+#content .contentArea li:nth-of-type(2) h3 {
+  letter-spacing: -2px;
+}
+#content .contentArea p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+#content .contentArea > ul > li > ul > li {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+#content .contentArea > ul > li > ul > li span {
+  font-weight: 700;
+}
+#content .contentArea > ul > li > ul > li > ul {
+  overflow: hidden;
+  width: 600px;
+}
+#content .contentArea > ul > li > ul > li > ul > li {
+  float: left;
+  width: 300px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+#content .contentArea ul .textile {
+  padding-left: 50px;
+}
+#content .contentArea ul .textile ul li ul li {
+  float: left;
+  width: 600px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+#content .contentArea .jinheung > li {
+  float: left;
+  width: 200px;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+}
+
+.moreBtn {
+  position: relative;
+}
+.moreBtn .more {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  color: rgba(47, 71, 152, 1);
+  width: 150px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  line-height: 30px;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05);
+  top: -427px;
+}
+.moreBtn .more:hover {
+  background: rgba(47, 71, 152, 0.7);
+  color: rgb(255, 255, 255);
+}
+#content .contentArea ul li:nth-of-type(1) .moreBtn .more {
+  right: 200px;
+}
+#content .contentArea ul li:nth-of-type(2) .moreBtn .more {
+  top: -430px;
+  left: 480px;
+}
+
+/* scroll */
+@keyframes up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#content .chumdan.active,
+#content .textile.active {
+  animation: up 0.5s ease-out;
+  animation-fill-mode: forwards;
+}

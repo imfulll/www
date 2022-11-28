@@ -1,0 +1,137 @@
+<?
+  session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>효성 | ESG_제보센터</title>
+    <link rel="stylesheet" href="../common/css/common.css" >
+    <link rel="stylesheet" href="./common/css/sub3common.css" >
+    <link rel="stylesheet" href="./css/sub3_content5.css" >
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" >
+
+    <script
+      src="https://kit.fontawesome.com/1b35f9429d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <? include "../common/sub_header.html" ?>
+    <div class="main">
+      <img src="./common/images/main.jpg" alt="" >
+      <h3>Environmental, Social, Governance</h3>
+      <p>더 나은 삶을 가꾸는 일, 효성이 앞장 서겠습니다.</p>
+    </div>
+
+    <div class="subNav">
+      <ul>
+        <li><a href="./sub3_1.html">그린경영</a></li>
+        <li><a href="./sub3_2.html">나눔경영</a></li>
+        <li><a href="./sub3_3.html">윤리경영</a></li>
+        <li><a href="./sub3_4.html">다운로드센터</a></li>
+        <li><a href="./sub3_5.html" class="current">제보센터</a></li>
+      </ul>
+    </div>
+
+    <article id="content">
+      <div class="titleArea">
+        <div class="lineMap">
+          <span><i class="fa-solid fa-house"></i> HOME</span> &gt;
+          <span>ESG</span> &gt;
+          <span>제보센터</span>
+        </div>
+        <h2>제보센터</h2>
+        <p>여러분의 목소리를 듣겠습니다.</p>
+        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+    <!-- 본문컨텐츠 영역 -->
+      <div class="contentArea">
+        <h3 class="hidden">제보하기</h3>
+        <p>효성그룹은 비윤리적 행위를 예방하여 윤리적 기업문화를 견고히 하기 위하여<br>
+          임직원과 관련한 각종 부정, 부패 및 잘못된 관행을 신고할 수 있도록 제보센터를 운영하고 있습니다.<br>
+          제보자에 대한 어떠한 불이익도 없으며 제보자에 대한 사항은 <span>철저히 비밀이 보장</span>됩니다.</p>
+        <img src="./images/content5/con1.jpg" alt="">
+        <dl>
+          <dt>제보내용</dt>
+          <dd>· 금품, 향응, 접대, 편의 등 수수행위</dd>
+          <dd>· 직위 또는 직무를 이용한 부당이익을 얻거나 회사에 손해를 끼치는 행위</dd>
+          <dd>· 불공정거래행위</dd>
+          <dd>· 회사 자산의 불법, 부당 사용행위</dd>
+          <dd>· 기타 윤리경영에 위배되는 행위</dd>
+        </dl>
+        <dl>
+          <dt>유의사항</dt>
+          <dd>· 기명 또는 무기명의 방법을 선택하여 제보할 수 있습니다.</dd>
+          <dd>· 제보내용은 육하원칙에 의하여 자세히 작성하여 주시기 바랍니다.</dd>
+          <dd>· 익명으로 비방글 접수시에는 사실관계 확인 및 조사에 제한이 있을 수 있습니다.</dd>
+        </dl>
+        <dl>
+          <dt>제보처리절차</dt>
+          <dd>신고내용 확인<i class="fa-solid fa-chevron-right"></i></dd>          
+          <dd>신고내용 검토<i class="fa-solid fa-chevron-right"></i></dd>
+          <dd>신고내용 조사<i class="fa-solid fa-chevron-right"></i></dd>
+          <dd>신고내용 조치</dd>
+        </dl>
+        <dl>
+          <dt>제보방법</dt>
+          <dd><span>E-mail</span> : yourvoice@hyosung.com</dd>
+          <dd><span>Tel</span> : 02-707-7000</dd>
+          <dd><span>Fax</span> : 02-707-7799</dd>
+          <dd><span>Address</span> : 서울특별시 마포구 마포대로 119</dd>
+          <dd><span>홈페이지 제보</span> (아래 형식을 이용해주세요)</dd>
+        </dl>
+        <div>
+          <p>제보하기</p>
+          <form action="./php/mail.php" method="post">
+            <ul>
+             <li>
+               <label for="uname">이름</label>
+               <input type="text" id="uname" name="uname" placeholder=" ex) 홍길동" required>
+              </li>
+              <li>
+               <label for="email">이메일</label>
+               <input type="text" id="email" name="email" placeholder=" ex) example123@naver.com" required>
+              </li>
+              <li>
+                <label for="phone">전화번호</label>
+                <input type="text" id="phone" name="phone" placeholder=" ex) 010-0000-0000" required>
+              </li>
+              <li>
+                <label for="subject">제보분야</label>
+                <select name="subject" id="subject">
+                  <option value="">제보 분야 선택</option>
+                  <option value="윤리강령 및 법규 위반">윤리강령 및 법규 위반</option>
+                  <option value="금품∙향응 요구 및 수수">금품∙향응 요구 및 수수</option>
+                  <option value="공정거래 위반">공정거래 위반</option>
+                  <option value="인권 침해">인권 침해</option>
+                  <option value="투명성 결여">투명성 결여</option>
+                  <option value="협력사 고충사항">협력사 고충사항</option>
+                  <option value="기타">기타</option>
+               </select>
+              </li>
+              <li>
+                <label for="message">제보 내용</label>
+                <textarea name="message" id="message"  placeholder=" 구체적 사실을 기재해주시기 바랍니다." cols="123" rows="15" area-invalid="false" required></textarea>
+              </li>
+              <li>
+                <input type="submit" value="제보하기" class="formBtn">
+                <input type="reset" value="다시쓰기" class="formBtn">
+              </li>
+           </ul>
+          </form>
+        </div>
+      </div>
+    </article>
+    
+    <? include "../common/sub_footer.html" ?>
+  </body>
+  </html>
+  
+  

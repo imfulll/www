@@ -1,0 +1,137 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#content .contentArea ul {
+  width: 1200px;
+  overflow: hidden;
+  margin-bottom: 200px;
+}
+#content .contentArea ul li {
+  width: 600px;
+  height: 400px;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+}
+#content .contentArea ul li:nth-of-type(2n) {
+  width: 599px;
+  float: right;
+  border-left: 1px solid #ccc;
+}
+#content .contentArea ul li:nth-of-type(1),
+#content .contentArea ul li:nth-of-type(2) {
+  border-bottom: 1px solid #ccc;
+}
+
+/* text */
+#content .contentArea ul li dl {
+  margin-top: 140px;
+}
+#content .contentArea ul li dt {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+#content .contentArea ul li dt span {
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea ul li dd {
+  width: 400px;
+  margin: 30px 0 0 100px;
+  word-break: break-all;
+  text-align: justify;
+}
+#content .contentArea ul li:nth-of-type(1) dl,
+#content .contentArea ul li:nth-of-type(2) dl {
+  margin-top: 80px;
+}
+
+/* div */
+#content .contentArea ul li > div {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+#content .contentArea ul li:nth-of-type(1) > div {
+  border-top-left-radius: 150px;
+  left: 445px;
+  top: 245px;
+  background: rgba(47, 71, 152, 0.8);
+}
+#content .contentArea ul li:nth-of-type(2) > div {
+  border-top-right-radius: 150px;
+  left: 5px;
+  top: 245px;
+  background: rgba(65, 138, 200, 0.8);
+}
+#content .contentArea ul li:nth-of-type(3) > div {
+  border-bottom-left-radius: 150px;
+  left: 445px;
+  top: 5px;
+  background: rgba(103, 132, 192, 0.8);
+}
+#content .contentArea ul li:nth-of-type(4) > div {
+  border-bottom-right-radius: 150px;
+  left: 5px;
+  top: 5px;
+  background: rgba(57, 179, 232, 0.8);
+}
+
+#content .contentArea ul li > div span {
+  display: block;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+#content .contentArea ul li:nth-of-type(1) > div span {
+  left: 75px;
+  top: 75px;
+}
+#content .contentArea ul li:nth-of-type(2) > div span {
+  left: 35px;
+  top: 75px;
+}
+#content .contentArea ul li:nth-of-type(3) > div span {
+  left: 75px;
+  top: 35px;
+}
+#content .contentArea ul li:nth-of-type(4) > div span {
+  left: 35px;
+  top: 35px;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#content .contentArea ul.active > li {
+  animation: up 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+#content .contentArea ul.active > li:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+#content .contentArea ul.active > li:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+#content .contentArea ul.active > li:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+#content .contentArea ul.active > li:nth-of-type(4) {
+  animation-delay: 0.4s;
+}

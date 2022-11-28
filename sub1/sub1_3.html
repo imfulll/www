@@ -1,0 +1,163 @@
+<?
+  session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>효성 | 효성그룹_위치정보</title>
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="./common/css/sub1common.css" />
+    <link rel="stylesheet" href="./css/sub1_content3.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+
+    <script
+      src="https://kit.fontawesome.com/1b35f9429d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e825925d8748e90e64127d7d05b65322"
+    ></script>
+    <script src="./js/sub1_content3/map_kakao2.js"></script>
+  </head>
+
+  <body>
+    <? include "../common/sub_header.html" ?>
+    <div class="main">
+      <img src="./common/images/main.jpg" alt="" />
+      <h3>효성그룹</h3>
+      <p>고객과 함께 더 가까이, 여러분 곁에는 효성이 있습니다.</p>
+    </div>
+
+    <div class="subNav">
+      <ul>
+        <li><a href="./sub1_1.html">효성소개</a></li>
+        <li><a href="./sub1_2.html">연혁</a></li>
+        <li><a href="./sub1_3.html" class="current">위치정보</a></li>
+        <li><a href="./sub1_4.html">글로벌네트워크</a></li>
+        <li><a href="./sub1_5.html">연구개발</a></li>
+      </ul>
+    </div>
+
+    <article id="content">
+      <div class="titleArea">
+        <div class="lineMap">
+          <span><i class="fa-solid fa-house"></i> HOME</span> &gt;
+          <span>효성그룹</span> &gt;
+          <span>위치정보</span>
+        </div>
+        <h2>위치정보</h2>
+        <p>글로벌 최고 수준의 기술로 고객가치 향상에 노력하겠습니다.</p>
+        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+      <!-- 본문컨텐츠 영역 -->
+      <div class="contentArea">
+        <div class="commonText">
+          <p>HYOSUNG IN<span> KOREA</span></p>
+          <p>지도를 참고하여 찾아오시기 바랍니다.</p>
+        </div>
+        <div class="mapContent">
+          <div class="tab tab1">
+            <h3 class="current2"><a href="#">본사 사무실</a></h3>
+            <div class="map map1" id="map1"></div>
+            <div class="mapInfo mapInfo1">
+              <ul>
+                <li>
+                  <dl>
+                    <dt><i class="fa-solid fa-globe"></i>주소</dt>
+                    <dd>서울시 마포구 마포대로 119</dd>
+                  </dl>
+                  <dl>
+                    <dt><i class="fa-solid fa-phone"></i>Tel</dt>
+                    <dd>02-707-7000</dd>
+                  </dl>
+                  <dl>
+                    <dt><i class="fa-solid fa-fax"></i>Fax</dt>
+                    <dd>02-707-7799</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><i class="fa-solid fa-bus-simple"></i>버스</dt>
+                    <dd>공덕역3번출구 방면</dd>
+                    <dd class="busM">마포10</dd>
+                    <dd class="busB">160</dd>
+                    <dd class="busB">260</dd>
+                    <dd class="busB">600</dd>
+                    <dd class="busG">1002</dd>
+                    <dd class="busG">7013</dd>
+                    <dd class="busG">7611</dd>
+                    <dd class="busG">6015</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><i class="fa-solid fa-train-subway"></i>지하철</dt>
+                    <dd>
+                      <span class="metro5">5호선</span>
+                      <span class="metro6">6호선</span>
+                      공덕역 3번 출구 앞
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab tab2">
+            <h3><a href="#">계열사 사무실</a></h3>
+            <div class="map map2" id="map2"></div>
+            <div class="mapInfo mapInfo2">
+              <ul>
+                <li>
+                  <dl>
+                    <dt><i class="fa-solid fa-globe"></i>주소</dt>
+                    <dd>서울특별시 서초구 반포대로 235</dd>
+                  </dl>
+                  <dl>
+                    <dt><i class="fa-solid fa-phone"></i>Tel</dt>
+                    <dd>02-2146-5500</dd>
+                  </dl>
+                  <dl>
+                    <dt><i class="fa-solid fa-fax"></i>Fax</dt>
+                    <dd>02-707-7798</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><i class="fa-solid fa-bus-simple"></i>버스</dt>
+                    <dd>국립중앙도서관 방면</dd>
+                    <dd class="busM">서초13</dd>
+                    <dd class="busM">서초21</dd>
+                    <dd class="busB">405</dd>
+                    <dd class="busB">740</dd>
+                    <dd class="busG">5413</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt><i class="fa-solid fa-train-subway"></i>지하철</dt>
+                    <dd>
+                      <span class="metro3">3호선</span>
+                      <span class="metro7">7호선</span>
+                      <span class="metro9">9호선</span> 고속터미널역 5번출구
+                      사평대로 건너 서래공원 옆
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+  </body>
+</html>

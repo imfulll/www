@@ -1,0 +1,131 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+}
+
+/* list */
+#content .contentArea .all {
+  display: block;
+  float: right;
+  text-align: right;
+  margin: 0 0 20px 0;
+  background: rgba(47, 71, 152, 0.1);
+  padding: 20px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+#content .contentArea .all:hover {
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .contentArea .all i {
+  margin-left: 10px;
+}
+#content .contentArea > ul {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  clear: both;
+}
+#content .contentArea .textList {
+  border-bottom: 1px solid #ccc;
+}
+
+#content .contentArea h4 a {
+  display: block;
+  font-size: 0.9em;
+  color: #666;
+  line-height: 2em;
+  padding: 20px 0 20px 70px;
+  overflow: hidden;
+}
+#content .contentArea .textList:first-of-type h4 a strong {
+  margin-left: 25px;
+}
+#content .contentArea h4 a strong {
+  font-size: 1.5em;
+  color: #333;
+  margin-left: 40px;
+}
+#content .contentArea h4 span {
+  float: right;
+  margin-right: 50px;
+}
+#content .contentArea .content2 {
+  display: none;
+}
+#content .contentArea p,
+#content .contentArea dl {
+  text-align: justify;
+  font-size: 1.25rem;
+  word-wrap: break-word;
+  padding: 20px 70px 0;
+  background: #f8f8f8;
+}
+#content .contentArea p {
+  padding-bottom: 30px;
+}
+#content .contentArea dl:last-of-type {
+  padding-bottom: 30px;
+}
+#content .contentArea dt {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+#content .contentArea dd {
+  line-height: 1.5em;
+  text-indent: -28px;
+  margin-left: 30px;
+}
+
+#content .contentArea ul {
+  margin-bottom: 150px;
+}
+#content .contentArea ul li {
+  position: relative;
+}
+
+/* table */
+#content .contentArea .member {
+  margin-bottom: 200px;
+}
+#content .contentArea .member span {
+  display: block;
+  text-align: right;
+  margin: 0 10px 10px 0;
+  color: #999;
+  font-size: 0.9em;
+}
+#content .contentArea .member table {
+  text-align: center;
+  width: 1200px;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+#content .contentArea .member table tr {
+  line-height: 3em;
+  border-bottom: 1px solid #ccc;
+}
+#content .contentArea .member table thead tr {
+  border-bottom: 1px solid #333;
+}
+#content .contentArea .member table thead th {
+  background: rgba(47, 71, 152, 0.07);
+  width: 180px;
+}
+#content .contentArea .member table thead th:nth-of-type(5) {
+  width: 300px;
+}
+#content .contentArea .member table tbody tr:hover {
+  background: rgba(47, 71, 152, 0.03);
+}

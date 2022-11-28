@@ -1,0 +1,380 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+}
+
+#content .contentArea .commonText {
+  margin-bottom: 100px;
+}
+#content .contentArea .commonText p:nth-child(1) {
+  text-align: center;
+  font-size: 1.875em;
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#content .contentArea .commonText p:nth-child(2),
+#content .contentArea .commonText p:nth-child(3) {
+  text-align: center;
+  font-size: 1.25em;
+  color: #666;
+}
+#content .contentArea .commonText img {
+  margin: 30px 0 50px 0;
+}
+#content .contentArea .commonText p span {
+  color: rgba(47, 71, 152, 1);
+}
+
+/* pageNav */
+#content .contentArea .navTab {
+  overflow: hidden;
+  width: 2000px;
+  position: relative;
+  left: -400px;
+  box-sizing: border-box;
+  padding-left: 400px;
+  margin-bottom: 150px;
+}
+#content .contentArea .navTab.navOn {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -1000px;
+  z-index: 60;
+}
+#content .contentArea .navTab li {
+  float: left;
+}
+#content .contentArea .navTab li a {
+  display: block;
+  width: 300px;
+  height: 70px;
+  font-weight: 700;
+  color: #666;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 70px;
+  border: 1px solid #ccc;
+  border-left-width: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+#content .contentArea .navTab li a {
+  border-left-width: 1px;
+}
+#content .contentArea .navTab li:hover a {
+  background: #eaecf4;
+}
+#content .contentArea .navTab li a.current2 {
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+
+/* content */
+#content .contentArea .pageNav {
+  position: relative;
+  margin-bottom: 150px;
+}
+#content .contentArea .pageNav > li {
+  margin-bottom: 150px;
+}
+#content .contentArea .pageNav > li:last-of-type {
+  margin-bottom: 200px;
+}
+
+#content .contentArea .pageNav .research h4 {
+  font-size: 1.875em;
+  position: relative;
+  left: 0;
+  top: 100px;
+  color: #333;
+}
+#content .contentArea .pageNav .research p {
+  font-size: 1.2em;
+  position: relative;
+  left: 130px;
+  top: 70px;
+  color: #666;
+}
+#content .contentArea .pageNav .research dd {
+  color: #666;
+}
+#content .contentArea .pageNav .research dd:hover {
+  background: rgba(47, 71, 152, 0.03);
+  color: #333;
+}
+
+#content .contentArea .pageNav .history {
+  margin-top: 250px;
+}
+#content .contentArea .pageNav .history h4 {
+  font-size: 1.875em;
+  color: #333;
+  text-align: center;
+}
+#content .contentArea .pageNav .history h4::after {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background: #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#content .contentArea .pageNav .history dl {
+  overflow: hidden;
+  padding: 20px 0;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea .pageNav .history dl:hover {
+  box-shadow: 1px 1px 20px 10px rgba(216, 216, 216, 0.5);
+}
+
+#content .contentArea .pageNav .history dt {
+  float: left;
+  width: 150px;
+  font-size: 1.7em;
+  color: rgba(47, 71, 152, 1);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  margin: 0 0 0 50px;
+}
+#content .contentArea .pageNav .history dd {
+  font-size: 1.2em;
+  width: 1000px;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 2.4em;
+  color: #666;
+  transition: all 0.1s ease-in-out;
+  margin-left: 200px;
+  padding-left: 10px;
+}
+#content .contentArea .pageNav .history dd:hover {
+  background: rgba(47, 71, 152, 0.03);
+  color: #333;
+}
+
+#content .contentArea .pageNav .reward h4 {
+  margin-top: 100px;
+  font-size: 1.875em;
+  color: #333;
+  text-align: center;
+}
+#content .contentArea .pageNav .reward h4::after {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background: #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#content .contentArea .pageNav .reward dl {
+  overflow: hidden;
+  padding: 20px 0;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea .pageNav .reward dl:hover {
+  box-shadow: 1px 1px 20px 10px rgba(216, 216, 216, 0.5);
+}
+
+#content .contentArea .pageNav .reward dt {
+  float: left;
+  width: 150px;
+  font-size: 1.7em;
+  color: rgba(47, 71, 152, 1);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  margin: 0 0 0 50px;
+}
+#content .contentArea .pageNav .reward dd {
+  font-size: 1.2em;
+  width: 1000px;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 2.4em;
+  color: #666;
+  transition: all 0.1s ease-in-out;
+  margin-left: 200px;
+  padding-left: 10px;
+}
+#content .contentArea .pageNav .reward dd:hover {
+  background: rgba(47, 71, 152, 0.03);
+  color: #333;
+}
+
+/* 연구분야 */
+#content .contentArea .pageNav .hk .research dl {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  left: 500px;
+  top: 150px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  box-shadow: 1px 1px 20px 10px rgba(216, 216, 216, 0.5);
+}
+#content .contentArea .pageNav .hk .research dl::before {
+  content: "";
+  display: block;
+  width: 700px;
+  height: 400px;
+  background: url(../images/content5/hk.jpg);
+  position: absolute;
+  left: -500px;
+  top: -70px;
+  z-index: -10;
+}
+#content .contentArea .pageNav .hk .research dt {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 0 30px 0;
+  padding-top: 60px;
+  font-weight: 600;
+}
+#content .contentArea .pageNav .hk .research dd {
+  width: 250px;
+  padding: 10px 0;
+}
+#content .contentArea .pageNav .hk .research dd:nth-of-type(2n) {
+  float: left;
+}
+#content .contentArea .pageNav .hk .research dd:nth-of-type(2n + 1) {
+  float: left;
+  margin-left: 100px;
+}
+
+#content .contentArea .pageNav .jy .research dl {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  left: 500px;
+  top: 150px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  box-shadow: 1px 1px 20px 10px rgba(216, 216, 216, 0.5);
+}
+#content .contentArea .pageNav .jy .research dl::before {
+  content: "";
+  display: block;
+  width: 700px;
+  height: 400px;
+  background: url(../images/content5/jy.jpg);
+  position: absolute;
+  left: -500px;
+  top: -70px;
+  z-index: -10;
+}
+#content .contentArea .pageNav .jy .research dt {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding-top: 60px;
+  font-weight: 600;
+}
+#content .contentArea .pageNav .jy .research dd {
+  width: 600px;
+  padding: 10px 0;
+  margin-left: 50px;
+}
+#content .contentArea .pageNav .ky .research div {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  left: 500px;
+  top: 150px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  box-shadow: 1px 1px 20px 10px rgba(216, 216, 216, 0.5);
+}
+#content .contentArea .pageNav .ky .research dl {
+  width: 290px;
+  height: 400px;
+  text-align: center;
+  position: absolute;
+  left: 60px;
+  top: 0;
+}
+#content .contentArea .pageNav .ky .research dl:nth-of-type(2) {
+  position: absolute;
+  left: 350px;
+}
+
+#content .contentArea .pageNav .ky .research div::before {
+  content: "";
+  display: block;
+  width: 700px;
+  height: 400px;
+  background: url(../images/content5/ky.jpg);
+  position: absolute;
+  left: -500px;
+  top: -70px;
+  z-index: -10;
+}
+#content .contentArea .pageNav .ky .research dt {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 0 40px 0;
+  padding-top: 100px;
+  font-weight: 600;
+}
+#content .contentArea .pageNav .ky .research dd {
+  width: 290px;
+  padding: 10px 0;
+  line-height: 2em;
+}
+#content .contentArea .pageNav .gy .research div {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  left: 500px;
+  top: 150px;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  box-shadow: 1px 1px 20px 10px rgba(216, 216, 216, 0.5);
+}
+#content .contentArea .pageNav .gy .research dl {
+  width: 290px;
+  height: 400px;
+  text-align: center;
+  position: absolute;
+  left: 60px;
+  top: 0;
+}
+#content .contentArea .pageNav .gy .research dl:nth-of-type(2) {
+  position: absolute;
+  left: 350px;
+}
+
+#content .contentArea .pageNav .gy .research div::before {
+  content: "";
+  display: block;
+  width: 700px;
+  height: 400px;
+  background: url(../images/content5/gy.jpg);
+  position: absolute;
+  left: -500px;
+  top: -70px;
+  z-index: -10;
+}
+#content .contentArea .pageNav .gy .research dt {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 60px;
+  font-weight: 600;
+}
+#content .contentArea .pageNav .gy .research dd {
+  width: 290px;
+  padding: 10px 0;
+  line-height: 2em;
+}

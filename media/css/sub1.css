@@ -1,0 +1,361 @@
+#headerArea #gnb ul li:nth-of-type(1)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 95px;
+  box-shadow: 0px 0px 4px 1px #52fefe;
+  margin-top: 5px;
+}
+
+/* 와이드 pc  */
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+.imgText{
+  font-family: "Black Ops One", cursive;
+  position: absolute;
+  left: 50%;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 3rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: 
+    typewriter 1s steps(5) 1s 1 normal both,
+    textMove 1s steps(5) 1s 1 normal both,
+    blinkTextCursor 500ms steps(5) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 214px;}
+}
+@keyframes textMove{
+  from{margin-left: 0;}
+  to{margin-left: -107px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* ============================= */
+#content .fixedImg {
+  width: 90%;
+  height: 100px;
+  margin: 0 5% 100px;
+  padding: 50px 0;
+  background: url(../images/fixedImg.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#content section {
+  padding: 100px 5%;
+  overflow: hidden;
+}
+#content h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Black Ops One", cursive;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: all .5s;
+}
+#content section:nth-of-type(1):hover h3 {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+}
+#content section:nth-of-type(2):hover h3 {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+}
+#content section:nth-of-type(3):hover h3 {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+}
+#content section:nth-of-type(4):hover h3 {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+}
+#content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#content .imgBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 45%;
+}
+#content .imgBox li {
+  border: 3px solid #fff;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#content .imgBox li:nth-of-type(1) {
+  flex-basis: 55%;
+  margin-bottom: 5%;
+  border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  transform: rotate(5deg);
+}
+#content .imgBox li:nth-of-type(2) {
+  flex-basis: 40%;
+  margin-bottom: 5%;
+  border-radius: 95% 4% 95% 6%/4% 95% 5% 92%;
+  transform: rotate(-3deg);
+}
+#content .imgBox li:nth-of-type(3) {
+  border-radius: 95% 4% 95% 6%/4% 95% 5% 92%;
+  flex-basis: 30%;
+  transform: rotate(-2deg);
+}
+#content .imgBox li:nth-of-type(4) {
+  border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  flex-basis: 65%;
+  transform: rotate(2deg);
+}
+#content .imgBox li:hover {
+  border-radius: 0;
+  box-shadow: 0px 0px 30px 10px rgba(2, 255, 255, 0.5);
+  transform: rotate(0);
+}
+#content .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+#content .imgBox li:hover img {
+  transform: scale(1.05);
+}
+#content .textBox {
+  flex-basis: 50%;
+  word-wrap: break-word;
+  text-align: justify;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 30px 10px rgba(2, 255, 255, 0.5);
+  border-radius: 4% 95% 6% 95%/95% 4% 92% 5%;
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+/* =========================== */
+#content .tony {
+  background: url(../images/sub1/tonyBack.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .tony .imgBox {
+  float: left;
+}
+#content .tony .textBox {
+  float: right;
+}
+
+/* =========================== */
+#content .kidnap {
+  background: url(../images/sub1/kidnapBack.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .kidnap .imgBox {
+  float: right;
+}
+#content .kidnap .textBox {
+  float: left;
+}
+
+/* =========================== */
+#content .iron {
+  background: url(../images/sub1/ironBack.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .iron .imgBox {
+  float: left;
+}
+#content .iron .textBox {
+  float: right;
+}
+
+/* =========================== */
+#content .hero {
+  background: url(../images/sub1/heroBack.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .hero .imgBox {
+  float: right;
+}
+#content .hero .textBox {
+  float: left;
+}
+
+/* =========================== */
+@media screen and (max-width: 1280px) {
+}
+/* =========================== */
+@media screen and (max-width: 1024px) {
+  #content .tony .imgBox li:nth-of-type(1) {
+    display: none;
+  }
+  #content .tony .imgBox li:nth-of-type(2) {
+    flex-basis: 100%;
+  }
+  #content .tony .imgBox li:nth-of-type(3) {
+    display: none;
+  }
+  #content .tony .imgBox li:nth-of-type(4) {
+    flex-basis: 100%;
+  }
+
+  #content .kidnap .imgBox li:nth-of-type(1) {
+    display: none;
+  }
+  #content .kidnap .imgBox li:nth-of-type(2) {
+    display: none;
+  }
+  #content .kidnap .imgBox li:nth-of-type(3) {
+    flex-basis: 100%;
+  }
+  #content .kidnap .imgBox li:nth-of-type(4) {
+    flex-basis: 100%;
+  }
+
+  #content .kidnap .imgBox li:nth-of-type(1) {
+    display: none;
+  }
+  #content .kidnap .imgBox li:nth-of-type(2) {
+    display: none;
+  }
+  #content .kidnap .imgBox li:nth-of-type(3) {
+    flex-basis: 100%;
+  }
+  #content .kidnap .imgBox li:nth-of-type(4) {
+    flex-basis: 100%;
+  }
+
+  #content .iron .imgBox li:nth-of-type(1) {
+    flex-basis: 100%;
+  }
+  #content .iron .imgBox li:nth-of-type(2) {
+    flex-basis: 100%;
+  }
+  #content .iron .imgBox li:nth-of-type(3) {
+    display: none;
+  }
+  #content .iron .imgBox li:nth-of-type(4) {
+    display: none;
+  }
+
+  #content .hero .imgBox li:nth-of-type(1) {
+    display: none;
+  }
+  #content .hero .imgBox li:nth-of-type(2) {
+    flex-basis: 100%;
+  }
+  #content .hero .imgBox li:nth-of-type(3) {
+    flex-basis: 100%;
+  }
+  #content .hero .imgBox li:nth-of-type(4) {
+    display: none;
+  }
+}
+/* =========================== */
+@media screen and (max-width: 768px) {
+}
+/* =========================== */
+@media screen and (max-width: 640px) {
+  #content .container {
+    flex-direction: column;
+  }
+  .imgText{
+    margin-left: -106px;
+    animation: none;
+    border-right: 0;
+  }
+  #content .textBox{
+    box-shadow: 0px 0px 30px 10px rgb(2 255 255 / 0%);
+  }
+  #content .tony .imgBox li:nth-of-type(1) {
+    display: block;
+    flex-basis: 55%;
+  }
+  #content .tony .imgBox li:nth-of-type(2) {
+    display: block;
+    flex-basis: 40%;
+  }
+  #content .tony .imgBox li:nth-of-type(3) {
+    display: block;
+    flex-basis: 30%;
+  }
+  #content .tony .imgBox li:nth-of-type(4) {
+    display: block;
+    flex-basis: 65%;
+  }
+
+  #content .kidnap .imgBox li:nth-of-type(1) {
+    display: block;
+    flex-basis: 55%;
+  }
+  #content .kidnap .imgBox li:nth-of-type(2) {
+    display: block;
+    flex-basis: 40%;
+  }
+  #content .kidnap .imgBox li:nth-of-type(3) {
+    display: block;
+    flex-basis: 30%;
+  }
+  #content .kidnap .imgBox li:nth-of-type(4) {
+    display: block;
+    flex-basis: 65%;
+  }
+
+  #content .iron .imgBox li:nth-of-type(1) {
+    display: block;
+    flex-basis: 55%;
+  }
+  #content .iron .imgBox li:nth-of-type(2) {
+    display: block;
+    flex-basis: 40%;
+  }
+  #content .iron .imgBox li:nth-of-type(3) {
+    display: block;
+    flex-basis: 30%;
+  }
+  #content .iron .imgBox li:nth-of-type(4) {
+    display: block;
+    flex-basis: 65%;
+  }
+
+  #content .hero .imgBox li:nth-of-type(1) {
+    display: block;
+    flex-basis: 55%;
+  }
+  #content .hero .imgBox li:nth-of-type(2) {
+    display: block;
+    flex-basis: 40%;
+  }
+  #content .hero .imgBox li:nth-of-type(3) {
+    display: block;
+    flex-basis: 30%;
+  }
+  #content .hero .imgBox li:nth-of-type(4) {
+    display: block;
+    flex-basis: 65%;
+  }
+}
+/* =========================== */
+@media screen and (max-width: 500px) {
+  .fixedImg {
+    display: none;
+  }
+}

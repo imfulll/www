@@ -1,0 +1,158 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea .text {
+  text-align: center;
+}
+
+#content .contentArea .text p {
+  font-size: 2.25em;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  color: #666;
+  position: relative;
+  margin-bottom: 100px;
+}
+#content .contentArea .text p span {
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea .text p i {
+  position: absolute;
+  font-size: 2em;
+  color: #999;
+  opacity: 0.5;
+  z-index: -10;
+}
+#content .contentArea .text p i:nth-of-type(1) {
+  top: -40px;
+  left: 280px;
+}
+#content .contentArea .text p i:nth-of-type(2) {
+  top: 40px;
+  right: 320px;
+}
+
+#content .contentArea h3 {
+  font-size: 1.5em;
+  margin: 30px 0 25px;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea h3::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30px;
+  background: #666;
+  margin-left: 275px;
+  margin-top: 20px;
+}
+
+#content .contentArea ul {
+  position: relative;
+}
+#content .contentArea li {
+  width: 580px;
+  height: 730px;
+  margin-bottom: 80px;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+  border-bottom-right-radius: 100px;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea li:hover {
+  background: rgba(47, 71, 152, 0.05);
+}
+#content .contentArea li:nth-of-type(2n + 1) {
+  float: left;
+}
+#content .contentArea li:nth-of-type(2n) {
+  float: right;
+}
+#content .contentArea li:nth-child(7),
+#content .contentArea li:nth-child(8) {
+  margin-bottom: 200px;
+}
+#content .contentArea li div {
+  width: 550px;
+  height: 380px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+#content .contentArea li img {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+#content .contentArea li:hover img {
+  transform: scale(1.1);
+}
+
+#content .contentArea li p {
+  padding: 0 70px;
+  font-size: 1.25em;
+  word-wrap: break-word;
+  text-align: justify;
+  color: #666;
+  transition: all 0.5s ease-in-out;
+  margin-top: 40px;
+}
+#content .contentArea li:hover p {
+  color: #333;
+}
+#content .contentArea li:nth-of-type(8) p {
+  letter-spacing: -1px;
+}
+
+#content .footerMain {
+  width: 2000px;
+  position: relative;
+  left: -400px;
+  top: 0;
+  overflow: hidden;
+}
+#content .footerMain img {
+  transform: scale(1);
+  filter: grayscale(0.5);
+  transition: all 0.5s ease-in-out;
+}
+#content .footerMain:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+#content .footerMain p {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  text-align: center;
+  width: 2000px;
+  margin-top: 240px;
+  font-size: 2.5em;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+}
+#content .footerMain p::before {
+  content: "효성그룹은 사회의 도움이 필요한 모든 사람이 혜택을 받을 수 있도록";
+  display: block;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  margin-left: -293px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+#content .footerMain p::after {
+  content: "지원 대상을 점차 확대할 계획입니다.";
+  display: block;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -157px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}

@@ -1,0 +1,413 @@
+/* ========================= */
+/* 공통영역 */
+.logo {
+  margin: 100px auto 0;
+  display: block;
+  width: 270px;
+  height: 43px;
+  background: url(../images/logo_big.png) center no-repeat;
+  text-indent: -9999%;
+  color: #fff;
+}
+html {
+  background: rgba(220, 220, 220, 0.3);
+}
+#content {
+  width: 850px;
+  margin: 100px auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  background: #fff;
+}
+.process{
+  overflow: hidden;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+.process li::before{
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  margin-left: -19px;
+  font-size: 0.8rem;
+}
+.process li:nth-of-type(1)::before{
+  content: 'STEP1';
+}
+.process li:nth-of-type(2)::before{
+  content: 'STEP2';
+}
+.process li:nth-of-type(3)::before{
+  content: 'STEP3';
+}
+.process li{
+  float: left;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 170px;
+  margin-right: 50px;
+  position: relative;
+}
+.sub_cont_wrap .process li:nth-of-type(1){
+  background: rgba(47, 71, 152, 0.9);
+  color: #fff;
+}
+.memberForm .process li:nth-of-type(2){
+  background: rgba(47, 71, 152, 0.9);
+  color: #fff;
+}
+.memberCompleteForm .process li:nth-of-type(3){
+  background: rgba(47, 71, 152, 0.9);
+  color: #fff;
+}
+.process li:last-of-type{
+  margin-right: 0;
+}
+.process li i{
+  position: absolute;
+  right: -43px;
+  top: 60px;
+  font-size: 2rem;
+  color: #ccc;
+}
+.sub_cont_wrap .process li:nth-of-type(1) i{
+  background: linear-gradient(to right, #2f4798, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.memberForm .process li:nth-of-type(1) i{
+  background: linear-gradient(to right, #ccc, #2f4798);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.memberForm .process li:nth-of-type(2) i{
+  background: linear-gradient(to right, #2f4798, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.memberCompleteForm .process li:nth-of-type(2) i{
+  background: linear-gradient(to right, #ccc , #2f4798);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+/* ========================= */
+/* 이용약관 */
+
+.join {
+  text-align: left;
+  position: relative;
+}
+.join h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.join h3::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 26px;
+  background: rgba(47, 71, 152, 1);
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.join h3 {
+  font-size: 20px;
+  margin: 30px 0 20px;
+  color: #666;
+  position: relative;
+  padding-left: 10px;
+}
+.join h3 span {
+  color: rgba(47, 71, 152, 1);
+  font-size: 0.9rem;
+}
+.join .policy {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 200px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.join .check {
+  color: #333;
+  margin: 20px 0 50px;
+}
+.join .button {
+  text-align: center;
+  margin-top: 30px;
+}
+.join .allcheck::before{
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  top: 5px;
+  margin-right: 10px;
+}
+.join .allcheck.on::before{
+  background: url(../images/checked_bg.png) center no-repeat;
+  border: 2px solid rgba(47, 71, 152, 1);
+  transition: all .5s;
+}
+.join .allcheck {
+  display: block;
+  margin-top: 70px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.join .button .ok{
+  display: inline-block;
+  width: 200px;
+  line-height: 24px;
+  padding: 8px 0;
+  border: 1px solid rgba(47, 71, 152, 1);
+  color: rgba(47, 71, 152, 1);
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all .5s;
+}
+.join .button .ok:focus,
+.join .button .ok:hover{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+.join .button .cancel {
+  display: inline-block;
+  width: 200px;
+  line-height: 24px;
+  padding: 8px 0;
+  border: 1px solid #333;
+  color: #333;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.join .button .cancel:focus,
+.join .button .cancel:hover {
+  color: #fff;
+  background: #333;
+}
+
+
+input[type="checkbox"] + label::before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 2px solid #999;
+  border-radius: 50%;
+  content: "";
+  margin: 0px 15px -6px 0px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label::before {
+  background: url(../images/checked_bg.png) center no-repeat;
+  border: 2px solid rgba(47, 71, 152, 1);
+  transition: all .5s;
+}
+
+/* ========================= */
+/* 회원가입 */
+.memberForm h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.memberForm > p{
+  text-align: right;
+  color: #999;
+}
+.memberForm span{
+  color: rgba(47, 71, 152, 1);
+}
+
+.memberForm form .row{
+  height: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 10px;
+}
+.memberForm form .row .col_1 label{
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  font-size: 1.2rem;
+  color: #999;
+  padding: 17px 0 0 20px;
+  transition: all .5s;
+}
+
+.memberForm form .row .col_1.focus label{
+  font-size: 0.8rem;
+  padding: 3px 0 0 16px;
+}
+.memberForm form .row .col_2{
+  width: 100%;
+}
+.memberForm form .row .col_2 input{
+  width: 100%;
+  height: 70px;
+  padding: 15px 0 0 26px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+.memberForm form .row .col_2 #loadtext,
+.memberForm form .row .col_2 #loadtext2_1,
+.memberForm form .row .col_2 #loadtext2_2,
+.memberForm form .row .col_2 #loadtext3{
+  position: absolute;
+  left: 50%;
+  top: 20px;
+}
+#id.good,
+#pass.good, 
+#pass_confirm.good,
+#nick.good{
+  background-color: rgba(47, 71, 152, 0.1);
+}
+#id.bad,
+#pass.bad, 
+#pass_confirm.bad,
+#nick.bad{
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.memberForm form .mbr_email .col_1,
+.memberForm form .mbr_phone .col_1{
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  font-size: 0.8rem;
+  color: #999;
+  padding: 3px 0 0 16px;
+  transition: all .5s;
+}
+.memberForm form .row.mbr_email .col_2,
+.memberForm form .row.mbr_phone .col_2{
+  margin-top: 30px;
+}
+.memberForm form .row.mbr_phone .col_2 select{
+  width: 20%;
+  height: 30px;
+  text-align: center;
+  margin-left: 40px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5rem;
+}
+.memberForm form .row.mbr_email .col_2 input,
+.memberForm form .row.mbr_phone .col_2 input{
+  width: 33%;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin-top: 2px;
+}
+.memberForm form .row.mbr_email .col_2 input{
+  width: 43.5%;
+}
+.memberForm form .row.mbr_email .col_2 input:first-of-type{
+  margin-left: 40px;
+}
+
+.memberForm form .row.mbr_phone .col_2 input:-internal-autofill-selected{
+  background: none;
+}
+input{
+  border: none;
+}
+input:focus-visible{
+  outline: 0;
+}
+
+.lastBtn {
+  overflow: hidden;
+  margin-top: 50px;
+}
+.lastBtn a{
+  display: block;  
+  float: left;
+  width: 200px;
+  line-height: 24px;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .5s;
+  text-align: center;
+  margin: 0 5px;
+}
+.lastBtn a.reset{
+  border: 1px solid #333;
+  margin-left: 215px;
+}
+.lastBtn a.submit{
+  border: 1px solid rgba(47, 71, 152, 1);
+}
+.lastBtn a.reset:focus,
+.lastBtn a.reset:hover{
+  background: #333;
+  color: #fff;
+}
+.lastBtn a.submit:focus,
+.lastBtn a.submit:hover{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+
+/* ================member complete============ */
+.memberCompleteForm h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.memberCompleteForm p{
+  text-align: center;
+}
+.memberCompleteForm p span{
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.lastBtn a.goMain{
+  border: 1px solid #333;
+  margin-left: 215px;
+}
+.lastBtn a.goLogin{
+  border: 1px solid rgba(47, 71, 152, 1);
+}
+.lastBtn a.goMain:focus,
+.lastBtn a.goMain:hover{
+  background: #333;
+  color: #fff;
+}
+.lastBtn a.goLogin:focus,
+.lastBtn a.goLogin:hover{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}

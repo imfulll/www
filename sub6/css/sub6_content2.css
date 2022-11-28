@@ -1,0 +1,158 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+}
+#content .contentArea .down {
+  margin-bottom: 150px;
+}
+#content .contentArea .down ul {
+  width: 1200px;
+  overflow: hidden;
+}
+#content .contentArea .down ul li {
+  width: 580px;
+  float: left;
+  padding-bottom: 10px;
+}
+#content .contentArea .down ul li:last-of-type {
+  float: right;
+}
+#content .contentArea .down ul li img {
+  width: 580px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#content .contentArea .down ul li p {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 20px 0;
+}
+#content .contentArea .down ul li a {
+  width: 120px;
+  display: block;
+  float: left;
+  background: rgba(47, 71, 152, 0.1);
+  padding: 5px 10px;
+  margin-right: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 5px 1px rgba(216, 216, 216, 0.5);
+}
+#content .contentArea .down ul li a span {
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+}
+
+/* video */
+#content .contentArea .video {
+  margin-bottom: 200px;
+}
+#content .contentArea .video .videoBig {
+  width: 1200px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+#content .contentArea .video .videoBig li {
+  width: 1200px;
+  display: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 50px;
+}
+#content .contentArea .video .videoBig li .imgBox {
+  width: 1200px;
+  height: 520px;
+  border: 10px solid rgba(47, 71, 152, 1);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#content .contentArea .video .videoBig li iframe {
+  width: 1180px;
+  height: 500px;
+}
+
+#content .contentArea .video .videoBig dl {
+  padding: 30px 30px 0 30px;
+  overflow: hidden;
+}
+#content .contentArea .video .videoBig dl dt {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 20px 0;
+}
+#content .contentArea .video .videoBig dl dd {
+  display: none;
+}
+#content .contentArea .video .videoBig li a {
+  display: block;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin: 30px 0 0 30px;
+  background: rgba(47, 71, 152, 0.1);
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+#content .contentArea .video .videoBig li a:hover {
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .contentArea .video .thumb {
+  overflow: hidden;
+}
+#content .contentArea .video .thumb li {
+  float: left;
+  margin-right: 30px;
+  width: 380px;
+  border: 3px solid rgba(47, 71, 152, 0);
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#content .contentArea .video .thumb li:hover {
+  background: rgba(47, 71, 152, 1);
+}
+
+#content .contentArea .video .thumb li:last-of-type {
+  margin-right: 0;
+}
+#content .contentArea .video .thumb li .imgBox2 {
+  width: 380px;
+  height: 280px;
+  overflow: hidden;
+}
+#content .contentArea .video .thumb li img {
+  transform: scale(1);
+  transition: all 0.5s;
+}
+#content .contentArea .video .thumb li:hover img {
+  transform: scale(1.05);
+}
+#content .contentArea .video .thumb li p {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.5s;
+}
+#content .contentArea .video .thumb li:hover p {
+  color: #fff;
+}
+#content .contentArea .video .thumb li span {
+  color: rgba(47, 71, 152, 1);
+  font-size: 0.75em;
+  transition: all 0.5s;
+}
+#content .contentArea .video .thumb li:hover span {
+  color: #fff;
+}

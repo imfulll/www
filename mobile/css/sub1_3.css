@@ -1,0 +1,84 @@
+/* ====================common================== */
+#content .commonText {
+  text-align: center;
+  margin: 30px auto;
+}
+#content .commonText p:first-of-type {
+  color: #666;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#content .commonText p:first-of-type span {
+  color: rgba(47, 71, 152, 1);
+}
+
+/* ===================content==================== */
+#content .continent {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(2, 50px);
+  padding: 0 3%;
+  text-align: center;
+}
+#content .continent li a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(47, 71, 152, 0);
+}
+#content .continent li:nth-of-type(4) a,
+#content .continent li:nth-of-type(5) a {
+  line-height: 1rem;
+  padding-top: 11px;
+}
+#content .continent li.current a {
+  color: rgba(47, 71, 152, 1);
+  border: 1px solid rgba(47, 71, 152, 1);
+  background: rgba(0, 0, 0, 0);
+}
+
+/* img */
+#content .mapImg {
+  position: relative;
+}
+#content .mapImg img {
+  width: 100%;
+  display: none;
+}
+
+/* table */
+#content .worldTable ul li {
+  display: none;
+}
+#content .worldTable table {
+  width: 94%;
+  margin: 0 3% 50px;
+  line-height: 2rem;
+  border: 1px solid rgba(47, 71, 152, 1);
+  box-sizing: border-box;
+}
+#content .worldTable table thead tr th {
+  text-align: center;
+}
+#content .worldTable table thead tr:nth-of-type(1) th {
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content .worldTable table thead tr:nth-of-type(2) th {
+  background: rgba(47, 71, 152, 0.5);
+  font-weight: 400;
+  border-left: 1px solid rgba(47, 71, 152, 1);
+}
+#content .worldTable table tbody tr td:nth-of-type(1) {
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid rgba(47, 71, 152, 1);
+}
+#content .worldTable table tbody tr td:nth-of-type(2) {
+  width: 70%;
+  padding-left: 20px;
+}

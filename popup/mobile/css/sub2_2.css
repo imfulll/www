@@ -1,0 +1,82 @@
+/* ====================common================== */
+#content {
+  position: relative;
+}
+#content .titleText h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: rgba(47, 71, 152, 1);
+  text-align: center;
+  margin-top: 20px;
+}
+#content .titleText p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* ====================content================== */
+#content .selector {
+  position: relative;
+}
+#content .selector a{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#content .selector > a{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+  width: 94%;
+  margin: 50px 3% 0;
+
+}
+#content .selector a i {
+  float: right;
+  font-size: 0.9rem;
+  line-height: 50px;
+  
+}
+#content .selector ul{
+  width: 94%;
+  margin: 0 3%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background: #fff;
+  padding: 10px 0;
+  display: none;
+}
+#content .selector ul li a{
+  font-size: 0.9rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+}
+#content .contentText{
+  margin-bottom: 50px;
+}
+#content .contentText > li{
+  display: none;
+}
+#content .contentText li ul li{
+  padding: 40px 3%;
+}
+#content .contentText li ul li:nth-of-type(2){
+  background: rgba(47, 71, 152, .1);
+}
+#content .contentText img{
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+}
+#content .contentText dl dt{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

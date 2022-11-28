@@ -1,0 +1,175 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto 150px;
+  position: relative;
+}
+
+#content .contentArea .commonText p:nth-child(1) {
+  text-align: center;
+  color: #666;
+  font-size: 1.875em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#content .contentArea .commonText p:nth-child(2) {
+  text-align: center;
+  font-size: 1.25em;
+  color: #666;
+}
+#content .contentArea .commonText p span {
+  color: rgba(47, 71, 152, 1);
+}
+
+/* tab */
+#content .contentArea .mapContent {
+  position: relative;
+  width: 1200px;
+  margin-top: 80px;
+}
+
+#content .contentArea .tab h3 {
+  position: absolute;
+  line-height: 40px;
+  top: -140px;
+}
+
+#content .contentArea .tab1 h3 {
+  left: 300px;
+}
+#content .contentArea .tab2 h3 {
+  left: 600px;
+}
+#content .contentArea .tab h3.current2 a {
+  color: rgba(47, 71, 152, 1);
+  border: 1px solid rgba(47, 71, 152, 1);
+}
+
+#content .contentArea .tab a {
+  display: block;
+  width: 300px;
+  height: 70px;
+  font-weight: 700;
+  color: #666;
+  text-align: center;
+  font-size: 20px;
+  line-height: 70px;
+  border: 1px solid #ccc;
+  border-left-width: 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+#content .contentArea .tab:first-of-type a {
+  border-left-width: 1px;
+}
+#content .contentArea .tab h3:hover a {
+  color: rgba(47, 71, 152, 1);
+  background: #eaecf4;
+}
+
+#content .contentArea .tab .map {
+  width: 1200px;
+  height: 570px;
+  margin-top: 200px;
+  display: none;
+}
+
+#content .contentArea .tab .mapInfo {
+  display: none;
+}
+#content .contentArea .tab ul {
+  color: #666;
+  margin-top: 50px;
+}
+#content .contentArea .tab ul li {
+  position: relative;
+  height: 80px;
+  padding-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+#content .contentArea .tab ul li:hover {
+  box-shadow: 1px 1px 20px 10px rgba(216, 216, 216, 0.5);
+}
+#content .contentArea .tab ul li:nth-child(1) {
+  height: 200px;
+  padding-top: 20px;
+}
+#content .contentArea .tab ul li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background: #ccc;
+  position: absolute;
+  left: 200px;
+  top: 20px;
+}
+#content .contentArea .tab ul li:nth-of-type(1)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 180px;
+  background: #ccc;
+  position: absolute;
+  left: 200px;
+  top: 20px;
+}
+#content .contentArea .tab ul li dl {
+  width: 1200px;
+  overflow: hidden;
+  font-size: 1.2em;
+  line-height: 60px;
+}
+#content .contentArea .tab ul li dl:hover {
+  background: rgba(47, 71, 152, 0.03);
+  color: #333;
+}
+
+#content .contentArea .tab ul li dl dt {
+  float: left;
+  width: 200px;
+  text-align: center;
+}
+#content .contentArea .tab ul li dl dt i {
+  margin-right: 30px;
+  font-size: 1.2em;
+}
+#content .contentArea .tab ul li:hover dl dt i {
+  color: rgba(47, 71, 152, 1);
+}
+#content .contentArea .tab ul li dl dd {
+  width: 1000px;
+  padding-left: 50px;
+  display: inline;
+}
+#content .contentArea .tab ul li:nth-of-type(2) dl dd {
+  padding-left: 30px;
+}
+#content .contentArea .tab ul li:nth-of-type(2) dl dd:nth-of-type(1) {
+  padding-left: 50px;
+  font-size: 0.8em;
+}
+#content .contentArea .tab ul li .busM {
+  color: green;
+}
+#content .contentArea .tab ul li .busB {
+  color: blue;
+}
+#content .contentArea .tab ul li .busG {
+  color: darkgreen;
+}
+#content .contentArea .tab ul li .metro3 {
+  color: orange;
+}
+#content .contentArea .tab ul li .metro5 {
+  color: purple;
+}
+#content .contentArea .tab ul li .metro6 {
+  color: brown;
+}
+#content .contentArea .tab ul li .metro7 {
+  color: darkgreen;
+}
+#content .contentArea .tab ul li .metro9 {
+  color: rgb(215, 136, 38);
+}

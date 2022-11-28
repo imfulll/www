@@ -1,0 +1,387 @@
+#headerArea #gnb ul li:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 169px;
+  box-shadow: 0px 0px 4px 1px #52fefe;
+  margin-top: 5px;
+}
+
+/* 와이드 pc  */
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+}
+.imgText{
+  font-family: "Black Ops One", cursive;
+  position: absolute;
+  left: 50%;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 3rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: 
+    typewriter 1s steps(11) 1s 1 normal both,
+    textMove 1s steps(11) 1s 1 normal both,
+    blinkTextCursor 500ms steps(11) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 403px;}
+}
+@keyframes textMove{
+  from{margin-left: 0;}
+  to{margin-left: -202px;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* ============================= */
+#wrap {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 25%,
+    rgba(0, 0, 0, 0) 85%
+  );
+}
+#content .fixedImg {
+  width: 90%;
+  height: 100px;
+  margin: 0 5% 100px;
+  padding: 50px 0;
+  background: url(../images/fixedImg.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#content section {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+}
+#content h4 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Black Ops One", cursive;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: all .5s;
+}
+#content .avengers:hover h4 {
+  text-shadow: 0 0 5px #fff, 0 0 10px #02feff;
+}
+#content .bad:hover h4 {
+  text-shadow: 0 0 5px #fff, 0 0 10px #f09;
+}
+#content section ul li {
+  box-sizing: border-box;
+  position: relative;
+  height: 500px;
+}
+
+#content section ul li .inner {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  z-index: 3;
+  padding: 5%;
+  box-sizing: border-box;
+}
+#content section ul li .inner p {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+#content section:nth-of-type(1)::before,
+#content section:nth-of-type(1)::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 70px 30px rgba(2, 255, 255, 0);
+  position: relative;
+  z-index: 2;
+  transition: all .5s;
+}
+#content section:nth-of-type(1):hover::before,
+#content section:nth-of-type(1):hover::after {
+  box-shadow: 0px 0px 70px 30px rgba(2, 255, 255, .3);
+}
+#content section.avengers ul li .inner {
+  margin-left: 50%;
+}
+#content section.avengers ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(19, 16, 33, 0) 25%,
+    rgba(19, 16, 33, 1) 85%
+  );
+}
+
+#content section.avengers ul li h4::before {
+  content: "GOOD";
+  display: block;
+  font-size: 1rem;
+  text-shadow: none;
+  margin-bottom: 10px;
+}
+#content section.avengers ul li h4::after {
+  display: block;
+  font-size: 1rem;
+  text-shadow: none;
+  margin-top: 10px;
+}
+#content section.avengers ul li:nth-of-type(1) h4::after {
+  content: "IRON MAN";
+}
+#content section.avengers ul li:nth-of-type(2) h4::after {
+  content: "CAPTAIN AMERICA";
+}
+#content section.avengers ul li:nth-of-type(3) h4::after {
+  content: "BLACK WIDOW";
+}
+#content section.avengers ul li:nth-of-type(4) h4::after {
+  content: "HULK";
+}
+#content section.avengers ul li:nth-of-type(5) h4::after {
+  content: "HAWKEYE";
+}
+#content section.avengers ul li:nth-of-type(6) h4::after {
+  content: "MIGHTY THOR";
+}
+
+#content section.avengers ul li:nth-of-type(1) {
+  background: url(../images/sub2/backImg1.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.avengers ul li:nth-of-type(2) {
+  background: url(../images/sub2/backImg2.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.avengers ul li:nth-of-type(3) {
+  background: url(../images/sub2/backImg3.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.avengers ul li:nth-of-type(4) {
+  background: url(../images/sub2/backImg4.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.avengers ul li:nth-of-type(5) {
+  background: url(../images/sub2/backImg5.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.avengers ul li:nth-of-type(6) {
+  background: url(../images/sub2/backImg6.jpg) center no-repeat;
+  background-size: cover;
+}
+
+#content section:nth-of-type(2)::before,
+#content section:nth-of-type(2)::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 30px 15px rgba(255, 0, 153, 0);
+  position: relative;
+  z-index: 2;
+  transition: all .5s;
+}
+#content section:nth-of-type(2):hover::before,
+#content section:nth-of-type(2):hover::after {
+  box-shadow: 0px 0px 30px 15px rgba(255, 0, 153, 0.3);
+  
+}
+#content section.bad ul li .inner {
+  margin-right: 50%;
+}
+#content section.bad ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    -90deg,
+    rgba(33, 16, 16, 0) 25%,
+    rgb(33, 16, 16) 85%
+  );
+}
+#content section.bad ul li:nth-of-type(1) {
+  background: url(../images/sub2/backImg7.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.bad ul li:nth-of-type(2) {
+  background: url(../images/sub2/backImg8.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.bad ul li:nth-of-type(3) {
+  background: url(../images/sub2/backImg9.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.bad ul li:nth-of-type(4) {
+  background: url(../images/sub2/backImg10.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.bad ul li:nth-of-type(5) {
+  background: url(../images/sub2/backImg11.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.bad ul li:nth-of-type(6) {
+  background: url(../images/sub2/backImg12.jpg) center no-repeat;
+  background-size: cover;
+}
+#content section.bad ul li h4::before {
+  content: "BAD";
+  display: block;
+  font-size: 1rem;
+  text-shadow: none;
+  margin-bottom: 10px;
+}
+
+/* =========================== */
+@media screen and (max-width: 1280px) {
+}
+/* =========================== */
+@media screen and (max-width: 1024px) {
+}
+/* =========================== */
+@media screen and (max-width: 768px) {
+  #content section:nth-of-type(1)::after {
+    display: none;
+  }
+  #content section:nth-of-type(2)::after {
+    display: none;
+  }
+  #content h4 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: "Black Ops One", cursive;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #content h4 span {
+    display: none;
+  }
+
+  #content section.avengers ul li::before {
+    background: linear-gradient(
+      0deg,
+      rgba(19, 16, 33, 1) 25%,
+      rgba(19, 16, 33, 0) 85%
+    );
+  }
+  #content section ul li .inner {
+    width: 100%;
+    padding: 230px 5% 50px;
+  }
+
+  #content section ul li .inner p {
+    -webkit-line-clamp: 3;
+  }
+
+  #content section.avengers ul li .inner {
+    margin-left: 0;
+  }
+  #content section.avengers ul li:nth-of-type(1) {
+    background: url(../images/sub2/backImg1_change.jpg) center no-repeat;
+    background-size: cover;
+  }
+  #content section.avengers ul li:nth-of-type(2) {
+    background: url(../images/sub2/backImg2_change.jpg) center no-repeat;
+    background-size: cover;
+  }
+  #content section.avengers ul li:nth-of-type(3) {
+    background: url(../images/sub2/backImg3_change.jpg) center no-repeat;
+    background-size: cover;
+  }
+  #content section.avengers ul li:nth-of-type(4) {
+    background: url(../images/sub2/backImg4_change.jpg) center no-repeat;
+    background-size: cover;
+  }
+  #content section.avengers ul li:nth-of-type(5) {
+    background: url(../images/sub2/backImg5_change.jpg) center no-repeat;
+    background-size: cover;
+  }
+  #content section.avengers ul li:nth-of-type(6) {
+    background: url(../images/sub2/backImg6_change.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  #content section.bad h4 {
+    margin-bottom: 30px;
+  }
+  #content section.bad ul li::before {
+    background: linear-gradient(
+      0deg,
+      rgba(33, 16, 16, 1) 25%,
+      rgba(33, 16, 16, 0) 85%
+    );
+  }
+  #content section.bad ul li .inner {
+    margin-left: 0;
+  }
+  #content section.bad ul li:nth-of-type(1) {
+    background: url(../images/sub2/backImg7_change.jpg) center no-repeat;
+  }
+  #content section.bad ul li:nth-of-type(2) {
+    background: url(../images/sub2/backImg8_change.jpg) center no-repeat;
+  }
+  #content section.bad ul li:nth-of-type(3) {
+    background: url(../images/sub2/backImg9_change.jpg) center no-repeat;
+  }
+  #content section.bad ul li:nth-of-type(4) {
+    background: url(../images/sub2/backImg10_change.jpg) center no-repeat;
+  }
+  #content section.bad ul li:nth-of-type(5) {
+    background: url(../images/sub2/backImg11_change.jpg) center no-repeat;
+  }
+  #content section.bad ul li:nth-of-type(6) {
+    background: url(../images/sub2/backImg12_change.jpg) center no-repeat;
+  }
+}
+/* =========================== */
+@media screen and (max-width: 640px) {
+  .imgText{
+    margin-left: -87px;
+    animation: none;
+    border-right: 0;
+  }
+}
+/* =========================== */
+@media screen and (max-width: 500px) {
+  #content .fixedImg {
+    display: none;
+  }
+}

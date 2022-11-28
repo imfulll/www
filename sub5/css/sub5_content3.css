@@ -1,0 +1,151 @@
+/* common */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea .divBox {
+  margin-bottom: 150px;
+  overflow: hidden;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+}
+#content .contentArea p {
+  text-align: center;
+}
+#content .contentArea p span {
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+}
+#content .contentArea ul {
+  width: 1200px;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+#content .contentArea ul li {
+  float: left;
+  box-shadow: 1px 1px 10px 5px rgba(216, 216, 216, 0.5);
+  transition: all 0.5s;
+}
+#content .contentArea ul li:hover {
+  box-shadow: 1px 1px 10px 5px rgb(195, 194, 194);
+}
+#content .contentArea ul li:last-of-type {
+  margin-right: 0;
+}
+#content .contentArea ul li h4 {
+  height: 50px;
+  font-size: 1.2em;
+  text-align: center;
+  background: rgba(47, 71, 152, 0.8);
+  color: #fff;
+  line-height: 50px;
+}
+#content .contentArea ul li p {
+  text-align: justify;
+  word-break: break-all;
+  padding: 0 30px;
+  color: #666;
+  margin-top: 25px;
+  line-height: 2em;
+}
+
+/* direction */
+#content .contentArea .direction {
+  margin-bottom: 130px;
+}
+#content .contentArea .direction li {
+  width: 350px;
+  height: 300px;
+  margin-right: 55px;
+  opacity: 0;
+}
+
+/* system */
+#content .contentArea .system {
+  margin-bottom: 180px;
+  text-align: center;
+}
+#content .contentArea .system li {
+  width: 555px;
+  margin-right: 50px;
+  padding-bottom: 7px;
+  opacity: 0;
+}
+#content .contentArea .system li p {
+  text-align: center;
+}
+#content .contentArea .system li dt {
+  margin: 20px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+#content .contentArea .system li dt span {
+  color: rgba(47, 71, 152, 1);
+}
+
+#content .contentArea .system li dd {
+  width: 530px;
+  height: 100px;
+  color: #666;
+  background: rgba(220, 220, 220, 0.4);
+  margin: 0 0 5px 12px;
+  padding-top: 31px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+#content .contentArea .system li dd span {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  transition: all 0.5s;
+}
+#content .contentArea .system li dd:hover {
+  color: #fff;
+  background: rgba(115, 115, 115, 0.4);
+}
+#content .contentArea .system li dd:hover span {
+  color: #fff;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#content .direction ul.active > li {
+  animation: up 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+#content .direction ul.active > li:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+#content .direction ul.active > li:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+#content .direction ul.active > li:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+
+#content .system ul.active > li {
+  animation: up 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+#content .system ul.active > li:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+#content .system ul.active > li:nth-of-type(2) {
+  animation-delay: 0.2s;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>IRON MAN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png" />
+    <link rel="apple-touch-startup-image" href="startup.png" />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/arc.css" />
+    
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/jquery-responsiveGallery.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/1b35f9429d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/prefixfree.min.js"></script>
+
+    <script>
+      // <![CDATA[
+      try {
+        window.addEventListener(
+          "load",
+          function () {
+            setTimeout(scrollTo, 0, 0, 1);
+          },
+          false
+        );
+      } catch (e) {}
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <? include "./common/header.html" ?>
+      <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>
+
+        <section class="about">
+          <h3>ABOUT</h3>
+          <div class="explain" id="explain"></div>
+          <div class="thumbnail">
+            <ul>
+              <li class="current">
+                <a href="#"> TONY STARK </a>
+              </li>
+              <li>
+                <a href="#"> KIDNAP </a>
+              </li>
+              <li>
+                <a href="#"> IRON MAN </a>
+              </li>
+              <li>
+                <a href="#"> HERO </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="gne">
+          <h3><span>GOOD</span><span> & </span> <span>EVIL</span></h3>
+          <div class="good">
+            <ul>
+              <li class="border borderB">
+                <div class="gneText">
+                  <p class="gneGroup">AVENGERS</p>
+                  <p class="name">Tony Stark</p>
+                  <p class="aka">a.k.a. <span>IRON MAN</span></p>
+                  <p class="hoverText">
+                    Stark is initially depicted as an industrialist, genius
+                    inventor, and playboy who is CEO of Stark Industries
+                  </p>
+                </div>
+              </li>
+              <li class="border borderB">
+                <div class="gneText">
+                  <p class="gneGroup">AVENGERS</p>
+                  <p class="name">Steve Rogers</p>
+                  <p class="aka">a.k.a. <span>CAPTAIN</span></p>
+                  <p class="hoverText">
+                    Captain Steven Grant "Steve" Rogers is a World War II
+                    veteran, a founding member of the Avengers
+                  </p>
+                </div>
+              </li>
+              <li class="border borderB">
+                <div class="gneText">
+                  <p class="gneGroup">AVENGERS</p>
+                  <p class="name">Peter Parker</p>
+                  <p class="aka">a.k.a. <span>SPIDER MAN</span></p>
+                  <p class="hoverText">
+                    Sometimes student, sometimes scientist and sometimes
+                    photographer, Peter Parker is a full-time super hero
+                  </p>
+                </div>
+              </li>
+              <li class="border borderB">
+                <div class="gneText">
+                  <p class="gneGroup">AVENGERS</p>
+                  <p class="name">James Rhodes</p>
+                  <p class="aka">a.k.a. <span>WAR MACHINE</span></p>
+                  <p class="hoverText">
+                    James Rhodes, between Stark Industries and the United States
+                    Air Force in the department of acquisitions
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="evil">
+            <ul>
+              <li class="border borderR">
+                <div class="gneText">
+                  <p class="gneGroup">WANTED</p>
+                  <p class="name">Bomber</p>
+                  <p class="aka">a.k.a. <span>KILLIAN</span></p>
+                  <p class="hoverText">
+                    Dr. Killian informed Hansen that he had stolen the Extremis
+                    serum for an undisclosed purpose
+                  </p>
+                </div>
+              </li>
+              <li class="border borderR">
+                <div class="gneText">
+                  <p class="gneGroup">WANTED</p>
+                  <p class="name">Aliens</p>
+                  <p class="aka">a.k.a. <span>CHITAURIS</span></p>
+                  <p class="hoverText">
+                    The Chitauri are a sentient species of cybernetically
+                    enhanced beings
+                  </p>
+                </div>
+              </li>
+              <li class="border borderR">
+                <div class="gneText">
+                  <p class="gneGroup">WANTED</p>
+                  <p class="name">AI Robot</p>
+                  <p class="aka">a.k.a. <span>ULTRON</span></p>
+                  <p class="hoverText">
+                    Ultron was an artificial intelligence, who was originally
+                    designed to be part of a peacekeeping program
+                  </p>
+                </div>
+              </li>
+              <li class="border borderR">
+                <div class="gneText">
+                  <p class="gneGroup">WANTED</p>
+                  <p class="name">Madlen</p>
+                  <p class="aka">a.k.a. <span>THANOS</span></p>
+                  <p class="hoverText">
+                    Thanos's objective was to bring stability to the universe by
+                    wiping out half of all life at every level
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a href="./sub2.html" class="more gneMore">more</a>
+        </section>
+
+        <section class="suitUp">
+          <h3>SUIT - UP</h3>
+          <div class="suitLeft">
+            <a href="./sub3.html">
+              <p>Mark III Armor Suit Up</p>
+              <div class="imgBox">
+                <img src="./images/index/su01.jpg" alt="" />
+                <div class="imgBorder">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <i class="fa-brands fa-youtube"></i>
+              <p class="moreText">Tony decide to show Ten Ring what justice is...</p>
+            </a>
+          </div>
+          <div class="suitRight">
+            <a href="./sub3.html">
+              <p>Versus VANKO Suit Up</p>
+              <div class="imgBox">
+                <img src="./images/index/su02.jpg" alt="" />
+                <div class="imgBorder">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <i class="fa-brands fa-youtube"></i>
+              <p class="moreText">the first portable Iron man suit in use</p>
+            </a>
+            <a href="./sub3.html">
+              <p>House Party Protocol</p>
+              <div class="imgBox">
+                <img src="./images/index/su03.jpg" alt="" />
+                <div class="imgBorder">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+              <i class="fa-brands fa-youtube"></i>
+              <p class="moreText">To overcome his paranoia of the suits</p>
+            </a>
+          </div>
+        </section>
+
+        <section
+          id="responsiveGallery-container"
+          class="responsiveGallery-container"
+        >
+          <h3>GALLERY</h3>
+          <a
+            class="responsiveGallery-btn responsiveGallery-btn_prev"
+            href="javascript:void(0);"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <a
+            class="responsiveGallery-btn responsiveGallery-btn_next"
+            href="javascript:void(0);"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+          <ul class="responsiveGallery-wrapper">
+            <li class="responsiveGallery-item">
+              <a href="./sub4.html" class="responsivGallery-link">
+                <img
+                  src="./images/index/gallery01.jpg"
+                  height="400"
+                  width="320"
+                  alt=""
+                  class="responsivGallery-pic"
+                />
+              </a>
+              <div class="w-responsivGallery-info">
+                <dl>
+                  <dt>Tony Stark</dt>
+                  <dd>"I am Iron Man"</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="responsiveGallery-item">
+              <a href="./sub4.html" class="responsivGallery-link">
+                <img
+                  src="./images/index/gallery02.jpg"
+                  height="400"
+                  width="320"
+                  alt=""
+                  class="responsivGallery-pic"
+                />
+              </a>
+              <div class="w-responsivGallery-info">
+                <dl>
+                  <dt>Morgan Stark</dt>
+                  <dd>"I love you 3000"</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="responsiveGallery-item">
+              <a href="./sub4.html" class="responsivGallery-link">
+                <img
+                  src="./images/index/gallery03.jpg"
+                  height="400"
+                  width="320"
+                  alt=""
+                  class="responsivGallery-pic"
+                />
+              </a>
+              <div class="w-responsivGallery-info">
+                <dl>
+                  <dt>Pepper Potts</dt>
+                  <dd>"You can rest now"</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="responsiveGallery-item">
+              <a href="./sub4.html" class="responsivGallery-link">
+                <img
+                  src="./images/index/gallery04.jpg"
+                  height="400"
+                  width="320"
+                  alt=""
+                  class="responsivGallery-pic"
+                />
+              </a>
+              <div class="w-responsivGallery-info">
+                <dl>
+                  <dt>Howard Stark</dt>
+                  <dd>"no amount of money ever bought a second of time"</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="responsiveGallery-item">
+              <a href="./sub4.html" class="responsivGallery-link">
+                <img
+                  src="./images/index/gallery05.jpg"
+                  height="400"
+                  width="320"
+                  alt=""
+                  class="responsivGallery-pic"
+                />
+              </a>
+              <div class="w-responsivGallery-info">
+                <dl>
+                  <dt>Happy Hogan</dt>
+                  <dd>"Badges, Guys!"</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="responsiveGallery-item">
+              <a href="./sub4.html" class="responsivGallery-link">
+                <img
+                  src="./images/index/gallery08.jpg"
+                  height="400"
+                  width="320"
+                  alt=""
+                  class="responsivGallery-pic"
+                />
+              </a>
+              <div class="w-responsivGallery-info">
+                <dl>
+                  <dt>Tony Stark</dt>
+                  <dd>"I am Iron Man"</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="responsiveGallery-item">
+              <a href="./sub4.html" class="responsivGallery-link">
+                <img
+                  src="./images/index/gallery06.jpg"
+                  height="400"
+                  width="320"
+                  alt=""
+                  class="responsivGallery-pic"
+                />
+              </a>
+              <div class="w-responsivGallery-info">
+                <dl>
+                  <dt>Steve Rogers</dt>
+                  <dd>"I can do this all day"</dd>
+                </dl>
+              </div>
+            </li>
+            <li class="responsiveGallery-item">
+              <a href="./sub4.html" class="responsivGallery-link">
+                <img
+                  src="./images/index/gallery07.jpg"
+                  height="400"
+                  width="320"
+                  alt=""
+                  class="responsivGallery-pic"
+                />
+              </a>
+              <div class="w-responsivGallery-info">
+                <dl>
+                  <dt>Yinsen</dt>
+                  <dd>"Don't waste your life"</dd>
+                </dl>
+              </div>
+            </li>
+          </ul>
+          <a href="./sub4.html" class="more galMore">more</a>
+        </section>
+      </article>
+
+      <? include "./common/footer.html" ?>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/fullnav.js"></script>
+
+    <script src="js/video.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+
+    <script type="text/javascript" src="./js/modernizr.custom.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/jquery.responsiveGallery.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".responsiveGallery-wrapper").responsiveGallery({
+          animatDuration: 400,
+          $btn_prev: $(".responsiveGallery-btn_prev"),
+          $btn_next: $(".responsiveGallery-btn_next"),
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-36251023-1"]);
+      _gaq.push(["_setDomainName", "jqueryscript.net"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

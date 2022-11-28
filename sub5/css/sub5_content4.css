@@ -1,0 +1,170 @@
+/* common */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea .divBox {
+  margin-bottom: 150px;
+  overflow: hidden;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+}
+
+/* division */
+#content .contentArea .division {
+  margin-bottom: 150px;
+}
+#content .contentArea .division > p {
+  font-size: 1.875em;
+  text-align: center;
+  color: rgba(47, 71, 152, 1);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+#content .contentArea .division ul {
+  width: 1200px;
+  overflow: hidden;
+}
+
+#content .contentArea .division ul li {
+  float: left;
+  width: 600px;
+  border: 1px solid #ccc;
+  border-top: 3px solid rgba(47, 71, 152, 1);
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+#content .contentArea .division ul li span {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+/* common */
+
+#content .contentArea .model {
+  width: 1200px;
+  height: 220px;
+  border: 3px dotted #ccc;
+  border-radius: 110px;
+  overflow: hidden;
+  padding-left: 20px;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+#content .contentArea .model > li {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 1px solid rgba(47, 71, 152, 1);
+  box-sizing: border-box;
+  padding-top: 40px;
+  position: relative;
+}
+#content .contentArea .model > li:last-of-type {
+  background: rgba(47, 71, 152, 0.8);
+}
+#content .contentArea .model > li span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+#content .contentArea .model > li span:nth-of-type(1) {
+  color: rgba(47, 71, 152, 1);
+  font-weight: 600;
+}
+#content .contentArea .model > li span:nth-of-type(2) {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+#content .contentArea .model > li span:nth-of-type(3) {
+  color: #666;
+}
+#content .contentArea .model > li:last-of-type span {
+  color: #fff;
+}
+#content .contentArea .model > li i {
+  position: absolute;
+  top: 85px;
+  font-size: 2em;
+  color: #999;
+}
+#content .contentArea dl {
+  overflow: hidden;
+  width: 1200px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+#content .contentArea dl dt {
+  float: left;
+  width: 200px;
+  height: 150px;
+  margin-left: 100px;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+#content .contentArea dl dt span {
+  color: rgba(47, 71, 152, 1);
+  position: relative;
+}
+#content .contentArea dl dt span::before {
+  content: "STEP";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  font-size: 0.45em;
+}
+#content .contentArea dl dd {
+  float: left;
+  width: 850px;
+  margin-left: 50px;
+  font-weight: 700;
+}
+#content .contentArea dl dd ul {
+  margin-top: 20px;
+}
+#content .contentArea dl dd ul li {
+  margin-left: 20px;
+  line-height: 2em;
+  list-style-type: disc;
+}
+#content .contentArea dl dd ul li span {
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+}
+#content .contentArea .moveSite {
+  text-decoration: underline;
+  color: rgba(47, 71, 152, 1);
+}
+
+/* regular */
+
+#content .contentArea .regular .model > li {
+  margin: 7px 120px 0 0;
+}
+#content .contentArea .regular .model > li:last-of-type {
+  margin-right: 0;
+}
+#content .contentArea .regular .model > li i {
+  left: 245px;
+}
+
+/* tempo */
+
+#content .contentArea .tempo .model > li {
+  margin: 7px 40px 0 0;
+}
+#content .contentArea .tempo .model > li:last-of-type {
+  margin-right: 0;
+}
+#content .contentArea .tempo .model > li i {
+  left: 208px;
+}

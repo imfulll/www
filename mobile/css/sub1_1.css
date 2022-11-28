@@ -1,0 +1,91 @@
+/* ====================common================== */
+#content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#content h3 span {
+  color: rgba(47, 71, 152, 1);
+}
+
+/* ===================ceo==================== */
+.ceo {
+  margin-bottom: 50px;
+}
+.ceo .picture {
+  width: 70%;
+  margin: 30px 15% 0;
+  z-index: -10;
+}
+.ceo .picture img {
+  width: 100%;
+}
+.ceo .text {
+  width: 100%;
+  padding: 50px 5% 90px;
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(47, 71, 152, 0.1);
+}
+
+.ceo .text p {
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+.ceo .text p:last-of-type {
+  position: absolute;
+  right: 5%;
+  bottom: 50px;
+}
+.ceo .text p span {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.ceo .text p span.textTitle {
+  display: block;
+  margin-bottom: 20px;
+}
+.ceo .text p span.textTitle strong {
+  font-size: 1.3em;
+}
+.ceo .text p span.textTitle strong:nth-of-type(2),
+.ceo .text p span.textTitle strong:nth-of-type(3) {
+  color: rgba(47, 71, 152, 1);
+}
+
+/* ========================prrofile======================== */
+.profile {
+  margin-bottom: 50px;
+}
+.profile h3 {
+  text-align: center;
+}
+.profile ul {
+  width: 100%;
+  display: grid;
+  padding: 0 10%;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: space-between;
+  grid-row-gap: 30px;
+}
+.profile ul li {
+}
+.profile ul li .profileImg {
+  border-radius: 100%;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.profile ul li .profileImg img {
+  width: 100%;
+}
+.profile ul li dl {
+  text-align: center;
+  margin-top: 10px;
+}
+.profile ul li dt {
+}
+.profile ul li dd {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

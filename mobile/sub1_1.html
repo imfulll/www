@@ -1,0 +1,308 @@
+<?
+  session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width" >
+
+    <title>효성그룹 | 효성그룹_CEO인사말</title>
+
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png" >
+    <link rel="apple-touch-startup-image" href="startup.png" >
+    <link rel="stylesheet" href="./css/common.css" >
+    <link rel="stylesheet" href="./css/sub1_common.css" >
+    <link rel="stylesheet" href="./css/sub1_1.css" >
+
+    <script
+      src="https://kit.fontawesome.com/1b35f9429d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script>
+      // <![CDATA[
+      try {
+        window.addEventListener(
+          "load",
+          function () {
+            setTimeout(scrollTo, 0, 0, 1);
+          },
+          false
+        );
+      } catch (e) {}
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <div id="skipNav">
+      <a href="#content">본문바로가기</a>
+      <a href="#gnb">네비게이션바로가기</a>
+    </div>
+
+    <div id="wrap">
+      <header id="headerArea">
+        <div class="headerInner">
+          <h1><a href="index.html">효성그룹 로고</a></h1>
+          <a class="menu-trigger" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <nav id="gnb">
+            <h2 class="hidden">글로벌네비게이션영역</h2>
+            <ul class="sideMenu">
+              <li class="depth1">
+                <h3>
+                  <a href="#"
+                    >효성그룹 <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                </h3>
+                <ul class="hide">
+                  <li><a href="./sub1_1.html">효성소개</a></li>
+                  <li><a href="./sub1_2.html">위치정보</a></li>
+                  <li><a href="./sub1_3.html">효성 네트워크</a></li>
+                  <li><a href="./sub1_4.html">주요사업분야</a></li>
+                </ul>
+              </li>
+              <li class="depth1">
+                <h3>
+                  <a href="#">ESG <i class="fa-solid fa-angle-down"></i></a>
+                </h3>
+                <ul class="hide">
+                  <li><a href="./sub2_1.html">윤리경영</a></li>
+                  <li><a href="./sub2_2.html">사회공헌</a></li>
+                </ul>
+              </li>
+              <li class="depth1">
+                <h3>
+                  <a href="#"
+                    >투자 및 채용 정보 <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                </h3>
+                <ul class="hide">
+                  <li><a href="./sub3_1.html">재무정보</a></li>
+                  <li><a href="./sub3_2.html">인사제도</a></li>
+                  <li><a href="./sub3_3.html">채용절차</a></li>
+                </ul>
+              </li>
+              <li class="depth1">
+                <h3>
+                  <a href="#"
+                    >홍보센터 <i class="fa-solid fa-angle-down"></i
+                  ></a>
+                </h3>
+                <ul class="hide">
+                  <li><a href="./sub4_1.html">홍보자료</a></li>
+                  <li><a href="./sub4_2.html">소셜미디어</a></li>
+                </ul>
+              </li>
+            </ul>
+            <?
+              @extract($_POST);
+              @extract($_GET);
+              @extract($_SESSION);
+              // == $_SESSION['userid'] = $userid;
+      
+              if(!$userid)
+              {
+            ?>
+            <ul class="loginMenu">
+              <li><a href="./login/login_form.php">로그인</a></li>
+              <li><a href="./member/join.html">회원가입</a></li>
+            </ul>
+            <?
+              }
+              else
+              {
+            ?>
+            <ul class="loginMenu">
+              <li><a class="bntColor" href="./login/logout.php">로그아웃</a></li>
+              <li><a class="bntColor" href="./member/member_form_modify.php">회원정보수정</a></li>
+            </ul>
+            <?
+              }
+            ?>
+          </nav>
+        </div>
+      </header>
+
+      <div class="main">
+        <span></span>
+        <h3>효성그룹</h3>
+      </div>
+
+      <div class="subNav">
+        <a href="#">효성소개 <i class="fa-solid fa-chevron-down"></i></a>
+        <ul>
+          <li><a href="./sub1_1.html">효성소개</a></li>
+          <li><a href="./sub1_2.html">위치정보</a></li>
+          <li><a href="./sub1_3.html">효성 네트워크</a></li>
+          <li><a href="./sub1_4.html">주요사업분야</a></li>
+        </ul>
+      </div>
+
+      <article id="content">
+        <h2 class="hidden">효성소개</h2>
+        <div class="ceo">
+          <div class="picture">
+            <img src="./images/sub1/ceox2.png" alt="" >
+          </div>
+          <div class="text">
+            <h3><span>CEO</span> 인사말</h3>
+            <p>
+              <span class="textTitle"
+                >"<strong>효성그룹</strong>이 걸어온 길은 정직한 기술로 행복한
+                세상을 만들기 위해 노력해온 <strong>도전</strong>과
+                <strong>혁신</strong>의 역사였습니다."</span
+              >
+              최고의 제품을 만들기 위해 끊임없는 연구 개발에 끊임없는 노력을
+              쏟아왔을 뿐만 아니라, 다양한 브랜드를 국내 업계의 독보적인 1위
+              브랜드로 성장시켰습니다. 또한 미국, 중국, 프랑스, 싱가포르,
+              베트남, 캄보디아 등 글로벌 시장에 진출해 한국 기술의 우수성을
+              세계에 널리 알리고 있습니다.<br ><br >
+              효성그룹은 지금까지 쌓아온 성과와 역량을 바탕으로 새롭게
+              도약하고자 합니다. 시대를 앞서 통찰하고 변화를 선도해온
+              효성그룹에게는 그 길이 행복한 세상을 앞당기는 가슴 설레는 도전이
+              될 것이라 믿습니다. <br ><br >
+              또한, 효성그룹은 기업의 사회적 책임을 다하기 위해 최선의 노력을
+              다할 것입니다. 이미 효성행복한재단, 효성봉사단을 중심으로 다양한
+              활동을 펼치고 있으며 대리점과 동반 성장할 수 있도록 지원하고
+              있습니다. <br ><br >
+              효성그룹은 세계인에게 기술력으로 인정받는 글로벌 기업이 되기 위한
+              도전을 멈추지 않을 것입니다. <br ><br >
+            </p>
+            <p>감사합니다.</p>
+            <p>회 장 <span>조 현 준</span></p>
+          </div>
+        </div>
+        <div class="profile">
+          <h3>COMPANY <span>PROFILE</span></h3>
+          <ul>
+            <li>
+              <div class="profileImg">
+                <img src="./images/sub1/profile01.png" alt="" >
+              </div>
+              <dl>
+                <dt>회사명</dt>
+                <dd>효성그룹</dd>
+              </dl>
+            </li>
+            <li>
+              <div class="profileImg">
+                <img src="./images/sub1/profile02.png" alt="" >
+              </div>
+              <dl>
+                <dt>설립일</dt>
+                <dd>1963.09.26</dd>
+              </dl>
+            </li>
+            <li>
+              <div class="profileImg">
+                <img src="./images/sub1/profile03.png" alt="" >
+              </div>
+              <dl>
+                <dt>상호변경</dt>
+                <dd>1992.04.02</dd>
+              </dl>
+            </li>
+            <li>
+              <div class="profileImg">
+                <img src="./images/sub1/profile04.png" alt="" >
+              </div>
+              <dl>
+                <dt>대표이사</dt>
+                <dd>조현준</dd>
+              </dl>
+            </li>
+            <li>
+              <div class="profileImg">
+                <img src="./images/sub1/profile06.png" alt="" >
+              </div>
+              <dl>
+                <dt>대표전화</dt>
+                <dd>02-707-7000</dd>
+              </dl>
+            </li>
+            <li>
+              <div class="profileImg">
+                <img src="./images/sub1/profile07.png" alt="" >
+              </div>
+              <dl>
+                <dt>본사주소</dt>
+                <dd>
+                  서울시 마포구 <br >
+                  마포대로 119
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <div class="profileImg">
+                <img src="./images/sub1/profile05.png" alt="" >
+              </div>
+              <dl>
+                <dt>업종 / 분야</dt>
+                <dd>
+                  섬유, 무역,<br >
+                  중공업, 건설, <br >
+                  산업자재, <br >화학, <br >정보통신 등
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <div class="profileImg">
+                <img src="./images/sub1/profile08.png" alt="" >
+              </div>
+              <dl>
+                <dt>주요연구소</dt>
+                <dd>
+                  효성기술원,<br >
+                  중공업연구소, <br >기술연구소, <br >강선연구소
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <footer id="footerArea">
+        <a href="#" class="topMove">top</a>
+        <div class="footerInner">
+          <span></span>
+          <p>(04144)서울특별시 마포구 마포대로 119(공덕동)</p>
+          <p>COPYRIGHT 2011 HYOSUNG. ALL RIGHTS RESERVED</p>
+          <div class="family">
+            <a class="familyBtn"
+              >FAMILY SITE <i class="fa-solid fa-chevron-up"></i
+            ></a>
+            <ul class="familyList">
+              <li>
+                <a href="http://www.hyosungtnc.com/kr/main.do" target="_blank" title="효성티앤씨 새창에서 열림">효성티앤씨</a>
+              </li>
+              <li>
+                <a href="http://www.hyosungheavyindustries.com/kr/main.do" target="_blank" title="효성중공업 새창에서 열림">효성중공업</a>
+              </li>
+              <li>
+                <a href="http://www.hyosungadvancedmaterials.com/kr/main.do" target="_blank" title="효성첨단소재 새창에서 열림">효성첨단소재</a>
+              </li>
+              <li>
+                <a href="http://www.hyosungchemical.com/kr/main.do" target="_blank" title="효성화학 새창에서 열림">효성화학</a>
+              </li>
+              <li>
+                <a href="http://www.hyosung-tns.co.kr/" target="_blank" title="효성티앤에스 새창에서 열림">효성티앤에스</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/family.js"></script>
+    <script src="./js/topMove.js"></script>
+    <script src="./js/subNav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+}
+#content .contentArea .network .networkTopic p {
+  font-size: 1.25em;
+  text-align: center;
+  color: #666;
+}
+#content .contentArea h3 span {
+  color: rgba(47, 71, 152, 1);
+}
+
+/* network */
+@keyframes network_pin {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* active */
+#content .network.active .networkImg li {
+  animation: network_pin 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+#content .network.active .networkImg li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+#content .network.active .networkImg li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+#content .network.active .networkImg li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+#content .network.active .networkImg li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+#content .network.active .networkImg li:nth-child(5) {
+  animation-delay: 0.5s;
+}
+#content .network.active .networkImg li:nth-child(6) {
+  animation-delay: 0.6s;
+}
+#content .network.active .networkImg li:nth-child(7) {
+  animation-delay: 0.7s;
+}
+#content .network.active .networkImg li:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+#content .network {
+  margin-bottom: 150px;
+}
+#content .network::before {
+  content: "";
+  width: 2000px;
+  height: 950px;
+  position: absolute;
+  left: -400px;
+  top: 127px;
+  background: rgba(47, 71, 152, 0.03);
+  z-index: -10;
+}
+#content .network .networkTopic {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+#content .network .networkImg {
+  position: relative;
+  width: 1200px;
+  height: 950px;
+  margin-bottom: 100px;
+}
+#content .network .networkImg::before {
+  content: "GLOBAL";
+  color: #fff;
+  position: absolute;
+  font-size: 250px;
+  font-weight: 900;
+  left: -200px;
+  top: -60px;
+  z-index: -10;
+}
+#content .network .networkImg img {
+  position: absolute;
+  left: 0;
+  top: 160px;
+}
+#content .network .networkImg::after {
+  content: "LEADER";
+  color: #fff;
+  position: absolute;
+  font-size: 250px;
+  font-weight: 900;
+  right: -200px;
+  bottom: -63px;
+  z-index: -10;
+}
+#content .network .networkImg > span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #999;
+}
+#content .network .networkImg > span:nth-of-type(1)::after {
+  content: "ASIA";
+  position: absolute;
+  left: 863px;
+  top: 380px;
+}
+#content .network .networkImg > span:nth-of-type(2)::after {
+  content: "AFRICA";
+  position: absolute;
+  left: 610px;
+  top: 540px;
+}
+#content .network .networkImg > span:nth-of-type(3)::after {
+  content: "OCEANIA";
+  position: absolute;
+  left: 970px;
+  top: 660px;
+}
+#content .network .networkImg > span:nth-of-type(4)::after {
+  content: "EUROPE";
+  position: absolute;
+  left: 660px;
+  top: 370px;
+}
+#content .network .networkImg > span:nth-of-type(5)::before {
+  content: "NORTH";
+  position: absolute;
+  left: 200px;
+  top: 390px;
+}
+#content .network .networkImg > span:nth-of-type(5)::after {
+  content: "AMERICA";
+  position: absolute;
+  left: 200px;
+  top: 410px;
+}
+#content .network .networkImg > span:nth-of-type(6)::before {
+  content: "SOUTH";
+  position: absolute;
+  left: 340px;
+  top: 610px;
+}
+#content .network .networkImg > span:nth-of-type(6)::after {
+  content: "AMERICA";
+  position: absolute;
+  left: 340px;
+  top: 630px;
+}
+#content .network .networkImg ul {
+  position: relative;
+  text-align: center;
+}
+#content .network .networkImg ul li {
+  font-size: 1.5em;
+  transform: scale(1);
+  transform-origin: bottom;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+#content .network .networkImg ul li a {
+  color: rgba(47, 71, 152, 1);
+}
+#content .network .networkImg ul li:hover {
+  transform: scale(1.05);
+  text-shadow: 5px 5px 20px #999;
+}
+#content .network .networkImg ul li span {
+  display: block;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease-in-out;
+  font-weight: 500;
+}
+#content .network .networkImg ul li:hover span {
+  color: rgba(47, 71, 152, 1);
+}
+#content .network .networkImg ul li:nth-child(1) {
+  /* USA */
+  left: 270px;
+  top: 400px;
+}
+/* BRAZIL */
+#content .network .networkImg ul li:nth-child(2) {
+  left: 380px;
+  top: 580px;
+}
+/* CHINA */
+#content .network .networkImg ul li:nth-child(3) {
+  left: 900px;
+  top: 350px;
+}
+/* GERMAN */
+#content .network .networkImg ul li:nth-child(4) {
+  left: 570px;
+  top: 350px;
+}
+/* INDIA */
+#content .network .networkImg ul li:nth-child(5) {
+  left: 800px;
+  top: 470px;
+}
+/* RUSSIA */
+#content .network .networkImg ul li:nth-child(6) {
+  left: 800px;
+  top: 300px;
+}
+/* SAUDI ARABIA */
+#content .network .networkImg ul li:nth-child(7) {
+  left: 650px;
+  top: 450px;
+}
+/* UK */
+#content .network .networkImg ul li:nth-child(8) {
+  left: 545px;
+  top: 330px;
+}
+#content .network .networkCont {
+}
+#content .network .networkCont ul {
+}
+#content .network .networkCont ul li {
+  width: 1200px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  background: rgba(47, 71, 152, 0.05);
+  border: 1px solid rgba(204, 204, 204, 0);
+  transition: all 0.5s ease-in-out;
+}
+#content .network .networkCont ul li:hover,
+#content .network .networkCont ul li:focus,
+#content .network .networkCont ul li:active {
+  border: 1px solid #999;
+  box-shadow: 1px 1px 5px 3px rgba(204, 204, 204, 0.5);
+  background: #fff;
+}
+#content .network .networkCont ul li:nth-of-type(2n) img {
+  float: left;
+}
+#content .network .networkCont ul li:nth-of-type(2n + 1) img {
+  float: right;
+}
+#content .network .networkCont ul li h4 {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: rgba(47, 71, 152, 1);
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+#content .network .networkCont ul li dl {
+  margin: 0 auto;
+  width: 600px;
+  margin: 10px 0;
+}
+
+#content .network .networkCont ul li:nth-of-type(2n + 1) dl {
+  float: left;
+  margin-left: 50px;
+}
+#content .network .networkCont ul li:nth-of-type(2n) dl {
+  float: right;
+  margin-right: 50px;
+}
+#content .network .networkCont ul li dl dt {
+  float: left;
+  width: 200px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+#content .network .networkCont ul li:hover dl dt {
+  font-weight: 700;
+}
+#content .network .networkCont ul li dl dd {
+  width: 400px;
+  float: right;
+  color: #666;
+  transition: all 0.5s ease-in-out;
+}
+#content .network .networkCont ul li:hover dl dd {
+  color: #333;
+}

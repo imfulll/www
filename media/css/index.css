@@ -1,0 +1,818 @@
+@keyframes flickerText {
+  0% {
+    text-shadow: 0px 0px 25px rgba(150, 255, 255, 1);
+  }
+  40% {
+    text-shadow: 0px 0px 25px rgba(150, 255, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0px 0px 17px rgba(150, 255, 255, 1);
+  }
+  60% {
+    text-shadow: 0px 0px 25px rgba(150, 255, 255, 0.4);
+  }
+  100% {
+    text-shadow: 0px 0px 25px rgba(150, 255, 255, 1);
+  }
+}
+
+/* 와이드 pc  */
+
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+#videoBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100; /*다른요소보다 아래에 위치*/
+}
+
+#imgBG {
+  position: fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+  left: 50%;
+  top: 50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+  width: auto;
+  min-width: 100%; /*동영상 너비를 꽉차게*/
+  height: auto;
+  min-height: 100%; /*동영상 높이를 꽉차게*/
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  display: none;
+}
+
+/* ============================= */
+#content h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-family: 'Audiowide', cursive;
+}
+#content a.more {
+  display: block;
+  color: #fff;
+  animation: flickerText 1s linear infinite;
+  transition: all 2s;
+  font-family: "Black Ops One", cursive;
+}
+#content a.more:hover {
+  animation: none;
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff, 0 0 40px #02feff;
+}
+
+/* ================================= */
+#content .about {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 200px 5% 150px;
+  position: relative;
+  background: url(../images/index/aboutBack.png) center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+#content .about h3 {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff, 0 0 40px #02feff,
+    0 0 82px #02feff, 0 0 92px #02feff;
+}
+#content .about .explain {
+  width: 45%;
+  height: calc(600px + 2vw);
+  float: left;
+  margin-top: 50px;
+  text-align: center;
+  padding: 60px 5%;
+  word-break: break-all;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 30px 10px rgba(2, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+}
+#content .about .explain dt {
+  font-size: 2rem;
+  font-family: "Black Ops One", cursive;
+  margin-bottom: 5%;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+}
+#content .about .explain dd {
+  line-height: 1.5;
+  display : -webkit-box;
+  -webkit-line-clamp: 13;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#content .about .explain a {
+  margin-top: 20px;
+  text-align: right;
+}
+#content .about .thumbnail {
+  float: right;
+  width: 45%;
+  margin-top: 50px;
+  margin-left: 5%;
+}
+#content .about .thumbnail ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  row-gap: 2vw;
+  column-gap: 2vw;
+}
+#content .about .thumbnail ul li {
+  transition: all 0.5s;
+}
+.content .about .thumbnail ul li:not(:hover) {
+  filter: blur(4px);
+}
+#content .about .thumbnail ul li:nth-of-type(1) {
+  background: url(../images/index/aboutThumb01.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .about .thumbnail ul li:nth-of-type(2) {
+  background: url(../images/index/aboutThumb02.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .about .thumbnail ul li:nth-of-type(3) {
+  background: url(../images/index/aboutThumb03.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .about .thumbnail ul li:nth-of-type(4) {
+  background: url(../images/index/aboutThumb04.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .about .thumbnail ul li:hover {
+  box-shadow: 0px 0px 30px 10px rgba(2, 255, 255, 0.5);
+}
+.content .about .thumbnail ul li:not(:hover) {
+  filter: blur(4px);
+}
+#content .about .thumbnail ul li.current {
+  box-shadow: 0px 0px 30px 10px rgba(2, 255, 255, 0.5);
+}
+#content .about .thumbnail ul li a {
+  display: block;
+  font-family: "Black Ops One", cursive;
+  position: relative;
+  color: #fff;
+  transition: all 0.5s;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 200px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  box-sizing: border-box;
+}
+#content .about .thumbnail ul li:hover a {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+}
+#content .about .thumbnail ul li.current a {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+}
+
+/* =========================================== */
+#content .gne {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+#content .gne h3 {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -200px;
+  text-align: center;
+  line-height: 3rem;
+}
+#content .gne h3 span:first-of-type {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff, 0 0 40px #02feff;
+}
+#content .gne h3 span:last-of-type {
+  text-shadow: 0 0 7px #fff, 0 0 20px #f09, 0 0 40px #f09, 0 0 82px #f09;
+}
+#content .gne .good {
+  width: 50%;
+  float: left;
+  background: url(../images/index/gne1.png) center no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+#content .gne ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 400px;
+  row-gap: 2vw;
+  column-gap: 2vw;
+  width: 80%;
+  margin-top: 250px;
+  text-align: center;
+  margin-left: 10%;
+}
+
+#content .gne .good ul li:nth-of-type(1) .gneText {
+  background: url(../images/index/gneg01.jpg) center no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#content .gne .good ul li:nth-of-type(1):hover .gneText {
+  background: url(../images/index/gneg01_h.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .gne .good ul li:nth-of-type(2) .gneText {
+  background: url(../images/index/gneg02.jpg) center no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#content .gne .good ul li:nth-of-type(2):hover .gneText {
+  background: url(../images/index/gneg02_h.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .gne .good ul li:nth-of-type(3) .gneText {
+  background: url(../images/index/gneg03.jpg) center no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#content .gne .good ul li:nth-of-type(3):hover .gneText {
+  background: url(../images/index/gneg03_h.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .gne .good ul li:nth-of-type(4) .gneText {
+  background: url(../images/index/gneg04.jpg) center no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#content .gne .good ul li:nth-of-type(4):hover .gneText {
+  background: url(../images/index/gneg04_h.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .gne .good ul li .gneText .gneGroup {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 20px rgba(2, 254, 255, 1);
+}
+
+#content .gne .evil {
+  width: 50%;
+  float: left;
+  background: url(../images/index/gne2.png) center no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+#content .gne .evil ul li:nth-of-type(1) .gneText {
+  background: url(../images/index/gnee01.jpg) center no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#content .gne .evil ul li:nth-of-type(1):hover .gneText {
+  background: url(../images/index/gnee01_h.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .gne .evil ul li:nth-of-type(2) .gneText {
+  background: url(../images/index/gnee02.jpg) center no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#content .gne .evil ul li:nth-of-type(2):hover .gneText {
+  background: url(../images/index/gnee02_h.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .gne .evil ul li:nth-of-type(3) .gneText {
+  background: url(../images/index/gnee03.jpg) center no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#content .gne .evil ul li:nth-of-type(3):hover .gneText {
+  background: url(../images/index/gnee03_h.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .gne .evil ul li:nth-of-type(4) .gneText {
+  background: url(../images/index/gnee04.jpg) center no-repeat;
+  background-size: cover;
+  transition: all 0.5s;
+}
+#content .gne .evil ul li:nth-of-type(4):hover .gneText {
+  background: url(../images/index/gnee04_h.jpg) center no-repeat;
+  background-size: cover;
+}
+#content .gne .evil ul li .gneText .gneGroup {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 20px #f09;
+}
+#content .gne > a.more {
+  display: block;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 180px;
+  color: #fff;
+  margin-left: -50px;
+}
+
+/* gne common */
+#content .gne ul li .gneText {
+  width: 100%;
+  height: 400px;
+  padding-top: 250px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+#content .gne ul li:hover .gneText {
+  padding-top: 0;
+}
+#content .gne ul li .gneText .gneGroup {
+  font-family: "Black Ops One", cursive;
+  font-size: 2rem;
+  transition: all 0.5s;
+}
+#content .gne ul li:hover .gneText .gneGroup {
+  opacity: 0;
+}
+#content .gne ul li .gneText .name {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+  z-index: 1;
+}
+#content .gne .good ul li:hover .gneText .name {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 20px rgba(2, 254, 255, 1);
+  font-family: "Black Ops One", cursive;
+}
+#content .gne .evil ul li:hover .gneText .name {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 20px #f09;
+  font-family: "Black Ops One", cursive;
+}
+#content .gne ul li .gneText .aka {
+  color: #fff;
+}
+#content .gne ul li:hover .gneText .aka {
+  display: none;
+}
+#content .gne ul li .gneText .aka span {
+  color: #fbca03;
+}
+#content .gne ul li .gneText .hoverText {
+  word-wrap: break-word;
+  width: 80%;
+  margin: 20px 10% 0;
+  line-height: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+#content .gne ul li:hover .gneText .hoverText {
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.border {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.borderB:before,
+.borderB:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    rgb(108, 228, 228),
+    rgb(64, 109, 255),
+    rgb(133, 2, 255),
+    rgb(108, 228, 228),
+    rgb(64, 109, 255),
+    rgb(132, 0, 255)
+  );
+  background-size: 300%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: steam 20s linear infinite;
+}
+.borderR:before,
+.borderR:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #b7016b,
+    #ffff00,
+    #a30a0a,
+    #b7016b,
+    #ffff00,
+    #a30a0a
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.border:after {
+  filter: blur(50px);
+}
+
+/* ======================== */
+#content .suitUp {
+  background: url(../images/index/suBack.png) center no-repeat;
+  background-size: cover;
+  padding: 50px 5%;
+  overflow: hidden;
+  perspective: 800px;
+  position: relative;
+}
+#content .suitUp h3 {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff, 0 0 40px #02feff,
+    0 0 82px #02feff, 0 0 92px #02feff;
+}
+#content .suitUp a {
+  position: relative;
+}
+#content .suitUp .imgBox {
+  overflow: hidden;
+  border: 5px solid #000;
+  transition: all 0.5s;
+  position: relative;
+}
+#content .suitUp a:hover .imgBox {
+  border: 5px solid rgba(0, 0, 0, 0);
+}
+#content .suitUp a .imgBox .imgBorder span {
+  display: block;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0px 0px 30px 10px rgba(2, 255, 255, 0.5);
+  transition-property: width, height;
+  transition-duration: 0.1s;
+}
+#content .suitUp a .imgBox .imgBorder span:nth-of-type(1) {
+  width: 0;
+  height: 5px;
+  left: 0;
+  top: 0;
+  transition-delay: 0;
+}
+#content .suitUp a:hover .imgBox .imgBorder span:nth-of-type(1) {
+  width: 100%;
+}
+#content .suitUp a .imgBox .imgBorder span:nth-of-type(2) {
+  width: 5px;
+  height: 0;
+  right: 0;
+  top: 0;
+  transition-delay: 0.1s;
+}
+#content .suitUp a:hover .imgBox .imgBorder span:nth-of-type(2) {
+  height: 100%;
+}
+#content .suitUp a .imgBox .imgBorder span:nth-of-type(3) {
+  width: 0;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  transition-delay: 0.2s;
+}
+#content .suitUp a:hover .imgBox .imgBorder span:nth-of-type(3) {
+  width: 100%;
+}
+#content .suitUp a .imgBox .imgBorder span:nth-of-type(4) {
+  width: 5px;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  transition-delay: 0.3s;
+}
+#content .suitUp a:hover .imgBox .imgBorder span:nth-of-type(4) {
+  height: 100%;
+}
+
+#content .suitUp .suitLeft {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 10%;
+  margin-left: 5%;
+  perspective: 800px;
+}
+#content .suitUp .suitLeft a {
+  display: block;
+  color: #fff;
+  transform: translateZ(0) rotateY(15deg);
+}
+#content .suitUp .suitLeft a img {
+  width: 100%;
+  transition: all 0.5s;
+}
+#content .suitUp a:hover img {
+  transform: scale(1.05);
+}
+#content .suitUp a p:first-of-type {
+  font-size: 1.2rem;
+  transition: text-shadow 0.5s;
+  transition-delay: 3s;
+  font-family: "Black Ops One", cursive;
+  padding-top: 20px;
+}
+#content .suitUp a:hover p:first-of-type {
+  animation: flickerText 3s linear;
+  animation-fill-mode: forwards;
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff, 0 0 40px #02feff;
+}
+#content .suitUp a p.moreText {
+  opacity: 0;
+  transition: all .5s;
+}
+#content .suitUp a:hover p.moreText {
+  opacity: 1;
+  
+}
+
+
+#content .suitUp .suitLeft a i {
+  font-size: 4vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -2vw;
+  margin-top: -2vw;
+  color: rgba(255, 0, 0, 0.75);
+}
+#content .suitUp .suitLeft a:hover i {
+  display: none;
+}
+#content .suitUp .suitRight {
+  float: right;
+  width: 35%;
+  transform: translateZ(0) rotateY(-10deg);
+  margin-right: 3%;
+}
+#content .suitUp .suitRight a {
+  display: block;
+  margin-bottom: 50px;
+  color: #fff;
+}
+#content .suitUp .suitRight a > p {
+  text-align: right;
+}
+#content .suitUp .suitRight img {
+  width: 100%;
+  transition: all 0.5s;
+}
+#content .suitUp .suitRight a i {
+  font-size: 3vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -1.5vw;
+  margin-top: -1.5vw;
+  color: rgba(255, 0, 0, 0.75);
+}
+#content .suitUp .suitRight a:hover i {
+  display: none;
+}
+
+/* ============================= */
+#content .responsiveGallery-container {
+  padding-top: 100px;
+  padding-bottom: 250px;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+#content .responsiveGallery-container h3 {
+  text-shadow: 0 0 7px #fff, 0 0 21px #02feff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#content .responsiveGallery-container dl dt {
+  font-size: 1.5rem;
+  font-family: "Black Ops One", cursive;
+  color: #fff
+  margin-bottom: 10px;
+  line-height: 1.2rem;
+}
+#content .responsiveGallery-container a.galMore {
+  position: absolute;
+  left: 50%;
+  top: 23%;
+  margin-left: -22px;
+}
+
+/* 일반 pc */
+@media screen and (max-width: 1280px) {
+  #content .about {
+    padding: 263px 0 100px;
+    position: relative;
+  }
+  #content .about h3{
+    position: absolute;
+    left: 50%;
+    top: 200px;
+    margin-left: -101px;
+  }
+  #content .about .explain {
+    float: none;
+    height: auto;
+    width: 90%;
+    margin: 50px 5% 0;
+  }
+  #content .about .explain dt {
+    margin-bottom: 20px;
+  }
+  #content .about .thumbnail {
+    float: none;
+    width: 90%;
+    margin-left: 0;
+    padding: 50px 5%;
+    overflow: hidden;
+    position: relative;
+  }
+  #content .about .thumbnail ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #content .gne h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -84px;
+    margin-top: -90px;
+    text-align: center;
+  }
+  #content .gne h3 span {
+    display: block;
+  }
+  #content .gne .good {
+    width: 100%;
+    float: none;
+    padding-bottom: 0;
+  }
+  #content .gne .evil {
+    width: 100%;
+    float: none;
+    padding-bottom: 0;
+  }
+  #content .gne ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin-top: 0;
+    margin-left: 5%;
+    padding: 150px 0;
+  }
+  #content .gne .good ul li:nth-of-type(4) {
+    display: none;
+  }
+  #content .gne .evil ul li:nth-of-type(1) {
+    display: none;
+  }
+}
+
+/* 테블릿 */
+@media screen and (max-width: 1024px) { 
+  #content .about .thumbnail ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+  }
+  #content .about .explain dd {
+    -webkit-line-clamp: 6;
+  }
+  #content .suitUp a p.moreText{
+    opacity: 1;
+  }
+  #content .suitUp .suitLeft {
+    width: 90%;
+    float: none;
+  }
+  #content .suitUp .suitRight {
+    float: none;
+    width: 90%;
+    transform: translateZ(0) rotateY(350deg);
+    margin: 80px 0 0 5%;
+    overflow: hidden;
+  }
+  #content .suitUp .suitRight a {
+    float: left;
+    width: 45%;
+    margin-right: 20px;
+  }
+  #content .suitUp .suitLeft a i {
+    font-size: 7vw;
+    margin-left: -3.5vw;
+    margin-top: -3.5vw;
+  }
+  #content .suitUp .suitRight a i {
+    font-size: 6vw;
+    margin-left: -3vw;
+    margin-top: -3vw;
+  }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width: 768px) {
+  #content .gne ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #content .gne .good ul li:nth-of-type(3) {
+    display: none;
+  }
+  #content .gne .evil ul li:nth-of-type(2) {
+    display: none;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width: 640px) {
+
+  #content .suitUp h3{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    margin-left: -136px;
+  }
+  #content .suitUp .suitRight {
+    width: 100%;
+    transform: translateZ(0) rotateY(345deg);
+    margin-top: 60px;
+  }
+  #content .suitUp .suitRight a:first-of-type {
+    display: none;
+  }
+  #content .suitUp .suitRight a:last-of-type {
+    width: 90%;
+    margin-right: 5%;
+  }
+  #content .suitUp .suitLeft{
+    margin-top: calc(10% + 63px);
+  }
+  #content .suitUp .suitLeft a i {
+    font-size: 10vw;
+    margin-left: -5vw;
+    margin-top: -5vw;
+  }
+  #content .suitUp .suitRight a i {
+    font-size: 10vw;
+    margin-left: -5vw;
+    margin-top: -5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #content .about .thumbnail ul li a{
+    padding-top: 105px;
+  }
+  #content .gne ul {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 600px;
+  }
+  #content .gne .good ul li:nth-of-type(2) {
+    display: none;
+  }
+  #content .gne .evil ul li:nth-of-type(3) {
+    display: none;
+  }
+  .border {
+    height: 600px;
+  }
+  #content .gne ul li .gneText {
+    height: 600px;
+    padding-top: 400px;
+  }
+  #content .suitUp .suitLeft a i {
+    font-size: 13vw;
+    margin-left: -6.5vw;
+    margin-top: -5vw;
+  }
+  #content .suitUp .suitRight a i {
+    font-size: 13vw;
+    margin-left: -6.5vw;
+    margin-top: -5vw;
+  }
+}

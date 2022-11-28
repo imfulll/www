@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  <div class='textBox'>
+    <div class='popTop'>
+      <p><span>$username</span>님의 가입정보입니다.</p>
+      <div>회원님의 임시비밀번호는 <span>$ranpass</span>입니다.</div>
+      <a class='popClose'><i class='fa-solid fa-xmark'></i></a>
+    </div>
+    <div class='popBot'>
+      <dl>
+        <dt>아이디</dt>
+        <dd>$userid</dd>
+      </dl>
+      <dl>
+        <dt>이름</dt>
+        <dd>$username</dd>
+      </dl>
+      <dl>
+        <dt>휴대전화</dt>
+        <dd>$userhp</dd>
+      </dl>
+      <dl>
+        <dt>가입일자</dt>
+        <dd>$date</dd>
+      </dl>
+    </div>
+    <div class='popBtn'>
+      <a href='./pw_find.php' class='findPass'>비밀번호 찾기</a>
+      <a href='./login_form.php' class='goLogin'>로그인</a>
+    </div>
+  </div>
+  <div class='modalPopup'></div>
+
+
+
+</body>
+</html>

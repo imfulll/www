@@ -1,0 +1,152 @@
+/* 효성소개 본문영역 */
+#content .contentArea {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content .contentArea h3 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#content .contentArea h3 span {
+  color: rgba(47, 71, 152, 1);
+}
+
+/* history */
+@keyframes tabs {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* active */
+#content .contentArea .history .tabs.active .tab_menu li {
+  animation: tabs 0.3s ease-out;
+  animation-fill-mode: forwards;
+}
+#content .contentArea .history .tabs.active .tab_menu li:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+#content .contentArea .history .tabs.active .tab_menu li:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+#content .contentArea .history .tabs.active .tab_menu li:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+#content .contentArea .history .tabs.active .tab_menu li:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+
+#content .contentArea .history {
+  margin: 0 auto 120px;
+}
+#content .contentArea .history .tab_menu {
+  margin-bottom: 100px;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#content .contentArea .history .tab_menu::after {
+  content: "";
+  display: block;
+  width: 1200px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  z-index: -10;
+}
+#content .contentArea .history .tab_menu li {
+  float: left;
+  width: 300px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+#content .contentArea .history .tab_menu .tab {
+  display: block;
+  color: #666;
+  transition: all 0.5s;
+  transform-origin: 50% 96%;
+  transform: scale(1);
+}
+
+#content .contentArea .history .tab_menu .tab span {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 5px 0;
+  transition: all;
+}
+#content .contentArea .history .tab_menu li > span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  border: 3px solid #666;
+  background: #fff;
+  margin-left: 143px;
+}
+
+#content .contentArea .history .historyList {
+  position: relative;
+  display: none;
+}
+#content .contentArea .history .historyList::after {
+  content: "";
+  display: block;
+  width: 2000px;
+  height: 100%;
+  position: absolute;
+  left: -400px;
+  top: 0;
+  background: url(../images/content2/worldmap_color.png) 0 0 no-repeat fixed;
+  z-index: -10;
+  opacity: 0.05;
+}
+#content .contentArea .history .historyList dl {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+#content .contentArea .history .historyList dl dt {
+  float: left;
+  width: 150px;
+  font-size: 2em;
+  color: rgba(47, 71, 152, 1);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  margin: 0 0 0 50px;
+}
+#content .contentArea .history .historyList dl dd {
+  font-size: 1.25em;
+  width: 1000px;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 3.125em;
+  color: #666;
+  transition: all 0.1s ease-in-out;
+  margin-left: 200px;
+  padding-left: 10px;
+}
+#content .contentArea .history .historyList dl dd:hover {
+  background: rgba(47, 71, 152, 0.05);
+  color: #333;
+}
+#content .contentArea .history .historyList dl dd img {
+  width: 1000px;
+  margin-left: -10px;
+  filter: grayscale(0.5);
+  transition: all 0.5s ease-in-out;
+  border-radius: 50px;
+}
+#content .contentArea .history .historyList dl dd img:hover {
+  filter: grayscale(0);
+  border-radius: 0;
+}

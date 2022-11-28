@@ -1,0 +1,138 @@
+a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===================selector=================== */
+#content .snsSelector {
+  position: relative;
+}
+#content .snsSelector a{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#content .snsSelector > a{
+  background: #ff0000;
+  color: #fff;
+  width: 94%;
+  margin: 50px 3% 0;
+  font-weight: 700;
+
+}
+#content .snsSelector a i {
+  float: right;
+  font-size: 0.9rem;
+  line-height: 50px;
+  
+}
+#content .snsSelector ul{
+  width: 94%;
+  margin: 0 3%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  background: #fff;
+  padding: 10px 0;
+  display: none;
+}
+#content .snsSelector ul li a{
+  font-size: 0.9rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+}
+
+/* ===================youtube=================== */
+#content .youtubeBox {
+  display: none;
+}
+#content .youtubeBox .screen li{
+  margin-top: 30px;
+}
+#content .youtubeBox .screen .frameContainer {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+#content .youtubeBox .screen iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#content .youtubeBox dl {
+  width: 94%;
+  margin: 20px 3% 20px;
+}
+#content .youtubeBox dl dt {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+#content .youtubeBox dl dd {
+  color: #666;
+}
+#content .youtubeBox dl dd:last-of-type {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+#content .youtubeBox .thumb{
+  display: grid;
+  grid-template-columns: repeat(2,48.5%);
+  grid-template-rows: repeat(3,300px);
+  grid-gap : 10px 3% ;
+  padding: 20px 3%;
+  margin-bottom: 50px;
+}
+#content .youtubeBox .thumb li{
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+#content .youtubeBox .thumb li.current{
+  border: 1px solid #ff0000;
+}
+#content .youtubeBox .thumb img{
+  width: 100%;
+}
+
+/* ===================blog=================== */
+#content .blogBox{
+  display: none;
+}
+#content .blogBox li{
+  width: 94%;
+  margin: 0 3%;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(4, 207, 92, 1);
+  box-sizing: border-box;
+}
+#content .blogBox li img{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#content .blogBox li p{
+  margin: 20px 10px 0;
+  color: rgba(4, 207, 92, 1);
+}
+#content .blogBox li dl{
+  margin: 10px 10px 20px;
+}
+#content .blogBox li dd{
+  color: #999;
+  margin-top: 5px;
+}
+
+

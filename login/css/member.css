@@ -1,0 +1,269 @@
+.logo {
+  margin: 100px auto 0;
+  display: block;
+  width: 270px;
+  height: 43px;
+  background: url(../images/logo_big.png) center no-repeat;
+  text-indent: -9999%;
+  color: #fff;
+}
+html {
+  background: rgba(220, 220, 220, 0.3);
+}
+#content {
+  width: 500px;
+  margin: 50px auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  background: #fff;
+}
+#title h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+}
+#title p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* ============================ */
+#content form .idInput,
+#content form .nameInput{
+  height: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 10px;
+}
+#content form .idInput .col_1 label,
+#content form .nameInput .col_1 label{
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  font-size: 1.2rem;
+  color: #999;
+  padding: 17px 0 0 20px;
+  transition: all .5s;
+}
+#content form .idInput .col_1.focus label,
+#content form .nameInput .col_1.focus label{
+  font-size: 0.8rem;
+  padding: 3px 0 0 16px;
+}
+#content form .idInput .col_2,
+#content form .nameInput .col_2{
+  width: 100%;
+}
+#content form .idInput .col_2 input,
+#content form .nameInput .col_2 input{
+  width: 100%;
+  height: 70px;
+  padding: 15px 0 0 25px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+#content form .mbr_phone{
+  height: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 10px;
+}
+#content form .mbr_phone .col_1{
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  font-size: 0.8rem;
+  color: #999;
+  padding: 3px 0 0 16px;
+  transition: all .5s;
+}
+#content form .mbr_phone .col_2{
+  margin-top: 30px;
+}
+#content form .mbr_phone .col_2 select{
+  width: 20%;
+  height: 30px;
+  text-align: center;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5rem;
+}
+#content form .mbr_phone .col_2 input{
+  width: 33%;
+  height: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin-top: 2px;
+}
+#content form #findPass_button,
+#content form #findId_button{
+  margin-top: 20px;
+}
+#content form #findPass_button input,
+#content form #findId_button input{
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  border: 1px solid rgba(47, 71, 152, 1);
+  background-color: #fff;
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+  transition: all .5s;
+}
+#content form #findPass_button input:focus,
+#content form #findPass_button input:hover,
+#content form #findId_button input:focus,
+#content form #findId_button input:hover{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
+#content form .go{
+  overflow: hidden;
+  padding-left: 132px;
+}
+#content form .go a{
+  display: block;
+  float: left;
+  padding: 10px 20px;
+  color: #666;
+  transition: all .5s;
+}
+#content form .go a:hover{
+  color: rgba(47, 71, 152, 1);
+}
+#content form #join_button{
+  text-align: center;
+  margin-top: 30px;
+}
+#content form #join_button a{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgba(47, 71, 152, 1);
+  padding : 0 10px;
+}
+input{
+  border: none;
+}
+input:focus-visible{
+  outline: 0;
+}
+
+/* ========================== */
+/* 가입정보 확인 */
+ .textBox {
+  width: 700px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -350px;
+  margin-top: -250px;
+  background: #fff;
+  border: 5px solid rgba(47, 71, 152, 1);
+  box-sizing: border-box;
+  z-index: 2;
+  text-align: center;
+}
+ .popTop{
+  width: 90%;
+  margin: 0 5%;
+  
+}
+ .popTop p{
+  font-size: 1.2rem;
+  margin: 30px 0 10px;
+}
+ .popTop div span,
+ .popTop p span{
+  color: rgba(47, 71, 152, 1);
+  font-weight: 700;
+  margin-right: 10px;
+}
+ .popTop div{
+  background: rgba(47, 71, 152, .3);
+  padding: 20px;
+  margin: 0 auto;
+}
+ .popTop a{
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+ .popTop a i{
+  font-size: 2rem;
+}
+ .popBot{
+  width: 90%;
+  padding: 30px 0 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 30px 5%;
+}
+ .popBot dl{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+ .popBot dt{
+  width: 30%;
+  float: left;
+  font-weight: 700;
+}
+ .popBot dd{
+  width: 70%;
+  float: left;
+  text-align: left;
+  box-sizing: border-box;
+}
+ .popBtn {
+  overflow: hidden;
+  padding-left: 135px;
+  margin-bottom: 30px;
+}
+ .popBtn a{
+  display: block;
+  width: 200px;
+  height: 50px;
+  float: left;
+  margin: 0 5px;
+  line-height: 50px;
+  transition: all .5s ;
+}
+ .popBtn a.findPass{
+  border: 1px solid #333;
+  
+}
+ .popBtn a.findPass:focus,
+ .popBtn a.findPass:hover{
+  background: #333;
+  color: #fff;
+}
+ .popBtn a.goLogin{
+  border: 1px solid rgba(47, 71, 152, 1);
+  color: rgba(47, 71, 152, 1);
+}
+ .popBtn a.goLogin:focus,
+ .popBtn a.goLogin:hover{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+
+}
+ .modalPopup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}

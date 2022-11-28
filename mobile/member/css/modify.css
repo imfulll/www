@@ -1,0 +1,161 @@
+/* ========================= */
+/* 공통영역 */
+.logo {
+  margin: 50px auto 0;
+  display: block;
+  width: 270px;
+  height: 43px;
+  background: url(../images/logo_big.png) center no-repeat;
+  text-indent: -9999%;
+  color: #fff;
+}
+html {
+  background: rgba(220, 220, 220, 0.3);
+}
+#content {
+  width: 90%;
+  margin: 50px auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 5%;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* ========================= */
+/* 회원가입 */
+#content h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+#content > p{
+  text-align: right;
+  color: #999;
+}
+#content span{
+  color: rgba(47, 71, 152, 1);
+}
+
+#content form .row{
+  height: 70px;
+  border: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 10px;
+}
+#content form .row .col_1 label{
+  position: absolute;
+  left: 10px;
+  top: 4px;
+  font-size: 1.2rem;
+  color: #999;
+  padding: 17px 0 0 20px;
+  transition: all .5s;
+}
+
+#content form .row .col_1.focus label{
+  font-size: 0.8rem;
+  padding: 3px 0 0 16px;
+}
+#content form .row .col_2{
+  width: 100%;
+}
+#content form .row .col_2 input{
+  width: 100%;
+  height: 70px;
+  padding: 15px 0 0 26px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+#content form .row .col_2 #loadtext2{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+#pass.good, 
+#pass_confirm.good{
+  background-color: rgba(47, 71, 152, 0.1);
+}
+#pass.bad, 
+#pass_confirm.bad{
+  background-color: rgba(255, 0, 0, 0.1);
+}
+#content form .mbr_email .col_1,
+#content form .mbr_phone .col_1{
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  font-size: 0.8rem;
+  color: #999;
+  padding: 3px 0 0 16px;
+  transition: all .5s;
+}
+#content form .row.mbr_email .col_2,
+#content form .row.mbr_phone .col_2{
+  margin-top: 30px;
+}
+#content form .row.mbr_phone .col_2 select{
+  width: 20%;
+  height: 30px;
+  text-align: center;
+  margin-left: 3%;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.5rem;
+}
+#content form .row.mbr_email .col_2 input,
+#content form .row.mbr_phone .col_2 input{
+  width: 33%;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 0;
+  margin-top: 2px;
+}
+#content form .row.mbr_email .col_2 input{
+  width: 43.5%;
+}
+#content form .row.mbr_email .col_2 input:first-of-type{
+  margin-left: 3%;
+}
+
+#content form .row.mbr_phone .col_2 input:-internal-autofill-selected{
+  background: none;
+}
+input{
+  border: none;
+}
+input:focus-visible{
+  outline: 0;
+}
+input:disabled {
+  background: rgba(47, 71, 152, 0.1);
+}
+
+
+
+.lastBtn {
+  overflow: hidden;
+  margin-top: 30px;
+  text-align: center;
+}
+.lastBtn a{
+  display: inline-block;  
+  width: 40%;
+  line-height: 24px;
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 5px;
+}
+.lastBtn a.reset{
+  background: #333;
+  color: #fff;
+}
+.lastBtn a.submit{
+  background: rgba(47, 71, 152, 1);
+  color: #fff;
+}
