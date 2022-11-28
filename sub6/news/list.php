@@ -33,25 +33,19 @@
 	if(!$scale)
 		$scale=6;			// 한 화면에 표시되는 글 수
 
-    if ($mode=="search")
-	{
-		if(!$search)
-		{
-			echo("
-				<script>
-				 window.alert('검색할 단어를 입력해 주세요');
-			     history.go(-1);
-				</script>
-			");
-			exit;
+    if ($mode=="search"){
+			if(!$search){
+				echo("
+					<script>
+					window.alert('검색할 단어를 입력해 주세요');
+						history.go(-1);
+					</script>
+				");
+				exit;}
+			$sql = "select * from $table where $select like '%$search%'order by num desc";
+		}else{
+			$sql = "select * from $table order by num desc";
 		}
-
-		$sql = "select * from $table where $select like '%$search%' order by num desc";
-	}
-	else
-	{
-		$sql = "select * from $table order by num desc";
-	}
 
 	$result = mysql_query($sql, $connect);
 
@@ -117,7 +111,7 @@
 						</div>
 						<div class="searchInput">
 							<label for="search" class="hidden">검색어입력</label>
-							<input type="text" name="search" placeholder="검색어를 입력하세요">
+							<input type="text" name="search" id="search" placeholder="검색어를 입력하세요">
 							<button>검색</button>
 						</div>
 					</div>
