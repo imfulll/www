@@ -133,7 +133,7 @@
 					</div>
 					<div class="searchInput">
 						<label for="search" class="hidden">검색어입력</label>
-						<input type="text" name="search" placeholder="검색어를 입력하세요">
+						<input type="text" name="search" id="search" placeholder="검색어를 입력하세요">
 						<button>검색</button>
 					</div>
 				</div>

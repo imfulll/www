@@ -176,7 +176,7 @@
 									$img_name = "./data/".$img_name;
 									$img_width = $image_width[$i];
 									
-									echo "<img src='$img_name' width='$img_width'>"."<br><br>";
+									echo "<img src='$img_name' width='$img_width' alt=''>"."<br><br>";
 								}
 							}
 						?>

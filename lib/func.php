@@ -48,7 +48,7 @@
 				<li>
 					<a href='./sub6/news/view.php?table=news&num=$num&page=1&scale=6'>
 						<div class='newsImg'>
-							<img src=$imgOutput>
+							<img src=$imgOutput alt=''>
 						</div>
 						<div class='newsText'>
 							<dl>
