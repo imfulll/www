@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
 
 /* NAV */
@@ -164,7 +164,7 @@ dd {
 }
 #headerArea #gnb ul li a {
   display: block;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
   color: #fff;
   text-decoration: none;
   transition: all 0.3s;
@@ -178,15 +178,9 @@ dd {
 }
 @keyframes blur-a {
   from {
-    text-shadow:0px 0px 10px #fff,
-      0px 0px 10px #fff,
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 25px #fff,
-      0px 0px 25px #02feff,
-      0px 0px 25px #02feff,
-      0px 0px 50px #02feff,
+    text-shadow: 0px 0px 10px #fff, 0px 0px 10px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #fff, 0px 0px 25px #fff, 0px 0px 25px #fff,
+      0px 0px 25px #02feff, 0px 0px 25px #02feff, 0px 0px 50px #02feff,
       0px 0px 50px #02feff;
   }
 }
