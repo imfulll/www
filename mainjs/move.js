@@ -322,14 +322,6 @@ $(document).ready(function () {
   var txt2 = "";
 
   function popchange() {
-    // txt += "<dl>";
-    // txt += "<dt>제품명 : " + memo[ind].title + "</dt>";
-    // txt += "<dd>제품가격: " + memo[ind].price + "</dd>";
-    // txt += "<dd>제품설명1 : " + memo[ind].sub1 + "</dd>";
-    // txt += "<dd>제품설명2 : " + memo[ind].sub2 + "</dd>";
-    // txt += "</dl>";
-    // $(".pop .popup .txt").html(txt);
-
     txt2 = "";
     txt2 += "<thead>";
     txt2 += "<tr>";

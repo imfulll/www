@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Looping - fullPage.js</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage looping demo." />
+    <meta
+      name="keywords"
+      content="fullpage,jquery,looping,loop,loopTop,loopBottom,demo" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="./css/examples.css" />
+
+    <script
+      src="https://kit.fontawesome.com/1b35f9429d.js"
+      crossorigin="anonymous"></script>
+    <script src="js/prefixfree.min.js"></script>
+
+    <style></style>
+
+    <!--[if IE]>
+      <script type="text/javascript">
+        var console = { log: function () {} };
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <header id="headerArea">
+      <div class="headerInner">
+        <h1>imfulll</h1>
+
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <nav class="mainMenu" id="gnb">
+          <h2 class="hidden">네비게이션영역</h2>
+          <ul id="menu">
+            <li data-menuanchor="home" class="active">
+              <h3><a href="#home">home</a></h3>
+            </li>
+            <li data-menuanchor="profile">
+              <h3><a href="#profile">profile</a></h3>
+            </li>
+            <li data-menuanchor="pc">
+              <h3><a href="#pc">pc</a></h3>
+            </li>
+            <li data-menuanchor="mobile">
+              <h3><a href="#mobile">mobile</a></h3>
+            </li>
+            <li data-menuanchor="responsive">
+              <h3><a href="#responsive">responsive</a></h3>
+            </li>
+            <li data-menuanchor="bootstrap">
+              <h3><a href="#bootstrap">bootstrap</a></h3>
+            </li>
+            <li data-menuanchor="wordpress">
+              <h3><a href="#wordpress">wordpress</a></h3>
+            </li>
+            <li data-menuanchor="vue">
+              <h3><a href="#vue">vue</a></h3>
+            </li>
+            <li data-menuanchor="react">
+              <h3><a href="#react">react</a></h3>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="fullpage">
+      <h2 class="hidden">본문컨텐츠영역</h2>
+      <div class="section" id="section0">
+        <div class="moto">
+          <p>
+            <span class="motoEm motoEm1">변</span
+            ><span class="motoEm motoEm1">화</span>를 두려워하지 않는 개발자
+          </p>
+          <p><span class="motoEm motoEm2">전가득</span>입니다</p>
+        </div>
+        <div>
+          <p class="homeFooter homeFooter1">portfolio v_2023</p>
+          <p class="homeFooter homeFooter2">front-end developer</p>
+        </div>
+      </div>
+
+      <div class="section" id="section1">
+        <div class="profileLeft">
+          <img src="./images/profileImg01.png" alt="" />
+          <div class="profileLink">
+            <a
+              href="#"
+              class="hvr-float-shadow"
+              target="_blank"
+              title="전가득 온라인이력서 새창에서 열기"
+              ><i class="fa-regular fa-file-lines"></i><br />
+              online<br />resume</a
+            >
+            <a
+              href="#"
+              class="hvr-float-shadow"
+              target="_blank"
+              title="전가득 스토리보드 새창에서 열기"
+              ><i class="fa-solid fa-book-open"></i><br />
+              story<br />board</a
+            >
+            <a
+              href="#"
+              class="hvr-float-shadow"
+              target="_blank"
+              title="전가득 깃허브 새창에서 열기"
+              ><i class="fa-brands fa-github"></i><br />
+              git<br />hub</a
+            >
+          </div>
+        </div>
+        <div class="profileRight">
+          <div class="profileTop">
+            <p class="profileName"><span>전가득</span>Front-end Developer</p>
+          </div>
+          <div class="profileMid">
+            contact
+            <p class="profilePhone">
+              <i class="fa-solid fa-phone"></i> 010 . 4845 . 5967
+            </p>
+            <p class="profileEmail">
+              <i class="fa-solid fa-envelope"></i> imfulll@naver.com
+            </p>
+          </div>
+          <div class="profileBot">
+            skills
+            <ul>
+              <li>
+                <img src="./images/skills/html5.png" alt="" />
+                <p>HTML</p>
+              </li>
+              <li>
+                <img src="./images/skills/css3.png" alt="" />
+                <p>CSS</p>
+              </li>
+              <li>
+                <img src="./images/skills/javascript.png" alt="" />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <img src="./images/skills/jquery.png" alt="" />
+                <p>Jquery</p>
+              </li>
+              <li>
+                <img src="./images/skills/react.png" alt="" />
+                <p>React</p>
+              </li>
+              <li>
+                <img src="./images/skills/sass.png" alt="" />
+                <p>Sass/Less</p>
+              </li>
+              <li>
+                <img src="./images/skills/json.png" alt="" />
+                <p>JSON</p>
+              </li>
+              <li>
+                <img src="./images/skills/ajax.png" alt="" />
+                <p>AJAX</p>
+              </li>
+              <li>
+                <img src="./images/skills/php.png" alt="" />
+                <p>pHp</p>
+              </li>
+              <li>
+                <img src="./images/skills/mysql.png" alt="" />
+                <p>MySQL</p>
+              </li>
+              <li>
+                <img src="./images/skills/bootstrap.png" alt="" />
+                <p>Bootstrap</p>
+              </li>
+              <li>
+                <img src="./images/skills/wordpress.png" alt="" />
+                <p>Wordpress</p>
+              </li>
+              <li>
+                <img src="./images/skills/github.png" alt="" />
+                <p>Git Hub</p>
+              </li>
+              <li>
+                <img src="./images/skills/photoshop.png" alt="" />
+                <p>Photoshop</p>
+              </li>
+              <li>
+                <img src="./images/skills/illustrator.png" alt="" />
+                <p>Illustrator</p>
+              </li>
+              <li>
+                <img src="./images/skills/msoffice.png" alt="" />
+                <p>MSOffice</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section2">
+        <div class="portLeft">
+          <h3>효성그룹 기업 홈페이지(PC버전)</h3>
+          <p>기업형 PC 웹사이트</p>
+          <div>
+            <p>- XTHML로 제작된 사이트를 HTML5로 개변</p>
+            <p>- 웹표준과 웹접근선을 고려한 Markup문법 사용</p>
+            <p>- 트렌디한 UI와 디자인으로 리뉴얼</p>
+          </div>
+          <div>
+            디자인
+            <p>- main color : <span></span><span></span><span></span></p>
+            <p>- font : Noto Sans Kr, Roboto</p>
+          </div>
+          <div>
+            제작기간
+            <p>- 2022. 08. 10 ~ 2022. 09. 15</p>
+          </div>
+          <div>
+            제작스킬
+            <p>- HTML5, CSS3, JavaScript, jQuery, JSON, AJAX, pHp, MySQL</p>
+            <p>- Adobe Photoshop, Adobe illustrator</p>
+            <p>
+              - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
+            </p>
+            <ul>
+              <li>
+                <img src="./images/skills/html5.png" alt="" />
+                <p>HTML</p>
+              </li>
+              <li>
+                <img src="./images/skills/css3.png" alt="" />
+                <p>CSS</p>
+              </li>
+              <li>
+                <img src="./images/skills/javascript.png" alt="" />
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <img src="./images/skills/jquery.png" alt="" />
+                <p>Jquery</p>
+              </li>
+              <li>
+                <img src="./images/skills/json.png" alt="" />
+                <p>JSON</p>
+              </li>
+              <li>
+                <img src="./images/skills/ajax.png" alt="" />
+                <p>AJAX</p>
+              </li>
+              <li>
+                <img src="./images/skills/php.png" alt="" />
+                <p>pHp</p>
+              </li>
+              <li>
+                <img src="./images/skills/mysql.png" alt="" />
+                <p>MySQL</p>
+              </li>
+              <li>
+                <img src="./images/skills/github.png" alt="" />
+                <p>Git Hub</p>
+              </li>
+              <li>
+                <img src="./images/skills/photoshop.png" alt="" />
+                <p>Photoshop</p>
+              </li>
+              <li>
+                <img src="./images/skills/illustrator.png" alt="" />
+                <p>Illustrator</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="portRight">
+          <video src="./images/video_edit_01.mp4" autoplay loop></video>
+          <a
+            href="#"
+            class="hvr-float-shadow"
+            target="_blank"
+            title="효성그룹 pc버전 포트폴리오 새창에서 열기"
+            >go to website!</a
+          >
+        </div>
+      </div>
+
+      <div class="section" id="section3">
+        <div class="portLeft">
+          <h3>효성그룹 기업 홈페이지(Mobile버전)</h3>
+          <p>기업형 Mobile 웹사이트</p>
+          <div>
+            <p>
+              - pc버전으로 구현한 기업형 효성그룹 홈페이지를 모바일용 UI로 구현
+            </p>
+            <p>- 마우스가 아니라 터치 이벤트를 중점적으로 구현</p>
+            <p>- 작은 해상도에서 쉽게 접근 가능한 퀵메뉴</p>
+          </div>
+          <div>
+            디자인
+            <p>- main color : <span></span><span></span><span></span></p>
+            <p>- font : Noto Sans Kr, Roboto</p>
+          </div>
+          <div>
+            제작기간
+            <p>- 2022. 08. 10 ~ 2022. 09. 15</p>
+          </div>
+          <div>
+            제작스킬
+            <p>- HTML5, CSS3, JavaScript, jQuery, JSON, AJAX, pHp, MySQL</p>
+            <p>- Adobe Photoshop, Adobe illustrator</p>
+            <p>
+              - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
+            </p>
+            <ul></ul>
+          </div>
+        </div>
+        <div class="portRight">
+          <video src="./images/video_edit_02.mp4" autoplay loop></video>
+          <a
+            href="#"
+            class="hvr-float-shadow"
+            target="_blank"
+            title="효성그룹 pc버전 포트폴리오 새창에서 열기"
+            >go to website!</a
+          >
+        </div>
+      </div>
+      <div class="section" id="section4">
+        <div class="portLeft">
+          <h3>IRON-MAN Responsive Website</h3>
+          <p>반응형 웹사이트</p>
+          <div>
+            <p>- MCU의 Iron-Man을 주제로 만든 반응형 웹사이트</p>
+            <p>- 디바이스별 해상도를 고려하여 최적화된 UI 동장</p>
+            <p>- 다양한 디바이스로 이용할 수 있는 반응형 웹 구축</p>
+          </div>
+          <div>
+            디자인
+            <p>- main color : <span></span><span></span><span></span></p>
+            <p>- font : Noto Sans Kr, Roboto</p>
+          </div>
+          <div>
+            제작기간
+            <p>- 2022. 08. 10 ~ 2022. 09. 15</p>
+          </div>
+          <div>
+            제작스킬
+            <p>- HTML5, CSS3, JavaScript, jQuery, JSON, AJAX, pHp, MySQL</p>
+            <p>- Adobe Photoshop, Adobe illustrator</p>
+            <p>
+              - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
+            </p>
+            <ul></ul>
+          </div>
+        </div>
+        <div class="portRight">
+          <img src="./images/frame.png" alt="" />
+          <a
+            href="#"
+            class="hvr-float-shadow"
+            target="_blank"
+            title="효성그룹 pc버전 포트폴리오 새창에서 열기"
+            >go to website!</a
+          >
+        </div>
+      </div>
+      <div class="section" id="section5">
+        <div class="portLeft">
+          <h3>McDonald's Bootstrap Website</h3>
+          <p>부트스트랩 웹사이트</p>
+          <div>
+            <p>- 세계적인 프렌차이즈 기업 맥도날드의 반응형 웹사이트</p>
+            <p>- 프레임워크 중 제일 인지도가 높은 부트스트랩 활용</p>
+            <p>- 디자인과 레이아웃을 보다 간편하고 빠르게 구현</p>
+          </div>
+          <div>
+            디자인
+            <p>- main color : <span></span><span></span><span></span></p>
+            <p>- font : Noto Sans Kr, Roboto</p>
+          </div>
+          <div>
+            제작기간
+            <p>- 2022. 08. 10 ~ 2022. 09. 15</p>
+          </div>
+          <div>
+            제작스킬
+            <p>- HTML5, CSS3, JavaScript, jQuery, JSON, AJAX, pHp, MySQL</p>
+            <p>- Adobe Photoshop, Adobe illustrator</p>
+            <p>
+              - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
+            </p>
+            <ul></ul>
+          </div>
+        </div>
+        <div class="portRight">
+          <img src="./images/frame.png" alt="" />
+          <a
+            href="#"
+            class="hvr-float-shadow"
+            target="_blank"
+            title="효성그룹 pc버전 포트폴리오 새창에서 열기"
+            >go to website!</a
+          >
+        </div>
+      </div>
+      <div class="section" id="section6">
+        <div class="portLeft">
+          <h3>MontBlanc Wordpress Website</h3>
+          <p>워드프레스 웹사이트</p>
+          <div>
+            <p>- 세계적인 명품브랜드 몽블랑을 주제로 한 반응형 웹사이트</p>
+            <p>
+              - 워드프레스의 테마와 플러그인을 활용하여 디자인과 레이아웃을
+              간편하게 구현
+            </p>
+            <p>- 브랜드 컬러와 컨셉에 맞는 디자인</p>
+          </div>
+          <div>
+            디자인
+            <p>- main color : <span></span><span></span><span></span></p>
+            <p>- font : Noto Sans Kr, Roboto</p>
+          </div>
+          <div>
+            제작기간
+            <p>- 2022. 08. 10 ~ 2022. 09. 15</p>
+          </div>
+          <div>
+            제작스킬
+            <p>- HTML5, CSS3, JavaScript, jQuery, JSON, AJAX, pHp, MySQL</p>
+            <p>- Adobe Photoshop, Adobe illustrator</p>
+            <p>
+              - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
+            </p>
+            <ul></ul>
+          </div>
+        </div>
+        <div class="portRight">
+          <img src="./images/frame.png" alt="" />
+          <a
+            href="#"
+            class="hvr-float-shadow"
+            target="_blank"
+            title="효성그룹 pc버전 포트폴리오 새창에서 열기"
+            >go to website!</a
+          >
+        </div>
+      </div>
+      <div class="section" id="section7">
+        <div class="portLeft">
+          <h3>전국 대학&전문대학 정보</h3>
+          <p>Vue 웹사이트</p>
+          <div>
+            <p>- JavaScript의 프레임워크인 Vue를 활용한 웹사이트</p>
+            <p>- 라우터와 컴포넌트를 활용하여 Vue의 장점을 최대한 활용</p>
+            <p>- Json파일과 Kakao Map API를 활용한 다양한 정보 제공</p>
+          </div>
+          <div>
+            디자인
+            <p>- main color : <span></span><span></span><span></span></p>
+            <p>- font : Noto Sans Kr, Roboto</p>
+          </div>
+          <div>
+            제작기간
+            <p>- 2022. 08. 10 ~ 2022. 09. 15</p>
+          </div>
+          <div>
+            제작스킬
+            <p>- HTML5, CSS3, JavaScript, jQuery, JSON, AJAX, pHp, MySQL</p>
+            <p>- Adobe Photoshop, Adobe illustrator</p>
+            <p>
+              - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
+            </p>
+            <ul></ul>
+          </div>
+        </div>
+        <div class="portRight">
+          <!-- <video src="./images/Untitled.mp4" autoplay loop></video> -->
+          <!-- <img src="./images/frame.png" alt="" /> -->
+          <a
+            href="#"
+            class="hvr-float-shadow"
+            target="_blank"
+            title="효성그룹 pc버전 포트폴리오 새창에서 열기"
+            >go to website!</a
+          >
+        </div>
+      </div>
+      <div class="section" id="section8"><div class="portLeft">
+        <h3>Happy Lottery!</h3>
+        <p>React 웹사이트</p>
+        <div>
+          <!-- <p>- JavaScript의 프레임워크인 Vue를 활용한 웹사이트</p>
+          <p>- 라우터와 컴포넌트를 활용하여 Vue의 장점을 최대한 활용</p>
+          <p>- Json파일과 Kakao Map API를 활용한 다양한 정보 제공</p> -->
+        </div>
+        <div>
+          디자인
+          <p>- main color : <span></span><span></span><span></span></p>
+          <p>- font : Noto Sans Kr, Roboto</p>
+        </div>
+        <div>
+          제작기간
+          <p>- 2022. 08. 10 ~ 2022. 09. 15</p>
+        </div>
+        <div>
+          제작스킬
+          <p>- HTML5, CSS3, JavaScript, jQuery, JSON, AJAX, pHp, MySQL</p>
+          <p>- Adobe Photoshop, Adobe illustrator</p>
+          <p>
+            - W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료
+          </p>
+          <ul></ul>
+        </div>
+      </div>
+      <div class="portRight">
+        <img src="./images/frame.png" alt="" />
+        <a
+          href="#"
+          class="hvr-float-shadow"
+          target="_blank"
+          title="효성그룹 pc버전 포트폴리오 새창에서 열기"
+          >go to website!</a
+        >
+      </div>
+    </div></div>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/fullnav.js"></script>
+    <script type="text/javascript" src="./js/fullpage.js"></script>
+    <script type="text/javascript" src="./js/examples.js"></script>
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        anchors: [
+          "home",
+          "profile",
+          "pc",
+          "mobile",
+          "responsive",
+          "bootstrap",
+          "wordpress",
+          "vue",
+          "react",
+        ],
+        menu: "#menu",
+        loopTop: true,
+        loopBottom: true,
+        responsiveWidth: 1024,
+        afterResponsive: function (isResponsive) {},
+        navigation: "true",
+        navigationPosition: "right",
+      });
+    </script>
+  </body>
+</html>

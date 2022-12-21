@@ -47,7 +47,6 @@
               <li><a href="./sub4/sub4_1.html">기업지배구조</a></li>
               <li><a href="./sub4/sub4_2.html">재무정보</a></li>
               <li><a href="./sub4/sub4_3.html">주식정보</a></li>
-              <li><a href="./sub4/sub4_4.html">공시정보</a></li>
             </ul>
           </li>
           <li class="m5 menu">
@@ -71,7 +70,7 @@
         </ul>
       </nav>
       <div class="headerRight">
-      <?
+        <?
         @extract($_POST);
         @extract($_GET);
         @extract($_SESSION);
@@ -93,7 +92,11 @@
 
         <ul>
           <li><a class="bntColor" href="./login/logout.php">로그아웃</a></li>
-          <li><a class="bntColor" href="./member/member_form_modify.php">회원정보수정</a></li>
+          <li>
+            <a class="bntColor" href="./member/member_form_modify.php"
+              >회원정보수정</a
+            >
+          </li>
         </ul>
 
         <?
@@ -102,3 +105,4 @@
       </div>
     </div>
   </header>
+</div>
