@@ -438,103 +438,13 @@ h1 {
 }
 
 /* css */
-/* ====================================== */
+/* ================================================== */
 #fullpage .fp-overflow {
   display: flex;
   align-items: center;
 }
 .section {
   padding-top: 67px;
-  box-sizing: border-box;
-}
-#fullpage .portLeft,
-#fullpage .portRight {
-  width: 50%;
-  box-sizing: border-box;
-}
-#fullpage .portRight {
-  padding-right: 100px;
-}
-#fullpage .portLeft {
-  padding-left: 130px;
-}
-#fullpage .portLeft > p {
-  color: #333;
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-#fullpage h3 {
-  font-size: 2rem;
-  color: #0c4da2;
-}
-#fullpage .portLeft > div {
-  color: #333;
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-#fullpage .portLeft > div:last-of-type {
-  margin-bottom: 0;
-}
-#fullpage .portLeft > div:nth-of-type(2) p span {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: #0c4da2;
-  border-radius: 100%;
-  margin: 0 5px;
-}
-#fullpage .portLeft > div > p {
-  color: #666;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-left: 10px;
-}
-#fullpage .portLeft > div > p:first-of-type {
-  margin-top: 5px;
-}
-#fullpage .portLeft ul {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  /* grid-template-rows: 50px; */
-  grid-column-gap: 10px;
-  grid-row-gap: 20px;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #999;
-  margin-top: 20px;
-}
-#fullpage .portLeft ul img {
-  width: 100%;
-}
-#fullpage .portLeft ul li {
-  align-self: center;
-}
-#fullpage .portLeft ul li p {
-  visibility: hidden;
-}
-#fullpage .portLeft ul li:hover p {
-  visibility: visible;
-  transition: all 0.5s;
-}
-#fullpage .portRight {
-  text-align: center;
-}
-#fullpage #section2 .portRight video {
-  width: 100%;
-  border: 0;
-}
-#fullpage #section3 .portRight video {
-  width: 36%;
-  border: 0;
-}
-#fullpage .portRight img {
-  width: 70%;
-}
-#fullpage .portRight a {
-  display: block;
-  width: 112px;
-  margin: 0 auto;
 }
 
 #fullpage #section0 {
@@ -559,7 +469,7 @@ h1 {
   font-weight: 700;
 }
 #fullpage #section0 .moto p span.motoEm1 {
-  font-size: 5rem;
+  font-size: 4rem;
   position: relative;
   color: #0c4da2;
 }
@@ -575,7 +485,7 @@ h1 {
   top: 0;
 }
 #fullpage #section0 .moto p span.motoEm2 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 #fullpage #section0 .homeFooter {
@@ -664,7 +574,7 @@ h1 {
   grid-column-gap: 10px;
   grid-row-gap: 20px;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 8px;
   color: #999;
   margin-top: 20px;
 }
@@ -677,4 +587,95 @@ h1 {
 #fullpage #section1 .profileBot ul li:hover p {
   visibility: visible;
   transition: all 0.5s;
+}
+
+/* ========================================================== */
+#fullpage .portLeft,
+#fullpage .portRight {
+  width: 50%;
+  box-sizing: border-box;
+}
+#fullpage .portRight {
+  padding-right: 100px;
+}
+#fullpage .portLeft {
+  padding-left: 130px;
+}
+#fullpage .portLeft > p {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+#fullpage h3 {
+  font-size: 2rem;
+  color: #0c4da2;
+}
+#fullpage .portLeft > div {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+#fullpage .portLeft > div:last-of-type {
+  margin-bottom: 0;
+}
+#fullpage .portLeft > div:nth-of-type(2) p span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #0c4da2;
+  border-radius: 100%;
+  margin: 0 5px;
+}
+#fullpage .portLeft > div > p {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 10px;
+}
+#fullpage .portLeft > div > p:first-of-type {
+  margin-top: 5px;
+}
+#fullpage .portLeft ul {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-rows: 50px; */
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 20px;
+}
+#fullpage .portLeft ul img {
+  width: 100%;
+}
+#fullpage .portLeft ul li {
+  align-self: center;
+}
+#fullpage .portLeft ul li p {
+  visibility: hidden;
+}
+#fullpage .portLeft ul li:hover p {
+  visibility: visible;
+  transition: all 0.5s;
+}
+#fullpage .portRight {
+  text-align: center;
+}
+#fullpage #section2 .portRight img {
+  width: 100%;
+  border: 0;
+}
+#fullpage #section3 .portRight img {
+  width: 30%;
+  border: 0;
+}
+#fullpage .portRight img {
+  width: 70%;
+}
+#fullpage .portRight a {
+  display: block;
+  width: 112px;
+  margin: 0 auto;
 }

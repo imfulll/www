@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+.wrap {
+  width: 90%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.profile .photo {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.profile .photo img {
+  width: 150px;
+}
+.profile .profileText {
+  padding: 10px 30px;
+  width: 70%;
+}
+.profile .profileText p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.profile .profileText .textDetail {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 15px 10px;
+}
+.profile .profileText .textDetail dt {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.summary {
+  width: 90%;
+  margin: 0 auto 50px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.03);
+}
+.summary ul {
+  overflow: hidden;
+}
+.summary ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  height: 150px;
+  line-height: 170px;
+  position: relative;
+}
+.summary ul li::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 130px;
+  background: rgba(204, 204, 204, 0.5);
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.summary ul li:last-child::after {
+  background: rgba(0, 0, 0, 0);
+}
+.summary ul li p {
+  position: relative;
+}
+.summary ul li p::before {
+  display: block;
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: 700;
+  top: -25px;
+  left: -26px;
+  margin-left: 50%;
+}
+.summary ul li:nth-of-type(1) p::before {
+  content: "학력사항";
+}
+.summary ul li:nth-of-type(2) p::before {
+  content: "경력사항";
+}
+.summary ul li:nth-of-type(3) p::before {
+  content: "희망연봉";
+}
+.summary ul li:nth-of-type(4) p::before {
+  content: "지원부문";
+}
+
+.spec {
+  width: 90%;
+  margin: 0 auto;
+}
+.spec .specLi {
+  margin-bottom: 100px;
+  width: 100%;
+}
+.spec .specLi table {
+  width: 100%;
+}
+.spec .specLi thead {
+  text-align: center;
+}
+.spec .specLi thead tr th {
+  border-bottom: 2px solid #ccc;
+  padding: 20px 0;
+}
+.spec .specLi tbody tr {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+.spec .specLi .specTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0c4da2;
+}
+.spec tbody td {
+  padding: 30px 20px;
+}
+
+.spec .portfolio .firstTh {
+  width: 30%;
+  min-width: 150px;
+}
+/* .spec .portfolio .thirdTh {
+  width: 30%;
+} */
+.spec .portfolio tbody tr td:nth-of-type(1) {
+  text-align: center;
+}
+.spec .portfolio tbody tr td:nth-of-type(3) {
+  text-align: center;
+}
+.spec .portfolio tbody tr td a {
+  text-decoration: underline;
+  color: #0c4da2;
+}
+
+.spec .education .firstTh {
+  width: 20%;
+}
+.spec .education .secondTh {
+  width: 50%;
+}
+.spec .education .thirdTh {
+  width: 20%;
+}
+.spec .education .fourthTh {
+  width: 10%;
+}
+.spec .education tbody tr {
+  text-align: center;
+}
+
+.spec .program .firstTh {
+  width: 15%;
+}
+.spec .program .secondTh {
+  width: 85%;
+}
+.spec .program tbody tr td:nth-of-type(1) {
+  text-align: center;
+}
+
+.spec .school .firstTh {
+  width: 20%;
+}
+.spec .school .secondTh {
+  width: 40%;
+}
+.spec .school .thirdTh {
+  width: 20%;
+}
+.spec .school .fourthTh {
+  width: 20%;
+}
+.spec .school tbody tr {
+  text-align: center;
+}
+
+.spec .experience .firstTh {
+  width: 30%;
+}
+.spec .experience .secondTh {
+  width: 30%;
+}
+.spec .experience .thirdTh {
+  width: 40%;
+}
+.spec .experience tbody tr {
+  text-align: center;
+}
+
+.spec .license .firstTh {
+  width: 30%;
+}
+.spec .license .secondTh {
+  width: 30%;
+}
+.spec .license .thirdTh {
+  width: 40%;
+}
+.spec .license tbody tr {
+  text-align: center;
+}
+
+.bottom {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: #0c4da2;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
+  line-height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  font-weight: 700;
+}

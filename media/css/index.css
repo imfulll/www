@@ -53,7 +53,7 @@
 #content h3 {
   font-size: 2.5rem;
   color: #fff;
-  font-family: 'Audiowide', cursive;
+  font-family: "Audiowide", cursive;
 }
 #content a.more {
   display: block;
@@ -102,7 +102,7 @@
 }
 #content .about .explain dd {
   line-height: 1.5;
-  display : -webkit-box;
+  display: -webkit-box;
   -webkit-line-clamp: 13;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -549,13 +549,11 @@
 }
 #content .suitUp a p.moreText {
   opacity: 0;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 #content .suitUp a:hover p.moreText {
   opacity: 1;
-  
 }
-
 
 #content .suitUp .suitLeft a i {
   font-size: 4vw;
@@ -615,7 +613,7 @@
 #content .responsiveGallery-container dl dt {
   font-size: 1.5rem;
   font-family: "Black Ops One", cursive;
-  color: #fff
+  color: #fff;
   margin-bottom: 10px;
   line-height: 1.2rem;
 }
@@ -632,7 +630,7 @@
     padding: 263px 0 100px;
     position: relative;
   }
-  #content .about h3{
+  #content .about h3 {
     position: absolute;
     left: 50%;
     top: 200px;
@@ -696,7 +694,7 @@
 }
 
 /* 테블릿 */
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   #content .about .thumbnail ul {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 250px;
@@ -704,7 +702,7 @@
   #content .about .explain dd {
     -webkit-line-clamp: 6;
   }
-  #content .suitUp a p.moreText{
+  #content .suitUp a p.moreText {
     opacity: 1;
   }
   #content .suitUp .suitLeft {
@@ -750,8 +748,7 @@
 
 /* 모바일 */
 @media screen and (max-width: 640px) {
-
-  #content .suitUp h3{
+  #content .suitUp h3 {
     position: absolute;
     left: 50%;
     top: 50px;
@@ -769,7 +766,7 @@
     width: 90%;
     margin-right: 5%;
   }
-  #content .suitUp .suitLeft{
+  #content .suitUp .suitLeft {
     margin-top: calc(10% + 63px);
   }
   #content .suitUp .suitLeft a i {
@@ -785,7 +782,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  #content .about .thumbnail ul li a{
+  #content .about .thumbnail ul li a {
     padding-top: 105px;
   }
   #content .gne ul {
